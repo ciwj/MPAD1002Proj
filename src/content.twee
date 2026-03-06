@@ -6,7 +6,7 @@ Untitled Story 2
 {
   "ifid": "CD62A0CA-DD2F-44D2-8187-51A3CE7ECFE3",
   "format": "SugarCube",
-  "format-version": "2.36.1",
+  "format-version": "2.30.0",
   "start": "Untitled Passage",
   "zoom": 1
 }
@@ -18,6 +18,8 @@ this is a test!
 click this [[link]]
 
 [[githubtest]]
+
+[[TwineOnASeperateFile]]
 
 
 :: link {"position":"625,375","size":"100,100"}
