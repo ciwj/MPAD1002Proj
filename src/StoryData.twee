@@ -1,0 +1,24 @@
+:: StoryTitle
+Untitled Story 2
+
+
+:: StoryData
+{
+  "ifid": "CD62A0CA-DD2F-44D2-8187-51A3CE7ECFE3",
+  "format": "SugarCube",
+  "format-version": "2.30.0",
+  "start": "Untitled Passage",
+  "zoom": 1
+}
+
+
+:: Untitled Passage {"position":"625,250","size":"100,100"}
+some temporary navigation:
+
+[[Act1]]
+
+[[Act2]]
+
+[[Act3]]
+
+[[TestingZone]]
