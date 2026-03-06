@@ -17,6 +17,8 @@ this is a test!
 
 click this [[link]]
 
+[[githubtest]]
+
 
 :: link {"position":"625,375","size":"100,100"}
 add the next box?
@@ -25,7 +27,10 @@ link to [[test]]
 
 
 :: test {"position":"625,375","size":"100,100"}
-words here! [[no]]
+words here! [[no]] 
 
 :: no
 i am continually full of fear
+
+:: githubtest
+if you're seeing this, then i can just type something here in content.twee and push to github?
