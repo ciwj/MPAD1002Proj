@@ -1,0 +1,31 @@
+:: StoryTitle
+Untitled Story 2
+
+
+:: StoryData
+{
+  "ifid": "CD62A0CA-DD2F-44D2-8187-51A3CE7ECFE3",
+  "format": "SugarCube",
+  "format-version": "2.36.1",
+  "start": "Untitled Passage",
+  "zoom": 1
+}
+
+
+:: Untitled Passage {"position":"625,250","size":"100,100"}
+this is a test!
+
+click this [[link]]
+
+
+:: link {"position":"625,375","size":"100,100"}
+add the next box?
+
+link to [[test]]
+
+
+:: test {"position":"625,375","size":"100,100"}
+words here! [[no]]
+
+:: no
+i am continually full of fear
