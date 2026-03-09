@@ -1,2 +1,87 @@
 :: Act1
-you are in Act1.twee
+you are in Act1.twee. First passage: [[name_set1]]
+
+::name_set1
+/* Gradient from black to white after some scrolling, then the below.*/
+
+<<type 40ms>>
+\> You're finally here.
+
+\> This story is about you. What should we call you?
+
+
+\>> I think... I think you can call me <<textbox "$name" "???" "name_confirm">>
+
+<</type>>
+
+::name_confirm
+
+/* Variable below to smooth the first sentence from second question? */
+<<set $name_resel to false>>
+
+<<type 40ms>>
+\> $name. A lot is going to happen, $name.
+
+\> If it's any consolation, it's all in your hands.
+
+
+\>> [[[Wait. I think I might be someone else?|name_reselect]]]
+
+\>> [[[.. What do you mean? What is this?|question2]]]
+
+<</type>>
+
+::name_reselect
+
+<<type 40ms>>
+
+\> It's so easy to forget, isn't it? Who are you, then?
+
+\>> <<textbox "$name" "???" "name_reconfirm">> That's it.
+
+
+<</type>>
+
+::name_reconfirm
+
+/* Variable below to smooth the first sentence from second question? */
+<<set $name_resel to true>>
+
+<<type 40ms>>
+\> You know this for sure, $name?
+
+\> After all, you should be certain.
+
+
+\>> [[[.. One more time.|name_reselect]]]
+
+\>> [[[Yes. I do.|question2]]]
+
+<</type>>
+
+::question2
+
+<<type 40ms>>
+
+<<if $name_resel is true>>
+
+\> Wonderful. We need to know - what enraptures you?
+<<else>>
+
+\> You'll see in due time. For now, we must know - what enraptures you?
+<</if>>
+/* Need to turn these into buttons then set a variable based on the answer IF it ends up doing anything */
+\>> Pure darkness as far as I can see.
+
+\>> A grating, droning noise - somehow from everywhere and nowhere.
+
+\>> A cold so intense, I can't even feel it.
+
+\>> Losing myself in a tangle of endless corridors.
+
+
+\>> No.. It must be TEXTBOX
+
+\>> You're starting to scare me
+
+<</type>>
