@@ -1,6 +1,10 @@
 :: Act1
 you are in Act1.twee. First passage: [[name_set1]]
 
+/**************************/
+/* START OF PRE-NARRATIVE */
+/**************************/
+
 ::name_set1
 /* Gradient from black to white after some scrolling, then the below.*/
 
@@ -61,7 +65,7 @@ you are in Act1.twee. First passage: [[name_set1]]
 
 ::question2
 
-<<type 40ms>>
+<<type 40ms>>  /* REQUIRES VARIABLES TO CONTROL THE BOTTOM TWO OPTIONS */
 
 <<if $name_resel is true>>
 
@@ -85,3 +89,19 @@ you are in Act1.twee. First passage: [[name_set1]]
 \>> You're starting to scare me
 
 <</type>>
+
+:: pre-wakeup
+
+<<type 40ms>>
+\> Wonderful. You're doing so well. Are you ready?
+
+\> After all, you should be certain.
+
+
+\>> [[[Yes.|wakeup]]]
+
+\>> [[[No! What is this? What's happening??|pre-wakeup]]]
+
+/*******************/
+/* AFTER WAKING UP */
+/*******************/
