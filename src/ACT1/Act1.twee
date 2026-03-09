@@ -105,3 +105,24 @@ you are in Act1.twee. First passage: [[name_set1]]
 /*******************/
 /* AFTER WAKING UP */
 /*******************/
+
+::wakeup
+
+/* VIDEO: first-person getting up from the ground (vincent massey?) and looking around. */
+/* TEXT: Internal dialogue of reorienting yourself */
+/* LINK to you wandering down the path */
+
+::house_intro
+
+/* DRAWING: See Act1 #9 Storyboard */
+/* TEXT: Contemplation */
+/* CHOICE: approach house or choose to leave */
+/* ^ leads to house_approach OR wander */
+
+:: wander
+/* VARIABLE: need to increment a counter every time you select this (to vary dialogue) */
+/* VIDEO: wandering through some brush!! (FIRST-PERSON) */
+/* LINK: go back to house_intro
+
+::house_approach
+/* DRAWING SET: See Act 1 #12 to 16 */
