@@ -1,20 +1,81 @@
 
 /**********************/
-:: Act3
+/*******************************/
+/* UPON ENTERING TUTORIAL ROOM */
+/*******************************/
 
-\> You are finally in the final stretch. 
+::endroom_main
 
-\> The next action you take determines your ending.
+/* REFERENCE paper prototypes interaction 3 */
+/* TEXT: collect your thoughts, analyze the space in front of you.*/
+/* DRAWINGS: one head-on shot of the room, one looking left, one looking right.*/
+/* DRAWINGS: looking right image from above with your hand raised with a gem in it */
+
+/* TEXT: IF TUTROOM_DIA1 is FALSE*/
+\> You think you know what's being demanded of you. It's not like you have much of a choice anyways.
+
+/* TEXT: IF TUTROOM_DIA1 IS TRUE */
+\> Does it matter? What else would you do right now?
+
+/* Set variable TUTROOM_DIA1 to True if below is pressed. SHOW IF TUTROOM_DIA1 IS FALSE*/
+\>> Did these used to glow before? What if this puts me in danger?
+
+\>> [[Whatever. At least something will happen.|break_or_place]]
+
+\>> [[You know what? I do have a choice. I could just do.... nothing.|null_choice1]]
+
+::break_or_place
+
+::null_choice1
+
+/* DRAWINGS: looking right image from above with your hand raised with a gem in it */
+
+/> Really? Nothing? That's the best course of action you can come up with right now?
+
+\>> [[[.. it might be a stupid idea. Nevermind.]|endroom_main]]
+
+\>> [[[I'm sick of this. I'm sick of whatever you are. whatever this is. I'm going to take a long, nice nap, and after that? I might take another.]|null_choice2]]
+
+::null_choice2
+/* DRAWINGS: looking right image from above with your hand raised with a gem in it */
+
+\> You don't want to do that. I'm trying to help you.
+
+\>> [[[...]|null_choice3]]
+
+::null_choice3
+
+/* DRAWING: shot of you on the ground looking at the old ceiling */
+
+\> You lie down and look at the ceiling.
+
+/* Loong scroll to black, Go to null_choice4 at the end*/
+
+::null_choice4
+
+/*-----------------------------------------------*/
+
+/***************/
+/* ENDING ROOM */
+/***************/
+
+:: endroom1
+
+/* */
 
 \>> [[[I should place the gem on the pedestal|place_gem]]]
 
 \>> [[[What if I try to break it?|break_gem]]]
 
 \>> [[[I've had enough. I give up on all this|ignore_gem]]]
+
+
 /**********************/
 
 /**********************/
 :: place_gem
+
+<<type 40ms>>
 
 \> You're finally free. Go back home. 
 
@@ -22,20 +83,30 @@
 /**********************/
 
 
+<</type>>
+
+<</type>>
+
 /**********************/
 :: break_gem
+
+<<type 40ms>>
 
 \> You have chosen to break this. You will regret this. You should have made better choices.
 
 /* "Bad" ending. Music goes wonky, droning noise increases, single bang on door, cut to black */
 /**********************/
 
+<</type>>
 
 /**********************/
 :: ignore_gem
 
+<<type 40ms>>
 
 \> You decided to give up after all this. Following your decision, nothing will happen over the next eternity.
 
 /* "Null" ending. Spend eternity watching the eons pass. */
 /**********************/
+<</type>>
+
