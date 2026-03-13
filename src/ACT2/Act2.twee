@@ -1,9 +1,30 @@
+
+/**************************/
+/* ACT II - CENTRAL ROOM  */
+/**************************/
+
+/**********************/
 :: Act2
-you are in Act2.twee
 
-[[Area 1]]
+\> in this cracked stone room there are three hallways ahead of you.  
+\> the hallways to either side are entirely dark. 
+\> in the hall straight ahead you can see a imposing door glistening with gold. 
 
-[[Area 2]]
+\> the door behind you slams shut. 
+\> the walls of this new room shake with the force of it.
+
+\> [[your eyes follow nervously follow the growing cracks in the stone.|rockslide]]
+/**********************/
+
+/**********************/
+:: rockslide
+\> the celling collapses and blocks middle hall.
+
+/>> [investigate the right hallway|AreaSideRoom1]
+
+/>> [investigate the left hallway|Area 2]
+/**********************/
+
 
 [[Area 3]]
 

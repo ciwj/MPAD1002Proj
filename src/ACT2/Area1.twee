@@ -1,4 +1,48 @@
-:: Area 1
-you are in area 1
+
+
+<!--////////////////////////////////////////////////SECTION SEPARATOR/////////////////////////////////////////// -->
+
+/***********************/
+/* ACT II - AREA 1     */
+/* SIDE ROOM 1 */
+/***********************/
+:: Area1SideRoom1
+
+walls start twisting. crazy sloped room. stuff looks bonkers
+
+[[Area1Puzzle| puzzle room]]
+
+
+<!--////////////////////////////////////////////////SECTION SEPARATOR/////////////////////////////////////////// -->
+
+
+/***********************/
+/* ACT II - AREA 1     */
+/* KITCHEN PUZZLE ROOM */
+/***********************/
+
+
+:: Area1puzzle
+
+you are in the crazy kitchen! serve the chef what he wants and you win the gemstone!
+
+[[back|Area1SideRoom1]]
+[[forwards|Area1SideRoom2]]
+
+
+<!--////////////////////////////////////////////////SECTION SEPARATOR/////////////////////////////////////////// -->
+
+
+/***********************/
+/* ACT II - AREA 1     */
+/* SIDE ROOM 2 */
+/***********************/
+:: Area1SideRoom2
+
+looks super totally weird in here in regards to direction and space
+
+[[back|Area1puzzle]]
+[[forwards|Area 3]]
+
 
 [[back|Act2]]

@@ -1,15 +1,13 @@
-:: Area 5
-you are in area 5
 /**********************/
 /* ACT II - AREA 5    */
-/* LAVA ROOM          */
+/* LAVA PUZZLE ROOM   */
 /**********************/
 
-:: area5_start
+/**********************/
+:: Area 5
 
 /* Player enters lava cave */
 
-<<type 40ms>>
 \> You enter the lava room.
 
 \> Heat fills the cave.
@@ -20,12 +18,12 @@ you are in area 5
 
 
 \>> [[[Find the first button.|area5_button1]]]
+/**********************/
 
-<</type>>
 
+/**********************/
 :: area5_button1
 
-<<type 40ms>>
 \> You find the first button and press it.
 
 \> The lava slows down a little.
@@ -33,11 +31,11 @@ you are in area 5
 
 \>> [[[Find the second button.|area5_button2]]]
 
-<</type>>
+/**********************/
 
+/**********************/
 :: area5_button2
 
-<<type 40ms>>
 \> You find the second button and press it.
 
 \> The lava slows again.
@@ -47,13 +45,14 @@ you are in area 5
 
 \>> [[[Find the final button.|area5_button3]]]
 
-<</type>>
+/**********************/
+
+/**********************/
 
 :: area5_button3
 
 /* Hidden final button */
 
-<<type 40ms>>
 \> You look around the cave.
 
 \> Then you turn behind you and find the final hidden button.
@@ -63,13 +62,14 @@ you are in area 5
 
 \>> [[[Reveal the gemstone.|area5_end]]]
 
-<</type>>
+/**********************/
+
+/**********************/
 
 :: area5_end
 
 /* Gemstone collected */
 
-<<type 40ms>>
 \> The cave shakes.
 
 \> The gemstone rises from the ground.
@@ -79,6 +79,32 @@ you are in area 5
 
 \>> [[[Continue.|act2_transition]]]
 
-<</type>>
+/**********************/
 
-[[back|Act2]]
+<!--////////////////////////////////////////////////SECTION SEPARATOR/////////////////////////////////////////// -->
+
+
+/***********************/
+/* ACT II - AREA 5     */
+/* SIDE ROOM 1 */
+/***********************/
+
+:: Area5SideRoom1
+
+weird room themed for area 5
+
+
+<!--////////////////////////////////////////////////SECTION SEPARATOR/////////////////////////////////////////// -->
+
+
+/***********************/
+/* ACT II - AREA 5     */
+/* SIDE ROOM 2 */
+/***********************/
+
+:: Area5SideRoom2
+
+another weird room themed for area 5
+
+
+[[Exit]]

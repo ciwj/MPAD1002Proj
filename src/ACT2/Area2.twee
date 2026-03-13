@@ -1,11 +1,8 @@
-:: Area 2
-you are in area 2
-
-
-
 /**********************/
 /* ACT II - AREA 2    */
 /* MUSIC PUZZLE ROOM  */
+/**********************/
+
 /**********************/
 
 :: area2_start
@@ -23,8 +20,9 @@ you are in area 2
 
 
 \>> [[[Listen to the first sequence.|area2_level1]]]
+/**********************/
 
-
+/**********************/
 :: area2_level1
 
 /* First easy sequence */
@@ -37,8 +35,9 @@ you are in area 2
 \>> [[[Complete level 1.|area2_level1_done]]]
 
 \>> [[[Try again.|area2_level1]]]
+/**********************/
 
-
+/**********************/
 :: area2_level1_done
 
 \> Correct.
@@ -49,8 +48,9 @@ you are in area 2
 
 
 \>> [[[Go to level 2.|area2_level2]]]
+/**********************/
 
-
+/**********************/
 :: area2_level2
 
 /* Second harder sequence */
@@ -63,8 +63,10 @@ you are in area 2
 \>> [[[Complete level 2.|area2_level2_done]]]
 
 \>> [[[Try again.|area2_level2]]]
+/**********************/
 
 
+/**********************/
 :: area2_level2_done
 
 -\> Correct again.
@@ -75,8 +77,9 @@ you are in area 2
 
 
 \>> [[[Go to final level.|area2_final]]]
+/**********************/
 
-
+/**********************/
 :: area2_final
 
 /* Final sequence */
@@ -91,8 +94,10 @@ you are in area 2
 \>> [[[Complete the final level.|area2_end]]]
 
 \>> [[[Try again.|area2_final]]]
+/**********************/
 
 
+/**********************/
 :: area2_end
 
 /* Gemstone collected */
@@ -105,4 +110,30 @@ you are in area 2
 
 
 \>> [[[Go to Area 3.|area3_start]]]
+/**********************/
 
+<!--////////////////////////////////////////////////SECTION SEPARATOR/////////////////////////////////////////// -->
+
+
+
+/**********************/
+/* ACT II - AREA 2    */
+/* SIDE ROOM 1        */
+/**********************/
+
+:: Area2SideRoom1
+
+weird room themed for area 2
+
+
+<!--////////////////////////////////////////////////SECTION SEPARATOR/////////////////////////////////////////// -->
+
+
+/**********************/
+/* ACT II - AREA 2    */
+/* SIDE ROOM 2        */
+/**********************/
+
+:: Area2SideRoom2
+
+another weird room themed for area 2

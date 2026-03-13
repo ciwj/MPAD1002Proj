@@ -1,10 +1,11 @@
-:: Area 3
-you are in area 3
+
 /**********************/
 /* ACT II - AREA 3    */
-/* COLD ROOM          */
+/* COLD PUZZLE ROOM   */
 /**********************/
 
+/**********************/
+:: Area 3
 
 /* Player enters cold room */
 
@@ -19,7 +20,10 @@ you are in area 3
 
 \>> [[[Use the lantern.|area3_heat1]]]
 
+/**********************/
 
+
+/**********************/
 :: area3_heat1
 
 /* First heating stage */
@@ -31,7 +35,9 @@ you are in area 3
 
 \>> [[[Keep heating.|area3_heat2]]]
 
+/**********************/
 
+/**********************/
 :: area3_heat2
 
 /* More melting */
@@ -42,8 +48,9 @@ you are in area 3
 
 
 \>> [[[Listen carefully.|area3_listen]]]
+/**********************/
 
-
+/**********************/
 :: area3_listen
 
 /* Crackling clue */
@@ -58,8 +65,9 @@ you are in area 3
 \>> [[[Free the gemstone.|area3_end]]]
 
 \>> [[[Wait and listen again.|area3_listen]]]
+/**********************/
 
-
+/**********************/
 :: area3_end
 
 /* Gemstone freed */
@@ -72,7 +80,31 @@ you are in area 3
 
 
 \>> [[[Go to Area 5.|area5_start]]]
+/**********************/
 
+<!--////////////////////////////////////////////////SECTION SEPARATOR/////////////////////////////////////////// -->
+
+/**********************/
+/* ACT II - AREA 3    */
+/* SIDE ROOM 1        */
+/**********************/
+
+:: Area3SideRoom1
+
+weird room themed for area 3
+
+
+<!--////////////////////////////////////////////////SECTION SEPARATOR/////////////////////////////////////////// -->
+
+
+/**********************/
+/* ACT II - AREA 3    */
+/* SIDE ROOM 1        */
+/**********************/
+
+:: Area3SideRoom1
+
+another weird room themed for area 3
 
 
 [[back|Act2]]
