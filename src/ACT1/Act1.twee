@@ -5,7 +5,7 @@ you are in Act1.twee. First passage: [[name_set1]]
 /* START OF PRE-NARRATIVE */
 /**************************/
 
-::name_set1
+:: name_set1
 /* Gradient from black to white after some scrolling, then the below.*/
 
 <<type 40ms>>
@@ -18,7 +18,7 @@ you are in Act1.twee. First passage: [[name_set1]]
 
 <</type>>
 
-::name_confirm
+:: name_confirm
 
 /* Variable below to smooth the first sentence from second question? */
 <<set $name_resel to false>>
@@ -35,7 +35,7 @@ you are in Act1.twee. First passage: [[name_set1]]
 
 <</type>>
 
-::name_reselect
+:: name_reselect
 
 <<type 40ms>>
 
@@ -46,7 +46,7 @@ you are in Act1.twee. First passage: [[name_set1]]
 
 <</type>>
 
-::name_reconfirm
+:: name_reconfirm
 
 /* Variable below to smooth the first sentence from second question? */
 <<set $name_resel to true>>
@@ -63,7 +63,7 @@ you are in Act1.twee. First passage: [[name_set1]]
 
 <</type>>
 
-::question2
+:: question2
 
 <<type 40ms>>  /* REQUIRES VARIABLES TO CONTROL THE BOTTOM TWO OPTIONS */
 
@@ -106,13 +106,13 @@ you are in Act1.twee. First passage: [[name_set1]]
 /* AFTER WAKING UP */
 /*******************/
 
-::wakeup
+:: wakeup
 
 /* VIDEO: first-person getting up from the ground (vincent massey?) and looking around. */
 /* TEXT: Internal dialogue of reorienting yourself */
 /* LINK to you wandering down the path */
 
-::house_intro
+:: house_intro
 
 /* DRAWING: See Act1 #9 Storyboard */
 /* TEXT: Contemplation */
@@ -124,5 +124,5 @@ you are in Act1.twee. First passage: [[name_set1]]
 /* VIDEO: wandering through some brush!! (FIRST-PERSON) */
 /* LINK: go back to house_intro
 
-::house_approach
+:: house_approach
 /* DRAWING SET: See Act 1 #12 to 16 */

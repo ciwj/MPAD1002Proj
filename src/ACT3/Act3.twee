@@ -15,7 +15,7 @@
 <</type>>
 
 
-::place_gem
+:: place_gem
 
 <<type 40ms>>
 
@@ -25,7 +25,7 @@
 
 <</type>>
 
-::break_gem
+:: break_gem
 
 <<type 40ms>>
 
@@ -35,7 +35,7 @@
 
 <</type>>
 
-::ignore_gem
+:: ignore_gem
 
 <<type 40ms>>
 
