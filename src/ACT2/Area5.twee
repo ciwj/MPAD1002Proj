@@ -1,4 +1,84 @@
 :: Area 5
 you are in area 5
+/**********************/
+/* ACT II - AREA 5    */
+/* LAVA ROOM          */
+/**********************/
+
+:: area5_start
+
+/* Player enters lava cave */
+
+<<type 40ms>>
+\> You enter the lava room.
+
+\> Heat fills the cave.
+
+\> Lava begins to rise.
+
+\> You need to press buttons before time runs out.
+
+
+\>> [[[Find the first button.|area5_button1]]]
+
+<</type>>
+
+:: area5_button1
+
+<<type 40ms>>
+\> You find the first button and press it.
+
+\> The lava slows down a little.
+
+
+\>> [[[Find the second button.|area5_button2]]]
+
+<</type>>
+
+:: area5_button2
+
+<<type 40ms>>
+\> You find the second button and press it.
+
+\> The lava slows again.
+
+\> One last button remains.
+
+
+\>> [[[Find the final button.|area5_button3]]]
+
+<</type>>
+
+:: area5_button3
+
+/* Hidden final button */
+
+<<type 40ms>>
+\> You look around the cave.
+
+\> Then you turn behind you and find the final hidden button.
+
+\> You press it.
+
+
+\>> [[[Reveal the gemstone.|area5_end]]]
+
+<</type>>
+
+:: area5_end
+
+/* Gemstone collected */
+
+<<type 40ms>>
+\> The cave shakes.
+
+\> The gemstone rises from the ground.
+
+\> You grab it quickly.
+
+
+\>> [[[Continue.|act2_transition]]]
+
+<</type>>
 
 [[back|Act2]]

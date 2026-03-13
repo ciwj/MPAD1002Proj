@@ -1,4 +1,122 @@
 :: Area 2
 you are in area 2
 
-[[back|Act2]]
+
+
+/**********************/
+/* ACT II - AREA 2    */
+/* MUSIC PUZZLE ROOM  */
+/**********************/
+
+:: area2_start
+
+/* Player enters the music room */
+/* Gemstone is locked */
+
+<<type 40ms>>
+\> You enter the music room.
+
+\> A locked box holds the gemstone.
+
+\> In front of you, there are note buttons.
+
+\> The puzzle begins.
+
+
+\>> [[[Listen to the first sequence.|area2_level1]]]
+
+<</type>>
+
+:: area2_level1
+
+/* First easy sequence */
+
+<<type 40ms>>
+\> The buttons light up in a short pattern.
+
+\> You try to repeat it.
+
+
+\>> [[[Complete level 1.|area2_level1_done]]]
+
+\>> [[[Try again.|area2_level1]]]
+
+<</type>>
+
+:: area2_level1_done
+
+<<type 40ms>>
+\> Correct.
+
+\> The first level is complete.
+
+\> A new sequence begins.
+
+
+\>> [[[Go to level 2.|area2_level2]]]
+
+<</type>>
+
+:: area2_level2
+
+/* Second harder sequence */
+
+<<type 40ms>>
+\> This sequence is longer and harder.
+
+\> You focus and repeat it carefully.
+
+
+\>> [[[Complete level 2.|area2_level2_done]]]
+
+\>> [[[Try again.|area2_level2]]]
+
+<</type>>
+
+:: area2_level2_done
+
+<<type 40ms>>
+\> Correct again.
+
+\> The box makes a clicking sound.
+
+\> One final sequence starts.
+
+
+\>> [[[Go to final level.|area2_final]]]
+
+<</type>>
+
+:: area2_final
+
+/* Final sequence */
+
+<<type 40ms>>
+\> The final pattern plays.
+
+\> It is the hardest one yet.
+
+\> You repeat the notes.
+
+
+\>> [[[Complete the final level.|area2_end]]]
+
+\>> [[[Try again.|area2_final]]]
+
+<</type>>
+
+:: area2_end
+
+/* Gemstone collected */
+
+<<type 40ms>>
+\> The box unlocks.
+
+\> The gemstone is revealed.
+
+\> You pick it up.
+
+
+\>> [[[Go to Area 3.|area3_start]]]
+
+<</type>>
