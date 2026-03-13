@@ -1,7 +1,5 @@
 :: Act3
 
-<<type 40ms>>
-
 \> You are finally in the final stretch. 
 
 \> The next action you take determines your ending.
@@ -12,36 +10,24 @@
 
 \>> [[[I've had enough. I give up on all this|ignore_gem]]]
 
-<</type>>
-
 
 :: place_gem
-
-<<type 40ms>>
 
 \> You're finally free. Go back home. 
 
 /* Another ending if all easter eggs are collected */
 
-<</type>>
-
 :: break_gem
-
-<<type 40ms>>
 
 \> You have chosen to break this. You will regret this. You should have made better choices.
 
 /* "Bad" ending. Music goes wonky, droning noise increases, single bang on door, cut to black */
 
-<</type>>
 
 :: ignore_gem
 
-<<type 40ms>>
 
 \> You decided to give up after all this. Following your decision, nothing will happen over the next eternity.
 
 /* "Null" ending. Spend eternity watching the eons pass. */
-
-<</type>>
 

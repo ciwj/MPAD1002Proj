@@ -5,6 +5,7 @@ you are in Act1.twee. First passage: [[name_set1]]
 /* START OF PRE-NARRATIVE */
 /**************************/
 
+
 :: name_set1
 /* Gradient from black to white after some scrolling, then the below.*/
 
@@ -101,6 +102,8 @@ you are in Act1.twee. First passage: [[name_set1]]
 \>> [[[Yes.|wakeup]]]
 
 \>> [[[No! What is this? What's happening??|pre-wakeup]]]
+
+<</type>>
 
 /*******************/
 /* AFTER WAKING UP */

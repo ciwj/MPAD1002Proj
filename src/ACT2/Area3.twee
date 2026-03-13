@@ -8,7 +8,6 @@ you are in area 3
 
 /* Player enters cold room */
 
-<<type 40ms>>
 \> You enter the cold room.
 
 \> The air is freezing.
@@ -20,13 +19,11 @@ you are in area 3
 
 \>> [[[Use the lantern.|area3_heat1]]]
 
-<</type>>
 
 :: area3_heat1
 
 /* First heating stage */
 
-<<type 40ms>>
 \> You hold the lantern near the ice.
 
 \> The outer layer starts to melt.
@@ -34,13 +31,11 @@ you are in area 3
 
 \>> [[[Keep heating.|area3_heat2]]]
 
-<</type>>
 
 :: area3_heat2
 
 /* More melting */
 
-<<type 40ms>>
 \> More ice melts away.
 
 \> You hear small crackling sounds.
@@ -48,13 +43,11 @@ you are in area 3
 
 \>> [[[Listen carefully.|area3_listen]]]
 
-<</type>>
 
 :: area3_listen
 
 /* Crackling clue */
 
-<<type 40ms>>
 \> The crackling sound grows louder.
 
 \> You wait and pay attention.
@@ -66,13 +59,11 @@ you are in area 3
 
 \>> [[[Wait and listen again.|area3_listen]]]
 
-<</type>>
 
 :: area3_end
 
 /* Gemstone freed */
 
-<<type 40ms>>
 \> The ice cracks open.
 
 \> The gemstone is finally free.
@@ -82,7 +73,6 @@ you are in area 3
 
 \>> [[[Go to Area 5.|area5_start]]]
 
-<</type>>
 
 
 [[back|Act2]]
