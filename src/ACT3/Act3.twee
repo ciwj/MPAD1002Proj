@@ -53,6 +53,49 @@
 
 ::null_choice4
 
+/* DRAWING: one of the previous ones */
+\> You wake up. Nothing is different.
+
+\>> [[[Pace around|null_choice5]]]
+\>> [[[Close your eyes again|null_choice6]]]
+
+::null_choice5
+
+/* DRAWING x2: alternating between two different angles of the room */
+
+\> Really great use of your time.
+
+\>> [[[Lie back down|null_choice6]]]
+
+::null_choice6
+
+/* NOTE: text portion of this can be more drawn out & fleshed out */
+
+/* DRAWING: previous drawing of the ceiling, fade to black */
+/* Long scroll section with clocks at different times interspersed <-- could be cool if they eventually were nonsense. clocks with >2 hands or none, melting, etc */
+
+\> How long have you been here? How.. exactly did you *get* here? You don't remember. It doesn't matter.
+
+
+
+\> Inaction is the only way to avoid doing something you regret, you think.
+
+/* DRAWING(s): Sequence of shots showing the room visibly gets older/more translucent */
+
+\> You forget that inaction is a type of action.
+
+/* DRAWING(s): ^ the last drawing but barely visible, followed by another longer scroll */
+
+
+/> Are you happy with this?
+
+\>> [Yes.]
+\>> [It was all I.. could do.]
+\>> [....]
+\>> [[[I wish.. I wish I could do this all over again]name_set1]] /* Restart <-- hover text if possible. for below option also */
+\>> [[[.. What if I had done this differently? Is this escapable? No. I need to know]|endroom_main]] /* Back to end room for diff ending*/
+
+
 /*-----------------------------------------------*/
 
 /***************/
