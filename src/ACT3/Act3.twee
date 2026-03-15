@@ -98,20 +98,6 @@
 
 /*-----------------------------------------------*/
 
-/***************/
-/* ENDING ROOM */
-/***************/
-
-:: endroom1
-
-/* */
-
-\>> [[[I should place the gem on the pedestal|place_gem]]]
-
-\>> [[[What if I try to break it?|break_gem]]]
-
-\>> [[[I've had enough. I give up on all this|ignore_gem]]]
-
 
 /**********************/
 
@@ -141,15 +127,3 @@
 /**********************/
 
 <</type>>
-
-/**********************/
-:: ignore_gem
-
-<<type 40ms>>
-
-\> You decided to give up after all this. Following your decision, nothing will happen over the next eternity.
-
-/* "Null" ending. Spend eternity watching the eons pass. */
-/**********************/
-<</type>>
-
