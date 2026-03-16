@@ -1,5 +1,3 @@
-
-/**********************/
 /*******************************/
 /* UPON ENTERING TUTORIAL ROOM */
 /*******************************/
@@ -25,6 +23,67 @@
 \>> [[You know what? I do have a choice. I could just do.... nothing.|null_choice1]]
 
 ::break_or_place
+
+/* DRAWING: you approaching a pedestal gem in hand */
+
+\> You approach. As you do, you're struck by how... *delicate* these seem. One good impact and they're gone, you think.
+
+\>> [[[Place it down gently.]|place1]]
+
+\>> [[[.. I want to hurl this.]|bad_end1]]
+
+/********************/
+/* GOOD/TRUE ENDING */
+/********************/
+
+:place1
+/* DRAWING: gem in place */
+
+\> Nothing seems to happen, but you can feel you're on the right track.
+
+\>> [[[Onto the next one.]|place2]]
+
+::place2
+/* DRAWINGS: frame of you placing the next one. */
+
+\>> [[[And the next..]]|place3]
+
+::place3
+/* DRAWINGS: frame of you placing the next one. */
+
+\>> [[[Two more.]]|place4]
+
+::place4
+/* DRAWINGS: frame of you placing the next one. */
+
+\>> [[[Last one.]]|place5]
+
+::place5
+
+/* DRAWING: you at the last pedestal, gem in hand. */
+
+\> This is the final one. You wonder what this'll do.
+
+/* IF all easter eggs gotten show this, otherwise show the other one below */
+\>> [[[Brace yourself and put down the last one]]|true_end1]
+
+\>> [[[Brace yourself and put down the last one]]|good_end1]
+
+/***************/
+/* GOOD ENDING */
+/***************/
+
+/***************/
+/* TRUE ENDING */
+/***************/
+
+/**************/
+/* BAD ENDING */
+/**************/
+
+/***************/
+/* NULL ENDING */
+/***************/
 
 ::null_choice1
 
