@@ -81,6 +81,18 @@
 /* BAD ENDING */
 /**************/
 
+::bad_end1
+
+/* DRAWING: same frame as before */
+
+\> Your grip tightens around the object in your hand. You gather everything you have, then..
+
+/* DRAWING: (ON A DELAY) frame of you looking down at the shattered gem */
+
+\> You start to hear something.
+
+/* AUDIO: droning gets louder, before the audio and screen cut to black. */
+
 /***************/
 /* NULL ENDING */
 /***************/
@@ -153,36 +165,3 @@
 \>> [....]
 \>> [[[I wish.. I wish I could do this all over again]name_set1]] /* Restart <-- hover text if possible. for below option also */
 \>> [[[.. What if I had done this differently? Is this escapable? No. I need to know]|endroom_main]] /* Back to end room for diff ending*/
-
-
-/*-----------------------------------------------*/
-
-
-/**********************/
-
-/**********************/
-:: place_gem
-
-<<type 40ms>>
-
-\> You're finally free. Go back home. 
-
-/* Another ending if all easter eggs are collected */
-/**********************/
-
-
-<</type>>
-
-<</type>>
-
-/**********************/
-:: break_gem
-
-<<type 40ms>>
-
-\> You have chosen to break this. You will regret this. You should have made better choices.
-
-/* "Bad" ending. Music goes wonky, droning noise increases, single bang on door, cut to black */
-/**********************/
-
-<</type>>
