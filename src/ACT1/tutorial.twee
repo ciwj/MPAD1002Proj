@@ -1,0 +1,38 @@
+:: starting room
+you find yourself in a room with a whole lot of doors
+
+[[kitchen tutorial]]
+[[music tutorial]]
+[[heater tutorial]]
+[[circut tutorial]]
+[[dark tutorial]]
+[[locked door]] /*leads to act 2 */
+
+:: kitchen tutorial
+introduce cooking mechanic 
+[[go back|starting room]]
+
+:: music tutorial
+introduce listening and recreating sounds
+[[go back|starting room]]
+
+:: heater tutorial
+learn to use the heating machine
+[[go back|starting room]]
+
+
+:: circut tutorial
+learn to complete the circuit
+[[go back|starting room]]
+
+
+:: dark tutorial
+learn to listen in the dark
+[[go back|starting room]]
+
+
+:: locked door
+this door has 5 shapes, all of which have a scroll wheel with numbers 0 -9. 
+by completing tutorial rooms you learn what numbers correspond to which shape and are able to unlock the door to act 2
+
+[[go back|starting room]]

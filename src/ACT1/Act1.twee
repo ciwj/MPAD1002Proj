@@ -9,7 +9,7 @@ you are in Act1.twee. First passage: [[name_set1]]
 :: name_set1
 /* Gradient from black to white after some scrolling, then the below.*/
 
-<<type 40ms>>
+/*<<type 40ms>>*/
 \> You're finally here.
 
 \> This story is about you. What should we call you?
@@ -17,14 +17,14 @@ you are in Act1.twee. First passage: [[name_set1]]
 
 \>> I think... I think you can call me <<textbox "$name" "???" "name_confirm">>
 
-<</type>>
+/*<</type>>*/
 
 :: name_confirm
 
 /* Variable below to smooth the first sentence from second question? */
 <<set $name_resel to false>>
 
-<<type 40ms>>
+/*<<type 40ms>>*/
 \> $name. A lot is going to happen, $name.
 
 \> If it's any consolation, it's all in your hands.
@@ -34,25 +34,25 @@ you are in Act1.twee. First passage: [[name_set1]]
 
 \>> [[[.. What do you mean? What is this?|question2]]]
 
-<</type>>
+/*<</type>>*/
 
 :: name_reselect
 
-<<type 40ms>>
+/*<<type 40ms>>*/
 
 \> It's so easy to forget, isn't it? Who are you, then?
 
 \>> <<textbox "$name" "???" "name_reconfirm">> That's it.
 
 
-<</type>>
+/*<</type>>*/
 
 :: name_reconfirm
 
 /* Variable below to smooth the first sentence from second question? */
 <<set $name_resel to true>>
 
-<<type 40ms>>
+/*<<type 40ms>>*/
 \> You know this for sure, $name?
 
 \> After all, you should be certain.
@@ -62,11 +62,11 @@ you are in Act1.twee. First passage: [[name_set1]]
 
 \>> [[[Yes. I do.|question2]]]
 
-<</type>>
+/*<</type>>*/
 
 :: question2
 
-<<type 40ms>>  /* REQUIRES VARIABLES TO CONTROL THE BOTTOM TWO OPTIONS */
+/*<<type 40ms>>*/  /* REQUIRES VARIABLES TO CONTROL THE BOTTOM TWO OPTIONS */
 
 <<if $name_resel is true>>
 
@@ -89,11 +89,13 @@ you are in Act1.twee. First passage: [[name_set1]]
 
 \>> You're starting to scare me
 
-<</type>>
+[[pre-wakeup]]
+
+/*<</type>>*/
 
 :: pre-wakeup
 
-<<type 40ms>>
+/*<<type 40ms>>*/
 \> Wonderful. You're doing so well. Are you ready?
 
 \> After all, you should be certain.
@@ -103,7 +105,7 @@ you are in Act1.twee. First passage: [[name_set1]]
 
 \>> [[[No! What is this? What's happening??|pre-wakeup]]]
 
-<</type>>
+/*<</type>>*/
 
 /*******************/
 /* AFTER WAKING UP */
@@ -111,12 +113,14 @@ you are in Act1.twee. First passage: [[name_set1]]
 
 :: wakeup
 
+[[house_intro]]
 /* VIDEO: first-person getting up from the ground (vincent massey?) and looking around. */
 /* TEXT: Internal dialogue of reorienting yourself */
 /* LINK to you wandering down the path */
 
 :: house_intro
 
+[[wander]]
 /* DRAWING: See Act1 #9 Storyboard */
 /* TEXT: Contemplation */
 /* CHOICE: approach house or choose to leave */
@@ -125,7 +129,9 @@ you are in Act1.twee. First passage: [[name_set1]]
 :: wander
 /* VARIABLE: need to increment a counter every time you select this (to vary dialogue) */
 /* VIDEO: wandering through some brush!! (FIRST-PERSON) */
-/* LINK: go back to house_intro
+/* LINK: go back to house_intro */
+[[house_approach]]
 
 :: house_approach
 /* DRAWING SET: See Act 1 #12 to 16 */
+[[starting room]]

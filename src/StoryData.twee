@@ -7,18 +7,26 @@ Untitled Story 2
   "ifid": "CD62A0CA-DD2F-44D2-8187-51A3CE7ECFE3",
   "format": "SugarCube",
   "format-version": "2.30.0",
-  "start": "Untitled Passage",
+  "start": "landing",
   "zoom": 1
 }
 
 
-:: Untitled Passage {"position":"625,250","size":"100,100"}
-some temporary navigation:
+:: landing {"position":"625,250","size":"100,100"}
+
+[[begin!|name_set1]]
+
+[[nav]]
+
+
+:: nav 
+
+[[back|landing]]
 
 [[Act1]]
 
 [[Act2]]
 
-[[Act3]]
+[[endroom_main]] 
 
 [[TestingZone]]
