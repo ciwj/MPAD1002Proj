@@ -9,16 +9,16 @@
 
 /* Player enters cold room */
 
-\> You enter the cold room.
+> You enter the cold room.
 
-\> The air is freezing.
+> The air is freezing.
 
-\> A gemstone is trapped inside layers of ice.
+> A gemstone is trapped inside layers of ice.
 
-\> A lantern sits nearby.
+> A lantern sits nearby.
 
 
-\>> [[[Use the lantern.|area3_heat1]]]
+>> [[[Use the lantern.|area3_heat1]]]
 
 /**********************/
 
@@ -28,12 +28,12 @@
 
 /* First heating stage */
 
-\> You hold the lantern near the ice.
+> You hold the lantern near the ice.
 
-\> The outer layer starts to melt.
+> The outer layer starts to melt.
 
 
-\>> [[[Keep heating.|area3_heat2]]]
+>> [[[Keep heating.|area3_heat2]]]
 
 /**********************/
 
@@ -42,12 +42,12 @@
 
 /* More melting */
 
-\> More ice melts away.
+> More ice melts away.
 
-\> You hear small crackling sounds.
+> You hear small crackling sounds.
 
 
-\>> [[[Listen carefully.|area3_listen]]]
+>> [[[Listen carefully.|area3_listen]]]
 /**********************/
 
 /**********************/
@@ -55,16 +55,16 @@
 
 /* Crackling clue */
 
-\> The crackling sound grows louder.
+> The crackling sound grows louder.
 
-\> You wait and pay attention.
+> You wait and pay attention.
 
-\> At the right moment, the last layer begins to break.
+> At the right moment, the last layer begins to break.
 
 
-\>> [[[Free the gemstone.|area3_end]]]
+>> [[[Free the gemstone.|area3_end]]]
 
-\>> [[[Wait and listen again.|area3_listen]]]
+>> [[[Wait and listen again.|area3_listen]]]
 /**********************/
 
 /**********************/
@@ -72,14 +72,14 @@
 
 /* Gemstone freed */
 
-\> The ice cracks open.
+> The ice cracks open.
 
-\> The gemstone is finally free.
+> The gemstone is finally free.
 
-\> You take it.
+> You take it.
 
 
-\>> [[[Go to Area 5.|area5_start]]]
+>> [[[Go to Area 5.|area5_start]]]
 /**********************/
 
 <!--////////////////////////////////////////////////SECTION SEPARATOR/////////////////////////////////////////// -->

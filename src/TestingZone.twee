@@ -1,12 +1,14 @@
 :: TestingZone 
 this is sam's testing zone
 
+
+
 <p>video test 1 (mp4):</p>
       <video width="320" height="240" controls autoplay>
-  <source src="src/videos/testvideo1.mp4" type="video/mp4">
+  <source src="src/assets/video/testvideo1.mp4" type="video/mp4">
 </video>
 
 <p>video test 2 (mov):</p>
       <video width="320" height="240" controls>
-      <source src="src/videos/testvideo2.mov">
+      <source src="src/assets/video/testvideo2.mov">
       </video>

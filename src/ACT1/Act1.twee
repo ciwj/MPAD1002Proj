@@ -10,12 +10,12 @@ you are in Act1.twee. First passage: [[name_set1]]
 /* Gradient from black to white after some scrolling, then the below.*/
 
 /*<<type 40ms>>*/
-\> You're finally here.
+> You're finally here.
 
-\> This story is about you. What should we call you?
+> This story is about you. What should we call you?
 
 
-\>> I think... I think you can call me <<textbox "$name" "???" "name_confirm">>
+>> I think... I think you can call me <<textbox "$name" "???" "name_confirm">>
 
 /*<</type>>*/
 
@@ -25,14 +25,14 @@ you are in Act1.twee. First passage: [[name_set1]]
 <<set $name_resel to false>>
 
 /*<<type 40ms>>*/
-\> $name. A lot is going to happen, $name.
+> $name. A lot is going to happen, $name.
 
-\> If it's any consolation, it's all in your hands.
+> If it's any consolation, it's all in your hands.
 
 
-\>> [[[Wait. I think I might be someone else?|name_reselect]]]
+>> [[[Wait. I think I might be someone else?|name_reselect]]]
 
-\>> [[[.. What do you mean? What is this?|question2]]]
+>> [[[.. What do you mean? What is this?|question2]]]
 
 /*<</type>>*/
 
@@ -40,9 +40,9 @@ you are in Act1.twee. First passage: [[name_set1]]
 
 /*<<type 40ms>>*/
 
-\> It's so easy to forget, isn't it? Who are you, then?
+> It's so easy to forget, isn't it? Who are you, then?
 
-\>> <<textbox "$name" "???" "name_reconfirm">> That's it.
+>> <<textbox "$name" "???" "name_reconfirm">> That's it.
 
 
 /*<</type>>*/
@@ -53,14 +53,14 @@ you are in Act1.twee. First passage: [[name_set1]]
 <<set $name_resel to true>>
 
 /*<<type 40ms>>*/
-\> You know this for sure, $name?
+> You know this for sure, $name?
 
-\> After all, you should be certain.
+> After all, you should be certain.
 
 
-\>> [[[.. One more time.|name_reselect]]]
+>> [[[.. One more time.|name_reselect]]]
 
-\>> [[[Yes. I do.|question2]]]
+>> [[[Yes. I do.|question2]]]
 
 /*<</type>>*/
 
@@ -70,24 +70,24 @@ you are in Act1.twee. First passage: [[name_set1]]
 
 <<if $name_resel is true>>
 
-\> Wonderful. We need to know - what enraptures you?
+> Wonderful. We need to know - what enraptures you?
 <<else>>
 
-\> You'll see in due time. For now, we must know - what enraptures you?
+> You'll see in due time. For now, we must know - what enraptures you?
 <</if>>
 /* Need to turn these into buttons then set a variable based on the answer IF it ends up doing anything */
-\>> Pure darkness as far as I can see.
+>> Pure darkness as far as I can see.
 
-\>> A grating, droning noise - somehow from everywhere and nowhere.
+>> A grating, droning noise - somehow from everywhere and nowhere.
 
-\>> A cold so intense, I can't even feel it.
+>> A cold so intense, I can't even feel it.
 
-\>> Losing myself in a tangle of endless corridors.
+>> Losing myself in a tangle of endless corridors.
 
 
-\>> No.. It must be TEXTBOX
+>> No.. It must be TEXTBOX
 
-\>> You're starting to scare me
+>> You're starting to scare me
 
 [[pre-wakeup]]
 
@@ -96,14 +96,14 @@ you are in Act1.twee. First passage: [[name_set1]]
 :: pre-wakeup
 
 /*<<type 40ms>>*/
-\> Wonderful. You're doing so well. Are you ready?
+> Wonderful. You're doing so well. Are you ready?
 
-\> After all, you should be certain.
+> After all, you should be certain.
 
 
-\>> [[[Yes.|wakeup]]]
+>> [[[Yes.|wakeup]]]
 
-\>> [[[No! What is this? What's happening??|pre-wakeup]]]
+>> [[[No! What is this? What's happening??|pre-wakeup]]]
 
 /*<</type>>*/
 

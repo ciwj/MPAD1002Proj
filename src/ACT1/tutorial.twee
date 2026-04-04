@@ -1,5 +1,30 @@
+/*Defining audio for tutorial music room */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 :: starting room
+ <img src="src/assets/img/tutorial_start.jpg" width="320" height="240" alt="[room with 6 doors. 3 on right wall. 2 on left. 1 ahead of you]"/>
+
 you find yourself in a room with a whole lot of doors
+
+[[check behind you|starting room back]]
 
 [[kitchen tutorial]]
 [[music tutorial]]
@@ -8,15 +33,97 @@ you find yourself in a room with a whole lot of doors
 [[dark tutorial]]
 [[locked door]] /*leads to act 2 */
 
+:: starting room back
+ <img src="src/assets/img/tutorial_start_back.jpg" width="320" height="auto" alt="[]"/>
+
+ [[...|starting room]]
+
 :: kitchen tutorial
+ <img src="src/assets/img/tutorial_kitchen.jpg" width="320" height="auto" alt="[room with a cooking pot, a green bin, a brown crate, a plate and a note tacked to the wall]"/>
+
 introduce cooking mechanic 
 [[go back|starting room]]
 
 :: music tutorial
+ <img src="src/assets/img/tutorial_music.jpg" width="240" height="auto" alt="[alt text goes here]"/>
+
 introduce listening and recreating sounds
+
+[[play the radio|radio]]
+
+[[press red button|noteC]]
+[[press yellow button|noteE]]
+[[press green button|noteG]]
+[[press blue button|noteB]]
+
+
 [[go back|starting room]]
 
+
+:: noteC
+ <img src="src/assets/img/tutorial_music.jpg" width="240" height="auto" alt="[alt text goes here]"/>
+<!--<<cacheaudio trackId sourceList>> -->
+<<cacheaudio "noteC" "src/assets/audio/tutorial_music_noteC.mp3">>
+<!--<<audio trackIdList actionList>> -->
+<<audio "noteC" play goto "music tutorial">>
+
+...
+
+:: noteE
+ <img src="src/assets/img/tutorial_music.jpg" width="240" height="auto" alt="[alt text goes here]"/>
+<!--<<cacheaudio trackId sourceList>> -->
+<<cacheaudio "noteE" "src/assets/audio/tutorial_music_noteE.mp3">>
+<!--<<audio trackIdList actionList>> -->
+<<audio "noteE" play goto "music tutorial">>
+
+...
+
+:: noteG
+ <img src="src/assets/img/tutorial_music.jpg" width="240" height="auto" alt="[alt text goes here]"/>
+<!--<<cacheaudio trackId sourceList>> -->
+<<cacheaudio "noteG" "src/assets/audio/tutorial_music_noteG.mp3">>
+<!--<<audio trackIdList actionList>> -->
+<<audio "noteG" play goto "music tutorial">>
+
+...
+
+:: noteB
+ <img src="src/assets/img/tutorial_music.jpg" width="240" height="auto" alt="[alt text goes here]"/>
+<!--<<cacheaudio trackId sourceList>> -->
+<<cacheaudio "noteB" "src/assets/audio/tutorial_music_noteB.mp3">>
+<!--<<audio trackIdList actionList>> -->
+<<audio "noteB" play goto "music tutorial">>
+
+...
+
+:: radio
+ <img src="src/assets/img/tutorial_music.jpg" width="240" height="auto" alt="[alt text goes here]"/>
+
+songNumer = $songNumber
+
+<<if $songNumber == 1>>
+<<cacheaudio "song1" "src/assets/audio/tutorial_music_song1.mp3">>
+<<audio "song1" play goto "music tutorial">>
+<</if>>
+
+<<if $songNumber == 2>>
+<<cacheaudio "song2" "src/assets/audio/tutorial_music_song2.mp3">>
+<<audio "song2" play goto "music tutorial">>
+<</if>>
+
+<<if $songNumber == 3>>
+<<cacheaudio "song3" "src/assets/audio/tutorial_music_song3.mp3">>
+<<audio "song3" play goto "music tutorial">>
+<</if>>
+
+<<if $songNumber == 4>>
+<<cacheaudio "song4" "src/assets/audio/tutorial_music_song4.mp3">>
+<<audio "song4" play goto "music tutorial">>
+<</if>>
+...
+
 :: heater tutorial
+ <img src="src/assets/img/tutorial_heater.jpg" width="320" height="auto" alt="[alt text goes here]"/>
 learn to use the heating machine
 [[go back|starting room]]
 

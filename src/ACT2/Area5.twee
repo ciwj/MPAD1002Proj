@@ -8,42 +8,42 @@
 
 /* Player enters lava cave */
 
-\> You enter the lava room.
+> You enter the lava room.
 
-\> Heat fills the cave.
+> Heat fills the cave.
 
-\> Lava begins to rise.
+> Lava begins to rise.
 
-\> You need to press buttons before time runs out.
+> You need to press buttons before time runs out.
 
 
-\>> [[[Find the first button.|area5_button1]]]
+>> [[[Find the first button.|area5_button1]]]
 /**********************/
 
 
 /**********************/
 :: area5_button1
 
-\> You find the first button and press it.
+> You find the first button and press it.
 
-\> The lava slows down a little.
+> The lava slows down a little.
 
 
-\>> [[[Find the second button.|area5_button2]]]
+>> [[[Find the second button.|area5_button2]]]
 
 /**********************/
 
 /**********************/
 :: area5_button2
 
-\> You find the second button and press it.
+> You find the second button and press it.
 
-\> The lava slows again.
+> The lava slows again.
 
-\> One last button remains.
+> One last button remains.
 
 
-\>> [[[Find the final button.|area5_button3]]]
+>> [[[Find the final button.|area5_button3]]]
 
 /**********************/
 
@@ -53,14 +53,14 @@
 
 /* Hidden final button */
 
-\> You look around the cave.
+> You look around the cave.
 
-\> Then you turn behind you and find the final hidden button.
+> Then you turn behind you and find the final hidden button.
 
-\> You press it.
+> You press it.
 
 
-\>> [[[Reveal the gemstone.|area5_end]]]
+>> [[[Reveal the gemstone.|area5_end]]]
 
 /**********************/
 
@@ -70,14 +70,14 @@
 
 /* Gemstone collected */
 
-\> The cave shakes.
+> The cave shakes.
 
-\> The gemstone rises from the ground.
+> The gemstone rises from the ground.
 
-\> You grab it quickly.
+> You grab it quickly.
 
 
-\>> [[[Continue.|act2_transition]]]
+>> [[[Continue.|act2_transition]]]
 
 /**********************/
 

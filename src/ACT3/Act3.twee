@@ -2,7 +2,7 @@
 /* UPON ENTERING TUTORIAL ROOM */
 /*******************************/
 
-::endroom_main
+:: endroom_main
 
 /* REFERENCE paper prototypes interaction 3 */
 /* TEXT: collect your thoughts, analyze the space in front of you.*/
@@ -10,64 +10,64 @@
 /* DRAWINGS: looking right image from above with your hand raised with a gem in it */
 
 /* TEXT: IF TUTROOM_DIA1 is FALSE*/
-\> You think you know what's being demanded of you. It's not like you have much of a choice anyways.
+> You think you know what's being demanded of you. It's not like you have much of a choice anyways.
 
 /* TEXT: IF TUTROOM_DIA1 IS TRUE */
-\> Does it matter? What else would you do right now?
+> Does it matter? What else would you do right now?
 
 /* Set variable TUTROOM_DIA1 to True if below is pressed. SHOW IF TUTROOM_DIA1 IS FALSE*/
-\>> Did these used to glow before? What if this puts me in danger?
+>> Did these used to glow before? What if this puts me in danger?
 
-\>> [[Whatever. At least something will happen.|break_or_place]]
+>> [[Whatever. At least something will happen.|break_or_place]]
 
-\>> [[You know what? I do have a choice. I could just do.... nothing.|null_choice1]]
+>> [[You know what? I do have a choice. I could just do.... nothing.|null_choice1]]
 
-::break_or_place
+:: break_or_place
 
 /* DRAWING: you approaching a pedestal gem in hand */
 
-\> You approach. As you do, you're struck by how... *delicate* these seem. One good impact and they're gone, you think.
+> You approach. As you do, you're struck by how... *delicate* these seem. One good impact and they're gone, you think.
 
-\>> [[[Place it down gently.]|place1]]
+>> [[[Place it down gently.]|place1]]
 
-\>> [[[.. I want to hurl this.]|bad_end1]]
+>> [[[.. I want to hurl this.]|bad_end1]]
 
 /********************/
 /* GOOD/TRUE ENDING */
 /********************/
 
-:place1
+:: place1
 /* DRAWING: gem in place */
 
-\> Nothing seems to happen, but you can feel you're on the right track.
+> Nothing seems to happen, but you can feel you're on the right track.
 
-\>> [[[Onto the next one.]|place2]]
+>> [[[Onto the next one.]|place2]]
 
-::place2
+:: place2
 /* DRAWINGS: frame of you placing the next one. */
 
-\>> [[[And the next..]]|place3]
+>> [[[And the next..]]|place3]
 
-::place3
+:: place3
 /* DRAWINGS: frame of you placing the next one. */
 
-\>> [[[Two more.]]|place4]
+>> [[[Two more.]]|place4]
 
-::place4
+:: place4
 /* DRAWINGS: frame of you placing the next one. */
 
-\>> [[[Last one.]]|place5]
+>> [[[Last one.]]|place5]
 
-::place5
+:: place5
 
 /* DRAWING: you at the last pedestal, gem in hand. */
 
-\> This is the final one. You wonder what this'll do.
+> This is the final one. You wonder what this'll do.
 
 /* IF all easter eggs gotten show this, otherwise show the other one below */
-\>> [[[Brace yourself and put down the last one]]|true_end1]
+>> [[[Brace yourself and put down the last one]]|true_end1]
 
-\>> [[[Brace yourself and put down the last one]]|good_end1]
+>> [[[Brace yourself and put down the last one]]|good_end1]
 
 /***************/
 /* GOOD ENDING */
@@ -81,15 +81,15 @@
 /* BAD ENDING */
 /**************/
 
-::bad_end1
+:: bad_end1
 
 /* DRAWING: same frame as before */
 
-\> Your grip tightens around the object in your hand. You gather everything you have, then..
+> Your grip tightens around the object in your hand. You gather everything you have, then..
 
 /* DRAWING: (ON A DELAY) frame of you looking down at the shattered gem */
 
-\> You start to hear something.
+> You start to hear something.
 
 /* AUDIO: droning gets louder, before the audio and screen cut to black. */
 
@@ -97,71 +97,71 @@
 /* NULL ENDING */
 /***************/
 
-::null_choice1
+:: null_choice1
 
 /* DRAWINGS: looking right image from above with your hand raised with a gem in it */
 
 /> Really? Nothing? That's the best course of action you can come up with right now?
 
-\>> [[[.. it might be a stupid idea. Nevermind.]|endroom_main]]
+>> [[[.. it might be a stupid idea. Nevermind.]|endroom_main]]
 
-\>> [[[I'm sick of this. I'm sick of whatever you are. whatever this is. I'm going to take a long, nice nap, and after that? I might take another.]|null_choice2]]
+>> [[[I'm sick of this. I'm sick of whatever you are. whatever this is. I'm going to take a long, nice nap, and after that? I might take another.]|null_choice2]]
 
-::null_choice2
+:: null_choice2
 /* DRAWINGS: looking right image from above with your hand raised with a gem in it */
 
-\> You don't want to do that. I'm trying to help you.
+> You don't want to do that. I'm trying to help you.
 
-\>> [[[...]|null_choice3]]
+>> [[[...]|null_choice3]]
 
-::null_choice3
+:: null_choice3
 
 /* DRAWING: shot of you on the ground looking at the old ceiling */
 
-\> You lie down and look at the ceiling.
+> You lie down and look at the ceiling.
 
 /* Loong scroll to black, Go to null_choice4 at the end*/
 
-::null_choice4
+:: null_choice4
 
 /* DRAWING: one of the previous ones */
-\> You wake up. Nothing is different.
+> You wake up. Nothing is different.
 
-\>> [[[Pace around|null_choice5]]]
-\>> [[[Close your eyes again|null_choice6]]]
+>> [[[Pace around|null_choice5]]]
+>> [[[Close your eyes again|null_choice6]]]
 
-::null_choice5
+:: null_choice5
 
 /* DRAWING x2: alternating between two different angles of the room */
 
-\> Really great use of your time.
+> Really great use of your time.
 
-\>> [[[Lie back down|null_choice6]]]
+>> [[[Lie back down|null_choice6]]]
 
-::null_choice6
+:: null_choice6
 
 /* NOTE: text portion of this can be more drawn out & fleshed out */
 
 /* DRAWING: previous drawing of the ceiling, fade to black */
 /* Long scroll section with clocks at different times interspersed <-- could be cool if they eventually were nonsense. clocks with >2 hands or none, melting, etc */
 
-\> How long have you been here? How.. exactly did you *get* here? You don't remember. It doesn't matter.
+> How long have you been here? How.. exactly did you *get* here? You don't remember. It doesn't matter.
 
 
 
-\> Inaction is the only way to avoid doing something you regret, you think.
+> Inaction is the only way to avoid doing something you regret, you think.
 
 /* DRAWING(s): Sequence of shots showing the room visibly gets older/more translucent */
 
-\> You forget that inaction is a type of action.
+> You forget that inaction is a type of action.
 
 /* DRAWING(s): ^ the last drawing but barely visible, followed by another longer scroll */
 
 
 /> Are you happy with this?
 
-\>> [Yes.]
-\>> [It was all I.. could do.]
-\>> [....]
-\>> [[[I wish.. I wish I could do this all over again]name_set1]] /* Restart <-- hover text if possible. for below option also */
-\>> [[[.. What if I had done this differently? Is this escapable? No. I need to know]|endroom_main]] /* Back to end room for diff ending*/
+>> [Yes.]
+>> [It was all I.. could do.]
+>> [....]
+>> [[[I wish.. I wish I could do this all over again]name_set1]] /* Restart <-- hover text if possible. for below option also */
+>> [[[.. What if I had done this differently? Is this escapable? No. I need to know]|endroom_main]] /* Back to end room for diff ending*/

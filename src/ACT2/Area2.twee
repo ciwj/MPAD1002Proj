@@ -10,16 +10,16 @@
 /* Player enters the music room */
 /* Gemstone is locked */
 
-\> You enter the music room.
+> You enter the music room.
 
-\> A locked box holds the gemstone.
+> A locked box holds the gemstone.
 
-\> In front of you, there are note buttons.
+> In front of you, there are note buttons.
 
-\> The puzzle begins.
+> The puzzle begins.
 
 
-\>> [[[Listen to the first sequence.|area2_level1]]]
+>> [[[Listen to the first sequence.|area2_level1]]]
 /**********************/
 
 /**********************/
@@ -27,27 +27,27 @@
 
 /* First easy sequence */
 
-\> The buttons light up in a short pattern.
+> The buttons light up in a short pattern.
 
-\> You try to repeat it.
+> You try to repeat it.
 
 
-\>> [[[Complete level 1.|area2_level1_done]]]
+>> [[[Complete level 1.|area2_level1_done]]]
 
-\>> [[[Try again.|area2_level1]]]
+>> [[[Try again.|area2_level1]]]
 /**********************/
 
 /**********************/
 :: area2_level1_done
 
-\> Correct.
+> Correct.
 
-\> The first level is complete.
+> The first level is complete.
 
-\> A new sequence begins.
+> A new sequence begins.
 
 
-\>> [[[Go to level 2.|area2_level2]]]
+>> [[[Go to level 2.|area2_level2]]]
 /**********************/
 
 /**********************/
@@ -55,28 +55,28 @@
 
 /* Second harder sequence */
 
-\> This sequence is longer and harder.
+> This sequence is longer and harder.
 
-\> You focus and repeat it carefully.
+> You focus and repeat it carefully.
 
 
-\>> [[[Complete level 2.|area2_level2_done]]]
+>> [[[Complete level 2.|area2_level2_done]]]
 
-\>> [[[Try again.|area2_level2]]]
+>> [[[Try again.|area2_level2]]]
 /**********************/
 
 
 /**********************/
 :: area2_level2_done
 
--\> Correct again.
+> Correct again.
 
-\> The box makes a clicking sound.
+> The box makes a clicking sound.
 
-\> One final sequence starts.
+> One final sequence starts.
 
 
-\>> [[[Go to final level.|area2_final]]]
+>> [[[Go to final level.|area2_final]]]
 /**********************/
 
 /**********************/
@@ -84,16 +84,16 @@
 
 /* Final sequence */
 
-\> The final pattern plays.
+> The final pattern plays.
 
-\> It is the hardest one yet.
+> It is the hardest one yet.
 
-\> You repeat the notes.
+> You repeat the notes.
 
 
-\>> [[[Complete the final level.|area2_end]]]
+>> [[[Complete the final level.|area2_end]]]
 
-\>> [[[Try again.|area2_final]]]
+>> [[[Try again.|area2_final]]]
 /**********************/
 
 
@@ -102,14 +102,14 @@
 
 /* Gemstone collected */
 
-\> The box unlocks.
+> The box unlocks.
 
-\> The gemstone is revealed.
+> The gemstone is revealed.
 
-\> You pick it up.
+> You pick it up.
 
 
-\>> [[[Go to Area 3.|area3_start]]]
+>> [[[Go to Area 3.|area3_start]]]
 /**********************/
 
 <!--////////////////////////////////////////////////SECTION SEPARATOR/////////////////////////////////////////// -->

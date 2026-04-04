@@ -12,7 +12,11 @@ Untitled Story 2
 }
 
 
+
 :: landing {"position":"625,250","size":"100,100"}
+<<set $songNumber to [1,2,3,4].random()>>
+
+
 
 [[begin!|name_set1]]
 
@@ -23,7 +27,11 @@ Untitled Story 2
 
 [[back|landing]]
 
+[[music tutorial]]
+
 [[Act1]]
+
+[[tutorial start|starting room]]
 
 [[Act2]]
 
