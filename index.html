@@ -112,69 +112,81 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 &lt;&lt;set $name_resel to false&gt;&gt;
 
 &lt;&lt;type 30ms&gt;&gt;
-&gt; $name. A lot is going to happen, $name.
+\&gt; $name. A lot is going to happen, $name.
 
-&gt; If it&#39;s any consolation, it&#39;s all in your hands.
+\&gt; If it&#39;s any consolation, it&#39;s all in your hands.
 
 
-&gt;&gt; [[[Wait. I think I might be someone else?|name_reselect]]]
+\&gt;&gt; [[[Wait. I think I might be someone else?|name_reselect]]]
 
-&gt;&gt; [[[.. What do you mean? What is this?|question2]]]
+\&gt;&gt; [[[.. What do you mean? What is this?|question2]]]
 
 &lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="name_reselect" tags="" position="350,100" size="100,100">&lt;&lt;type 30ms&gt;&gt;
 
-&gt; It&#39;s so easy to forget, isn&#39;t it? Who are you, then?
+\&gt; It&#39;s so easy to forget, isn&#39;t it? Who are you, then?
 
-&gt;&gt; &lt;&lt;textbox &quot;$name&quot; &quot;???&quot; &quot;name_reconfirm&quot;&gt;&gt; That&#39;s it.
+\&gt;&gt; &lt;&lt;textbox &quot;$name&quot; &quot;???&quot; &quot;name_reconfirm&quot;&gt;&gt; That&#39;s it.
 
 
 &lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="name_reconfirm" tags="" position="475,100" size="100,100">/* Variable below to smooth the first sentence from second question? */
 &lt;&lt;set $name_resel to true&gt;&gt;
 
 &lt;&lt;type 30ms&gt;&gt;
-&gt; You know this for sure, $name?
+\&gt; You know this for sure, $name?
 
-&gt; After all, you should be certain.
+\&gt; After all, you should be certain.
 
 
-&gt;&gt; [[[.. One more time.|name_reselect]]]
+\&gt;&gt; [[[.. One more time.|name_reselect]]]
 
-&gt;&gt; [[[Yes. I do.|question2]]]
+\&gt;&gt; [[[Yes. I do.|question2]]]
 
 &lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="question2" tags="" position="600,100" size="100,100">&lt;&lt;type 30ms&gt;&gt;  /* REQUIRES VARIABLES TO CONTROL THE BOTTOM TWO OPTIONS */
 
-&lt;&lt;if $name_resel is true&gt;&gt;
+&lt;&lt;if $name_resel is true and not $customEnrapture&gt;&gt;
 
-&gt; Wonderful. We need to know - what enraptures you?
+\&gt; Wonderful. We need to know - what enraptures you?
+
+&lt;&lt;elseif $customEnrapture and not $scarePrompt is true&gt;&gt;
+
+\&gt; Oh, I don&#39;t doubt it. Try again though.
+
+&lt;&lt;elseif $scarePrompt is true&gt;&gt;
+
+\&gt; We must be, yes. We&#39;re sorry, but this is the way forward. For you.
+
+&lt;&lt;elseif $name_resel is false&gt;&gt;
+
+\&gt; You&#39;ll see in due time. For now, we must know - what enraptures you?
 &lt;&lt;else&gt;&gt;
 
-&gt; You&#39;ll see in due time. For now, we must know - what enraptures you?
 &lt;&lt;/if&gt;&gt;
 /* Need to turn these into buttons then set a variable based on the answer IF it ends up doing anything */
-&gt;&gt; Pure darkness as far as I can see.
+\&gt;&gt; [[Pure darkness as far as I can see.|pre-wakeup]]
 
-&gt;&gt; A grating, droning noise - somehow from everywhere and nowhere.
+\&gt;&gt; [[A grating, droning noise - somehow from everywhere and nowhere.|pre-wakeup]]
 
-&gt;&gt; A cold so intense, I can&#39;t even feel it.
+\&gt;&gt; [[A cold so intense, I can&#39;t even feel it.|pre-wakeup]]
 
-&gt;&gt; Losing myself in a tangle of endless corridors.
+\&gt;&gt; [[Losing myself in a tangle of endless corridors.|pre-wakeup]]
 
+&lt;&lt;if not $customEnrapture&gt;&gt;
+\&gt;&gt; No.. It must be &lt;&lt;textbox &quot;$customEnrapture&quot; &quot;&quot; &quot;question2&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if not $scarePrompt is true&gt;&gt;
+\&gt;&gt; [[You&#39;re starting to scare me??|question2][$scarePrompt to true]]
+&lt;&lt;/if&gt;&gt;
 
-&gt;&gt; No.. It must be TEXTBOX
-
-&gt;&gt; You&#39;re starting to scare me
-
-[[pre-wakeup]]
 
 &lt;&lt;/type&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="pre-wakeup" tags="" position="725,100" size="100,100">&lt;&lt;type 30ms&gt;&gt;
-&gt; Wonderful. You&#39;re doing so well. Are you ready?
+\&gt; Wonderful. You&#39;re doing so well. Are you ready?
 
-&gt; After all, you should be certain.
+\&gt; After all, you should be certain.
 
 
-&gt;&gt; [[[Yes.|wakeup]]]
+\&gt;&gt; [[[Yes.|wakeup]]]
 
-&gt;&gt; [[[No! What is this? What&#39;s happening??|pre-wakeup]]]
+\&gt;&gt; [[[No! What is this? What&#39;s happening??|pre-wakeup]]]
 
 &lt;&lt;/type&gt;&gt;
 
