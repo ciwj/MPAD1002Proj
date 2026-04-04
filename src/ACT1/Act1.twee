@@ -1,6 +1,3 @@
-:: Act1
-you are in Act1.twee. First passage: [[name_set1]]
-
 /**************************/
 /* START OF PRE-NARRATIVE */
 /**************************/
@@ -9,22 +6,22 @@ you are in Act1.twee. First passage: [[name_set1]]
 :: name_set1
 /* Gradient from black to white after some scrolling, then the below.*/
 
-/*<<type 40ms>>*/
-> You're finally here.
+<<type 30ms>>
+\> You're finally here.
 
-> This story is about you. What should we call you?
+\> This story is about you. What should we call you?
 
 
->> I think... I think you can call me <<textbox "$name" "???" "name_confirm">>
+\>> I think... I think you can call me <<textbox "$name" "???" "name_confirm">>
 
-/*<</type>>*/
+<</type>>
 
 :: name_confirm
 
 /* Variable below to smooth the first sentence from second question? */
 <<set $name_resel to false>>
 
-/*<<type 40ms>>*/
+<<type 30ms>>
 > $name. A lot is going to happen, $name.
 
 > If it's any consolation, it's all in your hands.
@@ -34,25 +31,25 @@ you are in Act1.twee. First passage: [[name_set1]]
 
 >> [[[.. What do you mean? What is this?|question2]]]
 
-/*<</type>>*/
+<</type>>
 
 :: name_reselect
 
-/*<<type 40ms>>*/
+<<type 30ms>>
 
 > It's so easy to forget, isn't it? Who are you, then?
 
 >> <<textbox "$name" "???" "name_reconfirm">> That's it.
 
 
-/*<</type>>*/
+<</type>>
 
 :: name_reconfirm
 
 /* Variable below to smooth the first sentence from second question? */
 <<set $name_resel to true>>
 
-/*<<type 40ms>>*/
+<<type 30ms>>
 > You know this for sure, $name?
 
 > After all, you should be certain.
@@ -62,11 +59,11 @@ you are in Act1.twee. First passage: [[name_set1]]
 
 >> [[[Yes. I do.|question2]]]
 
-/*<</type>>*/
+<</type>>
 
 :: question2
 
-/*<<type 40ms>>*/  /* REQUIRES VARIABLES TO CONTROL THE BOTTOM TWO OPTIONS */
+<<type 30ms>>  /* REQUIRES VARIABLES TO CONTROL THE BOTTOM TWO OPTIONS */
 
 <<if $name_resel is true>>
 
@@ -91,11 +88,11 @@ you are in Act1.twee. First passage: [[name_set1]]
 
 [[pre-wakeup]]
 
-/*<</type>>*/
+<</type>>
 
 :: pre-wakeup
 
-/*<<type 40ms>>*/
+<<type 30ms>>
 > Wonderful. You're doing so well. Are you ready?
 
 > After all, you should be certain.
@@ -105,7 +102,7 @@ you are in Act1.twee. First passage: [[name_set1]]
 
 >> [[[No! What is this? What's happening??|pre-wakeup]]]
 
-/*<</type>>*/
+<</type>>
 
 /*******************/
 /* AFTER WAKING UP */
