@@ -4,6 +4,9 @@
 
 
 :: name_set1
+<<cacheaudio title src/assets/music/Title.mp3>>
+<<masteraudio volume 0.25>>
+<<audio "title" loop play>>
 /* Gradient from black to white after some scrolling, then the below.*/
 
 <<type 30ms>>
