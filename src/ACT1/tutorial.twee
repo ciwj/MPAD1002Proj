@@ -44,6 +44,8 @@ you find yourself in a room with a whole lot of doors
 introduce cooking mechanic 
 [[go back|starting room]]
 
+
+<!-- MUSIC TUTORIAL START -->
 :: music tutorial
  <img src="src/assets/img/tutorial_music.jpg" width="240" height="auto" alt="[alt text goes here]"/>
 
@@ -141,10 +143,46 @@ previous page - [[next page|musicbook2]]
 <</if>>
 ...
 
+<!-- MUSIC TUTORIAL END -->
+
+<!-- HEATER TUTORIAL START -->
+
 :: heater tutorial
  <img src="src/assets/img/tutorial_heater.jpg" width="320" height="auto" alt="[alt text goes here]"/>
 learn to use the heating machine
+
+[[investigate the machine|dial stage 1]]
+
 [[go back|starting room]]
+
+:: dial stage 1
+/*https://stackoverflow.com/questions/5182170/how-to-let-an-html-image-overlap-another */
+<img src="src/assets/img/HeaterTutorial_dial1.png" width="320" height="auto" alt="[alt text goes here]" style="border: 1px solid #f00;
+  position:relative;z-index: 2;"/>
+<img src="src/assets/img/HeaterTutorial_gauge1.png"  width="320" height="auto" alt="[alt text goes here]" style = "border: 1px solid #0f0;
+  position: relative;
+  z-index: 1;
+  top: -215px;"/>
+
+  [[^^ increase temp|dial stage 2]]
+  vv decrease temp
+
+:: dial stage 2
+<img src="src/assets/img/HeaterTutorial_dial2.png" width="320" height="auto" alt="[alt text goes here]" style="border: 1px solid #f00;position:relative;z-index: 2;"/>
+<img src="src/assets/img/HeaterTutorial_gauge1.png"  width="320" height="auto" alt="[alt text goes here]" style = "border: 1px solid #0f0;position: relative;z-index: 1;top: -215px;"/>
+
+[[^^ increase temp|dial stage 3]]
+[[vv decrease temp|dial stage 1]]
+
+:: dial stage 3
+<img src="src/assets/img/HeaterTutorial_dial3.png" width="320" height="auto" alt="[alt text goes here]" style="border: 1px solid #f00;position:relative;z-index: 2;"/>
+<img src="src/assets/img/HeaterTutorial_gauge1.png"  width="320" height="auto" alt="[alt text goes here]" style = "border: 1px solid #0f0;position: relative;z-index: 1;top: -215px;"/>
+
+^^ increase temp
+[[vv decrease temp|dial stage 2]]
+
+
+<!-- HEATER TUTORIAL END -->
 
 
 :: circut tutorial
