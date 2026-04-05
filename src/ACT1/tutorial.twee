@@ -50,6 +50,7 @@ introduce cooking mechanic
 introduce listening and recreating sounds
 
 [[play the radio|radio]]
+[[flip through the book|musicbook1]]
 
 [img[Red Button|src/assets/img/buttons/buttonRed.png][noteC]]\
 [img[Red Button|src/assets/img/buttons/buttonYellow.png][noteE]]\
@@ -58,6 +59,26 @@ introduce listening and recreating sounds
 
 
 [[go back|starting room]]
+
+
+:: musicbook1
+<img src="src/assets/img/musicbook_page1.jpg" width="240" height="auto" alt="[alt text goes here]"/>
+
+previous page - [[next page|musicbook2]]
+[[stop reading | music tutorial]]
+
+:: musicbook2
+ <img src="src/assets/img/musicbook_page2.jpg" width="240" height="auto" alt="[alt text goes here]"/>
+
+[[previous page|musicbook1]] - [[next page| musicbook3]]
+[[stop reading | music tutorial]]
+
+
+:: musicbook3
+ <img src="src/assets/img/musicbook_page3.jpg" width="240" height="auto" alt="[alt text goes here]"/>
+
+[[previous page|musicbook2]] - next page
+[[stop reading | music tutorial]]
 
 
 :: noteC
@@ -98,8 +119,6 @@ introduce listening and recreating sounds
 
 :: radio
  <img src="src/assets/img/tutorial_music.jpg" width="240" height="auto" alt="[alt text goes here]"/>
-
-songNumer = $songNumber
 
 <<if $songNumber == 1>>
 <<cacheaudio "song1" "src/assets/audio/tutorial_music_song1.mp3">>
