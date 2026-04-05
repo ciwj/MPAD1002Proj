@@ -51,10 +51,10 @@ introduce listening and recreating sounds
 
 [[play the radio|radio]]
 
-[[press red button|noteC]]
-[[press yellow button|noteE]]
-[[press green button|noteG]]
-[[press blue button|noteB]]
+[img[Red Button|src/assets/img/buttons/buttonRed.png][noteC]]
+[img[Red Button|src/assets/img/buttons/buttonYellow.png][noteE]]
+[img[Red Button|src/assets/img/buttons/buttonGreen.png][noteG]]
+[img[Red Button|src/assets/img/buttons/buttonBlue.png][noteB]]
 
 
 [[go back|starting room]]
