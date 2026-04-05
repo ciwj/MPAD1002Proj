@@ -1,3 +1,20 @@
+:: StoryStylesheet [stylesheet]
+
+@font-face {
+    font-family: "Courier Prime";
+    src: url("fonts/CourierPrime-Regular.ttf");
+}
+
+body {
+  font-family: "Courier Prime";
+  background-image: url("src/assets/img/bw_gradient.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
 /**************************/
 /* START OF PRE-NARRATIVE */
 /**************************/
@@ -8,6 +25,30 @@
 <<masteraudio volume 0.25>>
 <<audio "title" loop play>>
 /* Gradient from black to white after some scrolling, then the below.*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <<type 30ms>>
 \> You're finally here.
