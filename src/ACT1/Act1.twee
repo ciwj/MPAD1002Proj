@@ -165,6 +165,14 @@ body {
 /*******************/
 
 :: wakeup
+[img[You look up at the trees.|src/assets/img/act1/wakeup_still.png]]
+
+
+:: wakeup2
+<video width="100%" autoplay muted>
+  <source src="src/assets/video/getup_pt1.mp4" type="video/mp4">
+  Your browser does not support video.
+</video>
 
 [[house_intro]]
 /* VIDEO: first-person getting up from the ground (vincent massey?) and looking around. */
