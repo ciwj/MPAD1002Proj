@@ -172,7 +172,10 @@ body {
 
 
 
-\> You must've overslept. You try to remember what you were doing before this and draw... nothing. Absolutely nothing. Where are you? A thousand thoughts race
+\> You must've overslept. You try to remember what you were doing before this and draw... nothing. Absolutely nothing. Where are you?
+
+
+\> A thousand thoughts race through your mind.
 
 
 \> [[Get up.|wakeup2]] Where are you?
@@ -186,6 +189,28 @@ body {
 <<timed 10333ms>> <<goto wakeup3>> <</timed>>
 
 :: wakeup3
+
+[img[The trees stand before you.|src/assets/img/act1/getup_still2.png]]
+
+\> Okay. Looking around, you're confident:
+
+
+
+\> You've never been here before.
+
+
+\>  ...
+
+
+\>> [[Try to find something, anything.|wakeup4]]
+
+:: wakeup4
+<video width="100%" autoplay muted>
+  <source src="src/assets/video/wander1.mp4" type="video/mp4">
+  Your browser does not support video.
+</video>
+
+<<timed 7s>> \> You wander. <</timed>>
 
 :: house_intro
 
