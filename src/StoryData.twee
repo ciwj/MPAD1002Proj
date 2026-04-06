@@ -17,6 +17,7 @@ A Sense of Nowhere
 <<set $songNumber to [1,2,3,4].random()>>
 
 
+This experience makes use of your browser's autoplay feature. To make sure everything works as intended, please ensure the tab has permissions to do so. Enjoy!
 
 [[begin!|name_set1]]
 

@@ -165,8 +165,17 @@ body {
 /*******************/
 
 :: wakeup
+
+\> Your eyes open.
+
 [img[You look up at the trees.|src/assets/img/act1/wakeup_still.png]]
 
+
+
+\> You must've overslept. You try to remember what you were doing before this and draw... nothing. Absolutely nothing. Where are you? A thousand thoughts race
+
+
+\> [[Get up.|wakeup2]] Where are you?
 
 :: wakeup2
 <video width="100%" autoplay muted>
@@ -174,10 +183,9 @@ body {
   Your browser does not support video.
 </video>
 
-[[house_intro]]
-/* VIDEO: first-person getting up from the ground (vincent massey?) and looking around. */
-/* TEXT: Internal dialogue of reorienting yourself */
-/* LINK to you wandering down the path */
+<<timed 10333ms>> <<goto wakeup3>> <</timed>>
+
+:: wakeup3
 
 :: house_intro
 
