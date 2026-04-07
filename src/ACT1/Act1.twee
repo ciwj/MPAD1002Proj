@@ -461,6 +461,16 @@ footer img{
 
 ::tear_path
 
+[img[Something is in front of you.|src/assets/img/act1/woodsTear.png]]
+
+\> You try to wrap your head around whats happening in front of you. There must be a way to explain what you're seeing in front of you.
+
+<<type 50ms>>
+\> Every. Bit. Of your understanding of the world, your world, fails you. You're at a loss.
+<</type>> <<type 25ms>>
+\>> [[.. Let me try a different direction.|wander]]
+
+\>>[[What's that behind it? Let me take a look.|starting room]]
 
 /* DRAWING: See Act1 #9 Storyboard */
 /* TEXT: Contemplation */
