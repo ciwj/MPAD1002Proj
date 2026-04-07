@@ -20,7 +20,7 @@
 
 
 :: starting_room
- <img src="src/assets/img/tutorial_start.jpg" width="320" height="240" alt="[room with 6 doors. 3 on right wall. 2 on left. 1 ahead of you]"/>
+ <img src="src/assets/img/tutorial_start.jpg" width="800" alt="[room with 6 doors. 3 on right wall. 2 on left. 1 ahead of you]"/>
 
 you find yourself in a room with a whole lot of doors
 
@@ -34,12 +34,12 @@ you find yourself in a room with a whole lot of doors
 [[locked door]] /*leads to act 2 */
 
 :: starting_room_back
- <img src="src/assets/img/tutorial_start_back.jpg" width="320" height="auto" alt="[]"/>
+ <img src="src/assets/img/tutorial_start_back.jpg" width="800" height="auto" alt="[]"/>
 
  [[...|starting_room]]
 
 :: kitchen tutorial
- <img src="src/assets/img/tutorial_kitchen.jpg" width="320" height="auto" alt="[room with a cooking pot, a green bin, a brown crate, a plate and a note tacked to the wall]"/>
+ <img src="src/assets/img/tutorial_kitchen.jpg" width="800" height="auto" alt="[room with a cooking pot, a green bin, a brown crate, a plate and a note tacked to the wall]"/>
 
 introduce cooking mechanic 
 [[go back|starting_room]]
@@ -47,7 +47,7 @@ introduce cooking mechanic
 
 <!-- MUSIC TUTORIAL START -->
 :: music tutorial
- <img src="src/assets/img/tutorial_music.jpg" width="240" height="auto" alt="[alt text goes here]" class="music-tut-img"/>
+ <img src="src/assets/img/tutorial_music.jpg" width="800" height="auto" alt="[alt text goes here]" class="music-tut-img"/>
 
 introduce listening and recreating sounds
 
@@ -64,20 +64,20 @@ introduce listening and recreating sounds
 
 
 :: musicbook1
-<img src="src/assets/img/musicbook_page1.jpg" width="240" height="auto" alt="[alt text goes here]"/>
+<img src="src/assets/img/musicbook_page1.jpg" width="800" height="auto" alt="[alt text goes here]"/>
 
 previous page - [[next page|musicbook2]]
 [[stop reading | music tutorial]]
 
 :: musicbook2
- <img src="src/assets/img/musicbook_page2.jpg" width="240" height="auto" alt="[alt text goes here]"/>
+ <img src="src/assets/img/musicbook_page2.jpg" width="800" height="auto" alt="[alt text goes here]"/>
 
 [[previous page|musicbook1]] - [[next page| musicbook3]]
 [[stop reading | music tutorial]]
 
 
 :: musicbook3
- <img src="src/assets/img/musicbook_page3.jpg" width="240" height="auto" alt="[alt text goes here]"/>
+ <img src="src/assets/img/musicbook_page3.jpg" width="800" height="auto" alt="[alt text goes here]"/>
 
 [[previous page|musicbook2]] - next page
 [[stop reading | music tutorial]]
@@ -120,7 +120,7 @@ previous page - [[next page|musicbook2]]
 ...
 
 :: radio
- <img src="src/assets/img/tutorial_music.jpg" width="240" height="auto" alt="[alt text goes here]"/>
+ <img src="src/assets/img/tutorial_music.jpg" width="400" height="auto" alt="[alt text goes here]"/>
 
 <<if $songNumber == 1>>
 <<cacheaudio "song1" "src/assets/audio/tutorial_music_song1.mp3">>
@@ -148,7 +148,7 @@ previous page - [[next page|musicbook2]]
 <!-- HEATER TUTORIAL START -->
 
 :: heater tutorial
- <img src="src/assets/img/tutorial_heater.jpg" width="320" height="auto" alt="[alt text goes here]"/>
+ <img src="src/assets/img/tutorial_heater.jpg" width="800" height="auto" alt="[alt text goes here]"/>
 learn to use the heating machine
 
 [[investigate the machine|dial stage 1]]
