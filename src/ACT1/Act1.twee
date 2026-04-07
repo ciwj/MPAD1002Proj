@@ -168,6 +168,18 @@ footer img{
   background-repeat: no-repeat;
 }
 
+.passage[data-passage="wakeup3"] img{
+  width:800px;
+}
+
+.passage[data-passage="wakeup"] img{
+  width:800px;
+}
+
+.passage[data-passage="tear_path"] img{
+  width:800px;
+}
+
 /**************************/
 /* START OF PRE-NARRATIVE */
 /**************************/
@@ -291,7 +303,7 @@ footer img{
 
 
 
-<<type 30ms>>
+<<type 20ms>>
 \> You're finally here.
 
 \> This story is about you. What should we call you?
@@ -306,7 +318,7 @@ footer img{
 /* Variable below to smooth the first sentence from second question? */
 <<set $name_resel to false>>
 
-<<type 30ms>>
+<<type 20ms>>
 \> $name. A lot is going to happen, $name.
 
 \> If it's any consolation, it's all in your hands.
@@ -320,7 +332,7 @@ footer img{
 
 :: name_reselect
 
-<<type 30ms>>
+<<type 20ms>>
 
 \> It's so easy to forget, isn't it? Who are you, then?
 
@@ -334,7 +346,7 @@ footer img{
 /* Variable below to smooth the first sentence from second question? */
 <<set $name_resel to true>>
 
-<<type 30ms>>
+<<type 20ms>>
 \> You know this for sure, $name?
 
 \> After all, you should be certain.
@@ -347,9 +359,8 @@ footer img{
 <</type>>
 
 :: question2
-
-<<type 30ms>>  /* REQUIRES VARIABLES TO CONTROL THE BOTTOM TWO OPTIONS */
-
+<<set $prewakeup_re to false>>
+<<type 20ms>>  /* REQUIRES VARIABLES TO CONTROL THE BOTTOM TWO OPTIONS */
 <<if $name_resel is true and not $customEnrapture>>
 
 \> Wonderful. We need to know - what enraptures you?
@@ -388,8 +399,8 @@ footer img{
 <</type>>
 
 :: pre-wakeup
-
-<<type 30ms>>
+<<if $prewakeup_re is false>>
+<<type 20ms>>
 \> Wonderful. You're doing so well. Are you ready?
 
 \> After all, you should be certain.
@@ -397,9 +408,19 @@ footer img{
 
 \>> [[[Yes.|wakeup]]]
 
-\>> [[[No! What is this? What's happening??|pre-wakeup]]]
+\>> [[[No! What is this? What's happening??|pre-wakeup][$prewakeup_re to true]]]
 
 <</type>>
+<<else>>
+\> Wonderful. You're doing so well. Are you ready?
+
+\> After all, you should be certain.
+
+
+\>> [[[Yes.|wakeup]]]
+
+\>> [[[No! What is this? What's happening??|pre-wakeup][$prewakeup_re to true]]]
+<</if>>
 
 /*******************/
 /* AFTER WAKING UP */
@@ -412,7 +433,6 @@ footer img{
 [img[You look up at the trees.|src/assets/img/act1/wakeup_still.png]]
 
 
-
 \> You must've overslept. You try to remember what you were doing before this and draw... nothing. Absolutely nothing. Where are you?
 
 
@@ -422,7 +442,7 @@ footer img{
 \> [[Get up.|wakeup2]] Where are you?
 
 :: wakeup2
-<video width="100%" autoplay muted>
+<video width="800px" autoplay muted>
   <source src="src/assets/video/getup_pt1.mp4" type="video/mp4">
   Your browser does not support video.
 </video>
@@ -446,14 +466,11 @@ footer img{
 \>> [[Try to find something, anything.|wakeup4]]
 
 :: wakeup4
-<video width="100%" autoplay muted>
+<video width="800px" autoplay muted>
   <source src="src/assets/video/wander1.mp4" type="video/mp4">
   Your browser does not support video.
 </video>
-
 <<cacheaudio footsteps_dirt src/assets/audio/footsteps.mp3>>
-
-
 <<timed 2s>>
 <<audio "footsteps_dirt" play>>
 <<next 5s>> \> [[You wander.|tear_path]]
@@ -465,23 +482,28 @@ footer img{
 
 \> You try to wrap your head around whats happening in front of you. There must be a way to explain what you're seeing in front of you.
 
-<<type 50ms>>
+
+\> You aren't dreaming.
+
+<<type 40ms>>
 \> Every. Bit. Of your understanding of the world, your world, fails you. You're at a loss.
-<</type>> <<type 25ms>>
+... Is this your world anymore?
+
+
 \>> [[.. Let me try a different direction.|wander]]
 
-\>>[[What's that behind it? Let me take a look.|starting room]]
-
-/* DRAWING: See Act1 #9 Storyboard */
-/* TEXT: Contemplation */
-/* CHOICE: approach house or choose to leave */
-/* ^ leads to house_approach OR wander */
+\>>[[What's that behind it? Let me take a look.|pre_tutroom]]<</type>>
 
 :: wander
-/* VARIABLE: need to increment a counter every time you select this (to vary dialogue) */
-/* VIDEO: wandering through some brush!! (FIRST-PERSON) */
-/* LINK: go back to house_intro */
-[[house_approach]]
+<video width="800px" autoplay muted>
+  <source src="src/assets/video/woods_walk.mp4" type="video/mp4">
+  Your browser does not support video.
+</video>
+
+<<timed 3s>> \> [[You walk away for a while.|tear_path]] <</timed>>
+
+::pre_tutroom
+IMPLEMENT
 
 :: house_approach
 /* DRAWING SET: See Act 1 #12 to 16 */
