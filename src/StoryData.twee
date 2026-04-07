@@ -24,6 +24,13 @@ A Sense of Nowhere
             <button class="button">YT Link</button>
         </a>
     </div>
+    <div class="main-div">
+    <p>This experience makes use of your browser's autoplay feature.
+    To make sure everything works as intended, please ensure the tab has permissions to do so.
+    For help on how to do this in Firefox, <a href="https://support.mozilla.org/en-US/kb/block-autoplay#w_site-settings">see here.</a>
+Enjoy!
+     </p>
+    </div>
 </main>
 
 
