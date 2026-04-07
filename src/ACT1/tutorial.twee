@@ -19,12 +19,12 @@
 
 
 
-:: starting room
+:: starting_room
  <img src="src/assets/img/tutorial_start.jpg" width="320" height="240" alt="[room with 6 doors. 3 on right wall. 2 on left. 1 ahead of you]"/>
 
 you find yourself in a room with a whole lot of doors
 
-[[check behind you|starting room back]]
+[[check behind you|starting_room_back]]
 
 [[kitchen tutorial]]
 [[music tutorial]]
@@ -33,16 +33,16 @@ you find yourself in a room with a whole lot of doors
 [[dark tutorial]]
 [[locked door]] /*leads to act 2 */
 
-:: starting room back
+:: starting_room_back
  <img src="src/assets/img/tutorial_start_back.jpg" width="320" height="auto" alt="[]"/>
 
- [[...|starting room]]
+ [[...|starting_room]]
 
 :: kitchen tutorial
  <img src="src/assets/img/tutorial_kitchen.jpg" width="320" height="auto" alt="[room with a cooking pot, a green bin, a brown crate, a plate and a note tacked to the wall]"/>
 
 introduce cooking mechanic 
-[[go back|starting room]]
+[[go back|starting_room]]
 
 
 <!-- MUSIC TUTORIAL START -->
@@ -60,7 +60,7 @@ introduce listening and recreating sounds
 [img[Red Button|src/assets/img/buttons/buttonBlue.png][noteB]]
 
 
-[[go back|starting room]]
+[[go back|starting_room]]
 
 
 :: musicbook1
@@ -153,7 +153,7 @@ learn to use the heating machine
 
 [[investigate the machine|dial stage 1]]
 
-[[go back|starting room]]
+[[go back|starting_room]]
 
 :: dial stage 1
 /*https://stackoverflow.com/questions/5182170/how-to-let-an-html-image-overlap-another */
@@ -187,16 +187,16 @@ learn to use the heating machine
 
 :: circut tutorial
 learn to complete the circuit
-[[go back|starting room]]
+[[go back|starting_room]]
 
 
 :: dark tutorial
 learn to listen in the dark
-[[go back|starting room]]
+[[go back|starting_room]]
 
 
 :: locked door
 this door has 5 shapes, all of which have a scroll wheel with numbers 0 -9. 
 by completing tutorial rooms you learn what numbers correspond to which shape and are able to unlock the door to act 2
 
-[[go back|starting room]]
+[[go back|starting_room]]

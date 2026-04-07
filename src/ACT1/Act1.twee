@@ -479,7 +479,7 @@ footer img{
 ::tear_path
 
 [img[Something is in front of you.|src/assets/img/act1/woodsTear.png]]
-
+<<set $wanderCount to 0>>
 \> You try to wrap your head around whats happening in front of you. There must be a way to explain what you're seeing in front of you.
 
 
@@ -487,12 +487,12 @@ footer img{
 
 <<type 40ms>>
 \> Every. Bit. Of your understanding of the world, your world, fails you. You're at a loss.
-... Is this your world anymore?
+... Is this even your world anymore?
 
 
-\>> [[.. Let me try a different direction.|wander]]
+\>> [[.. Let me try a different direction.|wander][$wanderCount to $wanderCount + 1]]
 
-\>>[[What's that behind it? Let me take a look.|pre_tutroom]]<</type>>
+\>>[[What's that behind it? Let me take a look.|pre_tutroom1]]<</type>>
 
 :: wander
 <video width="800px" autoplay muted>
@@ -502,9 +502,13 @@ footer img{
 
 <<timed 3s>> \> [[You walk away for a while.|tear_path]] <</timed>>
 
-::pre_tutroom
-IMPLEMENT
+::pre_tutroom1
+\> You take a breath and step forward-
+<<timed 3s>> <<goto pre_tutroom2>> <</timed>>
 
-:: house_approach
-/* DRAWING SET: See Act 1 #12 to 16 */
-[[starting room]]
+::pre_tutroom2
+<video width="800px" autoplay muted>
+  <source src="src/assets/video/woodsTearVID.mp4" type="video/mp4">
+  Your browser does not support video.
+</video>
+<<timed 1600ms>> <<goto starting_room>> <</timed>>
