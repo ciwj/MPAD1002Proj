@@ -47,7 +47,7 @@ introduce cooking mechanic
 
 <!-- MUSIC TUTORIAL START -->
 :: music tutorial
- <img src="src/assets/img/tutorial_music.jpg" width="240" height="auto" alt="[alt text goes here]"/>
+ <img src="src/assets/img/tutorial_music.jpg" width="240" height="auto" alt="[alt text goes here]" class="music-tut-img"/>
 
 introduce listening and recreating sounds
 

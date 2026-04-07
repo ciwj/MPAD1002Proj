@@ -1,4 +1,17 @@
+/**************************/
+/* STYLING - GENERAL */
+/**************************/
+
+
 :: StoryStylesheet [stylesheet]
+
+
+*{
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  
+}
 
 @font-face {
     font-family: "Courier Prime";
@@ -7,13 +20,153 @@
 
 body {
   font-family: "Courier Prime";
-  background-image: url("src/assets/img/bw_gradient.jpg");
+  margin: 0;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x:hidden;
+}
+
+html, body{
+  height:100%;
+}
+
+main{
+    flex: 1;
+    display: flex;             
+    flex-direction: column;    
+    justify-content: center;   
+    align-items: center;      
+    text-align: center;
+}
+      
+a{
+    text-decoration: none;
+}
+
+.nav-img{
+  width: 250px;
+  height: 80px;
+  padding: 10px 10px 0px 10px;
+  margin: 10px 10px 10px 0px;
+}
+
+li:hover{
+    text-decoration: underline;
+}
+
+.logo-img{
+    width: 300px;
+    height: 300px;
+    margin: 0px 10px 10px 10px;
+    border-radius: 20px;
+}
+
+
+h1{
+    display: inline-block;
+    color: black;
+    font-size: 50px;
+    padding: 20px 20px 20px 20px;
+    background-color:rgb(188, 186, 186) ;
+    margin: 20px 0px 10px 0px;
+    font-family: "TypoSlab Main";
+    border-radius: 20px;
+}
+
+.buttons{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    }
+
+.button{
+    margin: 15px 40px;
+    padding: 15px 60px;
+    font-size: 25px;
+    width: 250px;
+    background-color:rgb(188, 186, 186) ;
+    color: black;
+    border-radius: 10px;
+    font-family: "Courier Prime";
+    border-color: purple;
+}
+
+
+.button:hover{
+    cursor: pointer;
+    background-color: rgb(240, 240, 240);
+}
+
+
+footer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color:rgb(188, 186, 186) ;
+  padding: 10px 20px;
+  margin-top: auto;
+}
+
+footer h3{
+  text-align: center;
+  font-size: 40px;
+  font-family: "TypoSlab Main";
+  color: black;
+}
+
+footer img{
+  width: 150px;
+}
+
+.col-1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  color: black;
+  font-family: "Courier Prime";
+  padding: 10px 10px 15px 10px;
+}
+.col-1 p{
+  text-align: center;
+}
+
+.passage[data-passage="landing"] {
+  background-image: url("src/assets/img/woods1_edited.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
+/**************************/
+/* STYLING - MUSIC TUTORIAL */
+/**************************/
 
+.passage[data-passage="music tutorial"] .music-tut-img{
+  width: 300px;
+  height: auto;
+}
+
+.passage[data-passage="music tutorial"] a img{
+  width: 40px;
+  height: auto;
+}
+
+/**************************/
+/* STYLING - PASSAGE #1 */
+/**************************/
+
+.passage[data-passage="name_set1"]{
+  background-image:url("src/assets/img/bw_gradient.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 /**************************/
 /* START OF PRE-NARRATIVE */
@@ -25,6 +178,95 @@ body {
 <<masteraudio volume 0.25>>
 <<audio "title" loop play>>
 /* Gradient from black to white after some scrolling, then the below.*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -165,20 +407,8 @@ body {
 /*******************/
 
 :: wakeup
-
-\> Your eyes open.
-
 [img[You look up at the trees.|src/assets/img/act1/wakeup_still.png]]
 
-
-
-\> You must've overslept. You try to remember what you were doing before this and draw... nothing. Absolutely nothing. Where are you?
-
-
-\> A thousand thoughts race through your mind.
-
-
-\> [[Get up.|wakeup2]] Where are you?
 
 :: wakeup2
 <video width="100%" autoplay muted>
@@ -186,31 +416,10 @@ body {
   Your browser does not support video.
 </video>
 
-<<timed 10333ms>> <<goto wakeup3>> <</timed>>
-
-:: wakeup3
-
-[img[The trees stand before you.|src/assets/img/act1/getup_still2.png]]
-
-\> Okay. Looking around, you're confident:
-
-
-
-\> You've never been here before.
-
-
-\>  ...
-
-
-\>> [[Try to find something, anything.|wakeup4]]
-
-:: wakeup4
-<video width="100%" autoplay muted>
-  <source src="src/assets/video/wander1.mp4" type="video/mp4">
-  Your browser does not support video.
-</video>
-
-<<timed 7s>> \> You wander. <</timed>>
+[[house_intro]]
+/* VIDEO: first-person getting up from the ground (vincent massey?) and looking around. */
+/* TEXT: Internal dialogue of reorienting yourself */
+/* LINK to you wandering down the path */
 
 :: house_intro
 

@@ -12,16 +12,31 @@ A Sense of Nowhere
 }
 
 
-
 :: landing {"position":"625,250","size":"100,100"}
 <<set $songNumber to [1,2,3,4].random()>>
 
+<main>
+    <img src="src/assets/img/grey_logo.png" class="logo-img" alt="logo/poster">
+    <div class="buttons">
+        <button class="button" onclick="SugarCube.Engine.play('name_set1')">Start</button>        
+        <button class="button" onclick="SugarCube.Engine.play('about')">About</button>        
+        <a href="https://youtube.com/@inkwellstories-l2c?si=AQ6A6CGjVy6PZ4bl" target="_blank">
+            <button class="button">YT Link</button>
+        </a>
+    </div>
+</main>
 
-This experience makes use of your browser's autoplay feature. To make sure everything works as intended, please ensure the tab has permissions to do so. Enjoy!
-
-[[begin!|name_set1]]
 
 [[nav]]
+
+<footer>
+    <div class="col-1">
+        <img src="src/assets/img/black_logo.png">
+        <p>© 2026 Inkwell Stories. All rights reserved.</p>
+        <img src="src/assets/img/logo-no-bg.png">                      
+    </div>
+</footer>
+
 
 
 :: nav 
