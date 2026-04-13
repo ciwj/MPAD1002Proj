@@ -30,7 +30,7 @@ you find yourself in a room with a whole lot of doors
 [[music tutorial]]
 [[heater tutorial]]
 [[circut tutorial]]
-[[dark tutorial]]
+[[dark_tut]]
 [[locked door]] /*leads to act 2 */
 
 :: starting_room_back
@@ -190,9 +190,28 @@ learn to complete the circuit
 [[go back|starting_room]]
 
 
-:: dark tutorial
-learn to listen in the dark
-[[go back|starting_room]]
+:: dark_tut
+\> You step through the door-
+
+\> Pure black. You can't see a thing.
+
+\> You feel for the door behind you, only to find a smooth stone wall behind you.
+
+\> [[[...]|dark_tut2]]
+
+::dark_tut2
+
+
+
+
+
+
+
+\> Okay. This is fine. You're fine! There's just no door where there was a door, and you're in a pitch black room. Textbook fine.
+
+\> After a long moment, you feel around. The space is narrow enough that you can feel both sides with your arms out.
+
+\>> [[[Start moving forwards.]|dark_tut3]]
 
 
 :: locked door
