@@ -206,12 +206,33 @@ learn to complete the circuit
 
 
 
-
+<<set $tutCrunch to 0>>
 \> Okay. This is fine. You're fine! There's just no door where there was a door, and you're in a pitch black room. Textbook fine.
 
 \> After a long moment, you feel around. The space is narrow enough that you can feel both sides with your arms out.
 
-\>> [[[Start moving forwards.]|dark_tut3]]
+\>> [[[Start moving forwards.]|dark_tut_crunch]]
+
+::dark_tut_crunch
+
+
+
+
+
+
+
+<<set $tutCrunch to $tutCrunch + 1>>
+<<if $tutCrunch is 1>>
+\> You hear something crunch under your feet. Nothing could possibly make you check what it is, but you take note.
+
+\>> [[[Another.]|dark_tut_step]]
+<<else>>
+
+<</if>>
+
+::dark_tut_groove
+
+::dark_tut_step
 
 
 :: locked door
