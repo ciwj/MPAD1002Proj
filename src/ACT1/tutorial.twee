@@ -29,7 +29,7 @@ you find yourself in a room with a whole lot of doors
 [[kitchen tutorial]]
 [[music tutorial]]
 [[heater tutorial]]
-[[circut tutorial]]
+[[circuit tutorial]]
 [[dark_tut]]
 [[locked door]] /*leads to act 2 */
 
@@ -45,9 +45,13 @@ introduce cooking mechanic
 [[go back|starting_room]]
 
 
-<!-- MUSIC TUTORIAL START -->
+/*****************************/
+/* MAIN TUT END, MUSIC START */
+/*****************************/
+
 :: music tutorial
  <img src="src/assets/img/tutorial_music.jpg" width="800" height="auto" alt="[alt text goes here]" class="music-tut-img"/>
+/* TODO-S retake image above in landscape? */
 
 introduce listening and recreating sounds
 
@@ -182,14 +186,20 @@ learn to use the heating machine
 [[vv decrease temp|dial stage 2]]
 
 
-<!-- HEATER TUTORIAL END -->
+/*****************************/
+/* HEATER END, CIRCUIT START */
+/*****************************/
 
-
-:: circut tutorial
+:: circuit tutorial
 learn to complete the circuit
 [[go back|starting_room]]
 
 
+/***************************/
+/* CIRCUIT END, DARK START */
+/***************************/
+
+/* TODO-Z implement rest of this */
 :: dark_tut
 \> You step through the door-
 

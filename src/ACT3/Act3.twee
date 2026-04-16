@@ -2,9 +2,9 @@
 
 Navigation passage. Start: [[endroom_main]]
 
-/*******************************/
-/* UPON ENTERING TUTORIAL ROOM */
-/*******************************/
+/**************************/
+/* UPON ENTERING END ROOM */
+/**************************/
 
 :: endroom_main
 
@@ -37,7 +37,7 @@ Navigation passage. Start: [[endroom_main]]
 >> [[[.. I want to hurl this.]|bad_end1]]
 
 /********************/
-/* GOOD/TRUE ENDING */
+/* GOOD ENDING */
 /********************/
 
 :: place1
@@ -68,18 +68,17 @@ Navigation passage. Start: [[endroom_main]]
 
 > This is the final one. You wonder what this'll do.
 
-/* IF all easter eggs gotten show this, otherwise show the other one below */
->> [[[Brace yourself and put down the last one]]|true_end1]
-
 >> [[[Brace yourself and put down the last one]]|good_end1]
 
-/***************/
-/* GOOD ENDING */
-/***************/
+::good_end1
 
-/***************/
-/* TRUE ENDING */
-/***************/
+
+
+
+
+\> Everything goes black.
+
+\> You're somewhere familiar again.
 
 /**************/
 /* BAD ENDING */

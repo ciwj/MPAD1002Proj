@@ -518,6 +518,7 @@ footer img{
 \>> [[.. Let me try a different direction.|wander][$wanderCount to $wanderCount + 1]]
 
 \>>[[What's that behind it? Let me take a look.|pre_tutroom1]]<</type>>
+/* TODO-Z implement dialogue variations */
 
 :: wander
 <video width="800px" autoplay muted>
