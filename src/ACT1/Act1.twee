@@ -206,6 +206,35 @@ footer img{
 }
 
 /**************************/
+/* STYLING - INVENTORY*/
+/**************************/
+
+.inventory_layout{
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.main_img{
+  width: 300px;
+  height: auto;
+}
+
+.inventory{
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+.inventory_slot{
+  width: 100px;
+  height: 100px;
+}
+
+/**************************/
 /* START OF PRE-NARRATIVE */
 /**************************/
 
@@ -538,3 +567,4 @@ footer img{
   Your browser does not support video.
 </video>
 <<timed 1600ms>> <<goto starting_room>> <</timed>>
+
