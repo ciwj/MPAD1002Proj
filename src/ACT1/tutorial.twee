@@ -20,23 +20,36 @@
 
 
 :: starting_room
- <img src="src/assets/img/tutorial_start.jpg" width="800" alt="[room with 6 doors. 3 on right wall. 2 on left. 1 ahead of you]"/>
+ <img src="src/assets/img/rooms/tutorial_start 1.jpg" width="800" alt="[room with 6 doors. 3 on right wall. 2 on left. 1 ahead of you]"/>
 
 you find yourself in a room with a whole lot of doors
 
-[[check behind you|starting_room_back]]
+[[look right|starting_room 2]]
+[[look left| starting_room 4]]
+[[check behind you| startingroom 3]]
 
-[[kitchen tutorial]]
-[[music tutorial]]
-[[heater tutorial]]
-[[circuit tutorial]]
-[[dark_tut]]
-[[locked door]] /*leads to act 2 */
+:: starting_room 2
+ <img src="src/assets/img/rooms/tutorial_start 2.jpg" width="800" alt="[]"/>
 
-:: starting_room_back
- <img src="src/assets/img/tutorial_start_back.jpg" width="800" height="auto" alt="[]"/>
+[[look right|starting_room 3]]/* 
+[[look left| starting_room 3]]
+[[check behind you| startingroom 3]]*/
 
- [[...|starting_room]]
+:: starting_room 3
+ <img src="src/assets/img/rooms/tutorial_start 3.jpg" width="800" alt="[]"/>
+
+[[look right|starting_room 4]]/* 
+[[look left| starting_room 2]]
+[[check behind you| startingroom 3]]*/
+
+:: starting_room 4
+ <img src="src/assets/img/rooms/tutorial_start 4.jpg" width="800" alt="[]"/>
+[[look right|starting_room 1]]/* 
+[[look left| starting_room 1]]
+[[check behind you| startingroom 3]]*/
+
+
+
 
 :: kitchen tutorial
 
