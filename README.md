@@ -3,3 +3,7 @@ in your files, open the folder MPAD1002Proj  and hit ALT + D then type cmd. in t
 consider installing twee 3 language tools as an extension on vscode to help with twine syntax
 
 
+helpful for overlapping images https://stackoverflow.com/questions/5182170/how-to-let-an-html-image-overlap-another 
+
+
+

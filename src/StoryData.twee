@@ -14,6 +14,14 @@ A Sense of Nowhere
 
 :: landing {"position":"625,250","size":"100,100"}
 <<set $songNumber to [1,2,3,4].random()>>
+<<set $heaterNumber to [1,2,3,4].random()>>
+<<set $circuitNumber to [1,2,3,4,5,6,7,8].random()>>
+<<set $hexagonDial to [1]>>
+<<set $circleDial to [1]>>
+<<set $triangleDial to [1]>>
+<<set $diamondDial to [1]>>
+<<set $pentagonDial to [1]>>
+
 
 <main>
     <img src="src/assets/img/grey_logo.png" class="logo-img" alt="logo/poster">

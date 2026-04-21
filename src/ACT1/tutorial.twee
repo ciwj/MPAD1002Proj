@@ -24,29 +24,73 @@
 
 you find yourself in a room with a whole lot of doors
 
+investigate the [[door ahead of you |enter_tutorialexit]]
+
 [[look right|starting_room 2]]
 [[look left| starting_room 4]]
-[[check behind you| startingroom 3]]
+[[check behind you| starting_room 3]]
+
+:: enter_tutorialexit
+ <img src="src/assets/img/rooms/door to tutorial exit.jpg" width="800" alt="[]"/>
+ [[enter|locked door]]
+ [[go back|starting_room]]
 
 :: starting_room 2
  <img src="src/assets/img/rooms/tutorial_start 2.jpg" width="800" alt="[]"/>
 
-[[look right|starting_room 3]]/* 
-[[look left| starting_room 3]]
-[[check behind you| startingroom 3]]*/
+you find yourself in a room with a whole lot of doors
+investigate the [[left door |enter_tutorialmusic]]
+investigate the [[right door |enter_tutorialcircuit]]
+
+[[look right|starting_room 3]]
+[[look left| starting_room]]
+[[check behind you| starting_room 4]]
+
+:: enter_tutorialmusic
+ <img src="src/assets/img/rooms/door to tutorial music.jpg" width="800" alt="[]"/>
+ [[enter|music tutorial]]
+ [[go back|starting_room 2]]
+
+ 
+:: enter_tutorialcircuit
+ <img src="src/assets/img/rooms/door to tutorial circuit.jpg" width="800" alt="[]"/>
+ [[enter|circuit tutorial]]
+ [[go back|starting_room 2]]
+
 
 :: starting_room 3
  <img src="src/assets/img/rooms/tutorial_start 3.jpg" width="800" alt="[]"/>
 
-[[look right|starting_room 4]]/* 
+ you find yourself in a room with a whole lot of doors
+investigate the [[left door|enter_tutorialheater]]
+investigate the [[middle door |enter_tutorialkitchen]]
+investigate the [[right door |enter_tutorialdark]]
+
+[[look right|starting_room 4]]
 [[look left| starting_room 2]]
-[[check behind you| startingroom 3]]*/
+[[check behind you| starting_room]]
+
+:: enter_tutorialheater
+<img src="src/assets/img/rooms/door to tutorial heater.jpg" width="800" alt="[]"/>
+ [[enter|heater tutorial]]
+ [[go back|starting_room 3]]
+
+:: enter_tutorialkitchen
+<img src="src/assets/img/rooms/door to tutorial kitchen.jpg" width="800" alt="[]"/>
+ [[enter|kitchen tutorial]]
+ [[go back|starting_room 3]]
+
+:: enter_tutorialdark
+<img src="src/assets/img/rooms/door to tutorial dark.jpg" width="800" alt="[]"/>
+ [[enter|dark tutorial]]
+ [[go back|starting_room 3]]
+
 
 :: starting_room 4
  <img src="src/assets/img/rooms/tutorial_start 4.jpg" width="800" alt="[]"/>
-[[look right|starting_room 1]]/* 
-[[look left| starting_room 1]]
-[[check behind you| startingroom 3]]*/
+[[look right|starting_room]]
+[[look left| starting_room 3]]
+[[check behind you| starting_room 2]]
 
 
 
@@ -272,31 +316,72 @@ learn to use the heating machine
 
 [[go back|starting_room]]
 
-:: dial stage 1
-/*https://stackoverflow.com/questions/5182170/how-to-let-an-html-image-overlap-another */
-<img src="src/assets/img/HeaterTutorial_dial1.png" width="320" height="auto" alt="[alt text goes here]" style="border: 1px solid #f00;
-  position:relative;z-index: 2;"/>
-<img src="src/assets/img/HeaterTutorial_gauge1.png"  width="320" height="auto" alt="[alt text goes here]" style = "border: 1px solid #0f0;
-  position: relative;
-  z-index: 1;
-  top: -215px;"/>
 
-  [[^^ increase temp|dial stage 2]]
-  vv decrease temp
+
+:: dial stage 1
+<<if $heaterNumer == 1>>
+  <img src="src/assets/img/temperature gauge/tutorial G1D1.png" width="240" alt="[]"/>
+<</if>>>>
+<<if $heaterNumer == 2>>
+  <img src="src/assets/img/temperature gauge/tutorial G2D1.png" width="240" alt="[]"/>
+<</if>>>>
+<<if $heaterNumer == 3>>
+  <img src="src/assets/img/temperature gauge/tutorial G3D1.png" width="240" alt="[]"/>
+<</if>>>>
+<<if $heaterNumer == 4>>
+  <img src="src/assets/img/temperature gauge/tutorial G4D1.png" width="240" alt="[]"/>
+<</if>>>>
+
+[[ vv decrease|dial stage 1]] - [[^^ increase|dial stage 2]]
 
 :: dial stage 2
-<img src="src/assets/img/HeaterTutorial_dial2.png" width="320" height="auto" alt="[alt text goes here]" style="border: 1px solid #f00;position:relative;z-index: 2;"/>
-<img src="src/assets/img/HeaterTutorial_gauge1.png"  width="320" height="auto" alt="[alt text goes here]" style = "border: 1px solid #0f0;position: relative;z-index: 1;top: -215px;"/>
+<<if $heaterNumer == 1>>
+  <img src="src/assets/img/temperature gauge/tutorial G1D2.png" width="240" alt="[]"/>
+<</if>>>>
+<<if $heaterNumer == 2>>
+  <img src="src/assets/img/temperature gauge/tutorial G2D2.png" width="240" alt="[]"/>
+<</if>>>>
+<<if $heaterNumer == 3>>
+  <img src="src/assets/img/temperature gauge/tutorial G3D2.png" width="240" alt="[]"/>
+<</if>>>>
+<<if $heaterNumer == 4>>
+  <img src="src/assets/img/temperature gauge/tutorial G4D2.png" width="240" alt="[]"/>
+<</if>>>>
 
-[[^^ increase temp|dial stage 3]]
-[[vv decrease temp|dial stage 1]]
+[[ vv decrease|dial stage 1]] - [[^^ increase|dial stage 3]]
 
 :: dial stage 3
-<img src="src/assets/img/HeaterTutorial_dial3.png" width="320" height="auto" alt="[alt text goes here]" style="border: 1px solid #f00;position:relative;z-index: 2;"/>
-<img src="src/assets/img/HeaterTutorial_gauge1.png"  width="320" height="auto" alt="[alt text goes here]" style = "border: 1px solid #0f0;position: relative;z-index: 1;top: -215px;"/>
+<<if $heaterNumer == 1>>
+  <img src="src/assets/img/temperature gauge/tutorial G1D3.png" width="240" alt="[]"/>
+<</if>>>>
+<<if $heaterNumer == 2>>
+  <img src="src/assets/img/temperature gauge/tutorial G2D3.png" width="240" alt="[]"/>
+<</if>>>>
+<<if $heaterNumer == 3>>
+  <img src="src/assets/img/temperature gauge/tutorial G3D3.png" width="240" alt="[]"/>
+<</if>>>>
+<<if $heaterNumer == 4>>
+  <img src="src/assets/img/temperature gauge/tutorial G4D3.png" width="240" alt="[]"/>
+<</if>>>>
 
-^^ increase temp
-[[vv decrease temp|dial stage 2]]
+[[ vv decrease|dial stage 2]] - [[^^ increase|dial stage 4]]
+
+:: dial stage 4
+<<if $heaterNumer == 1>>
+  <img src="src/assets/img/temperature gauge/tutorial G1D4.png" width="240" alt="[]"/>
+<</if>>>>
+<<if $heaterNumer == 2>>
+  <img src="src/assets/img/temperature gauge/tutorial G2D4.png" width="240" alt="[]"/>
+<</if>>>>
+<<if $heaterNumer == 3>>
+  <img src="src/assets/img/temperature gauge/tutorial G3D4.png" width="240" alt="[]"/>
+<</if>>>>
+<<if $heaterNumer == 4>>
+  <img src="src/assets/img/temperature gauge/tutorial G4D4.png" width="240" alt="[]"/>
+<</if>>>>
+
+[[ vv decrease|dial stage 1]] - [[^^ increase|dial stage 3]]
+
 
 
 /*****************************/
@@ -322,7 +407,7 @@ learn to complete the circuit
 
 \> [[[...]|dark_tut2]]
 
-::dark_tut2
+:: dark_tut2
 
 
 
@@ -336,7 +421,7 @@ learn to complete the circuit
 
 \>> [[[Start moving forwards.]|dark_tut_crunch]]
 
-::dark_tut_crunch
+:: dark_tut_crunch
 
 
 
@@ -353,13 +438,607 @@ learn to complete the circuit
 
 <</if>>
 
-::dark_tut_groove
+:: dark_tut_groove
 
-::dark_tut_step
+:: dark_tut_step
 
+
+
+
+/***************************/
+/* DARK END, TUTORIAL EXIT START */
+/***************************/
 
 :: locked door
-this door has 5 shapes, all of which have a scroll wheel with numbers 0 -9. 
-by completing tutorial rooms you learn what numbers correspond to which shape and are able to unlock the door to act 2
+ <img src="src/assets/img/rooms/tutorial_exit.jpg" width="800" alt="[]"/>
+
+you are faced with a door with a strange lock. there are 5 shapes: a hexagon, a circle, a triangle, a diamond, and a pentagon. 
+
+investigate the [[hexagon]]
+investigate the [[circle]]
+investigate the [[triangle]]
+investigate the [[diamond]]
+investigate the [[pentagon]]
 
 [[go back|starting_room]]
+
+<!--HEXAGON -->
+:: hexagon
+<<if $hexagonDial == 1>>
+  <<goto hexagon_dial1>>
+<</if>>
+<<if $hexagonDial == 2>>
+  <<goto hexagon_dial2>>
+<</if>>
+<<if $hexagonDial == 3>>
+  <<goto hexagon_dial3>>
+<</if>>
+<<if $hexagonDial == 4>>
+  <<goto hexagon_dial4>>
+<</if>>
+<<if $hexagonDial == 5>>
+  <<goto hexagon_dial5>>
+<</if>>
+<<if $hexagonDial == 6>>
+  <<goto hexagon_dial6>>
+<</if>>
+<<if $hexagonDial == 7>>
+  <<goto hexagon_dial7>>
+<</if>>
+<<if $circleDial == 8>>
+  <<goto hexagon_dial8>>
+<</if>>
+
+:: hexagon_dial1
+<<set $hexagonDial to [1]>>
+<img src="src/assets/img/tutorial_exit_lock/hexagon1.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the first notch. 
+
+[[turn the dial right|hexagon_dial2]]
+[[turn the dial left|hexagon_dial8]]
+
+[[take a step back|locked door]]
+
+:: hexagon_dial2
+<<set $hexagonDial to [2]>>
+<img src="src/assets/img/tutorial_exit_lock/hexagon2.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the second notch. 
+
+[[turn the dial right|hexagon_dial3]]
+[[turn the dial left|hexagon_dial1]]
+
+[[take a step back|locked door]]
+
+:: hexagon_dial3
+<<set $hexagonDial to [3]>>
+<img src="src/assets/img/tutorial_exit_lock/hexagon3.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the third notch. 
+
+[[turn the dial right|hexagon_dial4]]
+[[turn the dial left|hexagon_dial2]]
+
+[[take a step back|locked door]]
+
+:: hexagon_dial4
+<<set $hexagonDial to [4]>>
+<img src="src/assets/img/tutorial_exit_lock/hexagon 4.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the fourth notch. 
+
+[[turn the dial right|hexagon_dial5]]
+[[turn the dial left|hexagon_dial3]]
+
+[[take a step back|locked door]]
+
+:: hexagon_dial5
+<<set $hexagonDial to [5]>>
+<img src="src/assets/img/tutorial_exit_lock/hexagon5.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the fifth notch. 
+
+[[turn the dial right|hexagon_dial6]]
+[[turn the dial left|hexagon_dial4]]
+
+[[take a step back|locked door]]
+
+:: hexagon_dial6
+<<set $hexagonDial to [6]>>
+<img src="src/assets/img/tutorial_exit_lock/hexagon6.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the sixth notch. 
+
+[[turn the dial right|hexagon_dial7]]
+[[turn the dial left|hexagon_dial5]]
+
+[[take a step back|locked door]]
+
+:: hexagon_dial7
+<<set $hexagonDial to [7]>>
+<img src="src/assets/img/tutorial_exit_lock/hexagon7.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the fifth notch. 
+
+[[turn the dial right|hexagon_dial8]]
+[[turn the dial left|hexagon_dial6]]
+
+[[take a step back|locked door]]
+
+:: hexagon_dial8
+<<set $hexagonDial to [8]>>
+<img src="src/assets/img/tutorial_exit_lock/hexagon8.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the eigth notch. 
+
+[[turn the dial right|hexagon_dial1]]
+[[turn the dial left|hexagon_dial7]]
+
+[[take a step back|locked door]]
+
+<!--CIRCLE -->
+
+:: circle
+<<if $circleDial == 1>>
+  <<goto circle_dial1>>
+<</if>>
+<<if $circleDial == 2>>
+  <<goto circle_dial2>>
+<</if>>
+<<if $circleDial == 3>>
+  <<goto circle_dial3>>
+<</if>>
+<<if $circleDial == 4>>
+  <<goto circle_dial4>>
+<</if>>
+<<if $circleDial == 5>>
+  <<goto circle_dial5>>
+<</if>>
+<<if $circleDial == 6>>
+  <<goto circle_dial6>>
+<</if>>
+<<if $circleDial == 7>>
+  <<goto circle_dial7>>
+<</if>>
+<<if $circleDial == 8>>
+  <<goto circle_dial8>>
+<</if>>
+
+:: circle_dial1
+<<set $circleDial to [1]>>
+<img src="src/assets/img/tutorial_exit_lock/circle 1.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the first notch. 
+
+[[turn the dial right|circle_dial2]]
+[[turn the dial left|circle_dial8]]
+
+[[take a step back|locked door]]
+
+:: circle_dial2
+<<set $circleDial to [2]>>
+<img src="src/assets/img/tutorial_exit_lock/circle 2.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the second notch. 
+
+[[turn the dial right|circle_dial3]]
+[[turn the dial left|circle_dial1]]
+
+[[take a step back|locked door]]
+
+:: circle_dial3
+<<set $circleDial to [3]>>
+<img src="src/assets/img/tutorial_exit_lock/circle 3.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the third notch. 
+
+[[turn the dial right|circle_dial4]]
+[[turn the dial left|circle_dial2]]
+
+[[take a step back|locked door]]
+
+:: circle_dial4
+<<set $circleDial to [4]>>
+<img src="src/assets/img/tutorial_exit_lock/circle 4.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the fourth notch. 
+
+[[turn the dial right|circle_dial5]]
+[[turn the dial left|circle_dial3]]
+
+[[take a step back|locked door]]
+
+:: circle_dial5
+<<set $circleDial to [5]>>
+<img src="src/assets/img/tutorial_exit_lock/circle 5.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the fifth notch. 
+
+[[turn the dial right|circle_dial6]]
+[[turn the dial left|circle_dial4]]
+
+[[take a step back|locked door]]
+
+:: circle_dial6
+<<set $circleDial to [6]>>
+<img src="src/assets/img/tutorial_exit_lock/circle 6.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the sixth notch. 
+
+[[turn the dial right|circle_dial7]]
+[[turn the dial left|circle_dial5]]
+
+[[take a step back|locked door]]
+
+:: circle_dial7
+<<set $circleDial to [7]>>
+<img src="src/assets/img/tutorial_exit_lock/circle 7.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the fifth notch. 
+
+[[turn the dial right|circle_dial8]]
+[[turn the dial left|circle_dial6]]
+
+[[take a step back|locked door]]
+
+:: circle_dial8
+<<set $circleDial to [8]>>
+<img src="src/assets/img/tutorial_exit_lock/circle 8.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the eigth notch. 
+
+[[turn the dial right|circle_dial1]]
+[[turn the dial left|circle_dial7]]
+
+[[take a step back|locked door]]
+
+<!--TRIANGLE -->
+
+:: triangle
+<<if $triangleDial == 1>>
+  <<goto triangle_dial1>>
+<</if>>
+<<if $triangleDial == 2>>
+  <<goto triangle_dial2>>
+<</if>>
+<<if $triangleDial == 3>>
+  <<goto triangle_dial3>>
+<</if>>
+<<if $triangleDial == 4>>
+  <<goto triangle_dial4>>
+<</if>>
+<<if $triangleDial == 5>>
+  <<goto triangle_dial5>>
+<</if>>
+<<if $triangleDial == 6>>
+  <<goto triangle_dial6>>
+<</if>>
+<<if $triangleDial == 7>>
+  <<goto triangle_dial7>>
+<</if>>
+<<if $triangleDial == 8>>
+  <<goto triangle_dial8>>
+<</if>>
+
+:: triangle_dial1
+<<set $triangleDial to [1]>>
+<img src="src/assets/img/tutorial_exit_lock/triangle 1.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the first notch. 
+
+[[turn the dial right|triangle_dial2]]
+[[turn the dial left|triangle_dial8]]
+
+[[take a step back|locked door]]
+
+:: triangle_dial2
+<<set $triangleDial to [2]>>
+<img src="src/assets/img/tutorial_exit_lock/triangle 2.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the second notch. 
+
+[[turn the dial right|triangle_dial3]]
+[[turn the dial left|triangle_dial1]]
+
+[[take a step back|locked door]]
+
+:: triangle_dial3
+<<set $triangleDial to [3]>>
+<img src="src/assets/img/tutorial_exit_lock/triangle 3.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the third notch. 
+
+[[turn the dial right|triangle_dial4]]
+[[turn the dial left|triangle_dial2]]
+
+[[take a step back|locked door]]
+
+:: triangle_dial4
+<<set $triangleDial to [4]>>
+<img src="src/assets/img/tutorial_exit_lock/triangle 4.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the fourth notch. 
+
+[[turn the dial right|triangle_dial5]]
+[[turn the dial left|triangle_dial3]]
+
+[[take a step back|locked door]]
+
+:: triangle_dial5
+<<set $triangleDial to [5]>>
+<img src="src/assets/img/tutorial_exit_lock/triangle 5.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the fifth notch. 
+
+[[turn the dial right|triangle_dial6]]
+[[turn the dial left|triangle_dial4]]
+
+[[take a step back|locked door]]
+
+:: triangle_dial6
+<<set $triangleDial to [6]>>
+<img src="src/assets/img/tutorial_exit_lock/triangle 6.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the sixth notch. 
+
+[[turn the dial right|triangle_dial7]]
+[[turn the dial left|triangle_dial5]]
+
+[[take a step back|locked door]]
+
+:: triangle_dial7
+<<set $triangleDial to [7]>>
+<img src="src/assets/img/tutorial_exit_lock/triangle 7.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the fifth notch. 
+
+[[turn the dial right|triangle_dial8]]
+[[turn the dial left|triangle_dial6]]
+
+[[take a step back|locked door]]
+
+:: triangle_dial8
+<<set $triangleDial to [8]>>
+<img src="src/assets/img/tutorial_exit_lock/triangle 8.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the eigth notch. 
+
+[[turn the dial right|triangle_dial1]]
+[[turn the dial left|triangle_dial7]]
+
+[[take a step back|locked door]]
+
+
+<!--DIAMOND -->
+
+:: diamond
+<<if $diamondDial == 1>>
+  <<goto diamond_dial1>>
+<</if>>
+<<if $diamondDial == 2>>
+  <<goto diamond_dial2>>
+<</if>>
+<<if $diamondDial == 3>>
+  <<goto diamond_dial3>>
+<</if>>
+<<if $diamondDial == 4>>
+  <<goto diamond_dial4>>
+<</if>>
+<<if $diamondDial == 5>>
+  <<goto diamond_dial5>>
+<</if>>
+<<if $diamondDial == 6>>
+  <<goto diamond_dial6>>
+<</if>>
+<<if $diamondDial == 7>>
+  <<goto diamond_dial7>>
+<</if>>
+<<if $diamondDial == 8>>
+  <<goto diamond_dial8>>
+<</if>>
+
+:: diamond_dial1
+<<set $diamondDial to [1]>>
+<img src="src/assets/img/tutorial_exit_lock/diamond 1.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the first notch. 
+
+[[turn the dial right|diamond_dial2]]
+[[turn the dial left|diamond_dial8]]
+
+[[take a step back|locked door]]
+
+:: diamond_dial2
+<<set $diamondDial to [2]>>
+<img src="src/assets/img/tutorial_exit_lock/diamond 2.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the second notch. 
+
+[[turn the dial right|diamond_dial3]]
+[[turn the dial left|diamond_dial1]]
+
+[[take a step back|locked door]]
+
+:: diamond_dial3
+<<set $diamondDial to [3]>>
+<img src="src/assets/img/tutorial_exit_lock/diamond 3.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the third notch. 
+
+[[turn the dial right|diamond_dial4]]
+[[turn the dial left|diamond_dial2]]
+
+[[take a step back|locked door]]
+
+:: diamond_dial4
+<<set $diamondDial to [4]>>
+<img src="src/assets/img/tutorial_exit_lock/diamond 4.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the fourth notch. 
+
+[[turn the dial right|diamond_dial5]]
+[[turn the dial left|diamond_dial3]]
+
+[[take a step back|locked door]]
+
+:: diamond_dial5
+<<set $diamondDial to [5]>>
+<img src="src/assets/img/tutorial_exit_lock/diamond 5.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the fifth notch. 
+
+[[turn the dial right|diamond_dial6]]
+[[turn the dial left|diamond_dial4]]
+
+[[take a step back|locked door]]
+
+:: diamond_dial6
+<<set $diamondDial to [6]>>
+<img src="src/assets/img/tutorial_exit_lock/diamond 6.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the sixth notch. 
+
+[[turn the dial right|diamond_dial7]]
+[[turn the dial left|diamond_dial5]]
+
+[[take a step back|locked door]]
+
+:: diamond_dial7
+<<set $diamondDial to [7]>>
+<img src="src/assets/img/tutorial_exit_lock/diamond 7.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the fifth notch. 
+
+[[turn the dial right|diamond_dial8]]
+[[turn the dial left|diamond_dial6]]
+
+[[take a step back|locked door]]
+
+:: diamond_dial8
+<<set $diamondDial to [8]>>
+<img src="src/assets/img/tutorial_exit_lock/diamond 8.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the eigth notch. 
+
+[[turn the dial right|diamond_dial1]]
+[[turn the dial left|diamond_dial7]]
+
+[[take a step back|locked door]]
+
+
+<!--PENTAGON -->
+
+:: pentagon
+<<if $pentagonDial == 1>>
+  <<goto pentagon_dial1>>
+<</if>>
+<<if $pentagonDial == 2>>
+  <<goto pentagon_dial2>>
+<</if>>
+<<if $pentagonDial == 3>>
+  <<goto pentagon_dial3>>
+<</if>>
+<<if $pentagonDial == 4>>
+  <<goto pentagon_dial4>>
+<</if>>
+<<if $pentagonDial == 5>>
+  <<goto pentagon_dial5>>
+<</if>>
+<<if $pentagonDial == 6>>
+  <<goto pentagon_dial6>>
+<</if>>
+<<if $pentagonDial == 7>>
+  <<goto pentagon_dial7>>
+<</if>>
+<<if $pentagonDial == 8>>
+  <<goto pentagon_dial8>>
+<</if>>
+
+:: pentagon_dial1
+<<set $pentagonDial to [1]>>
+<img src="src/assets/img/tutorial_exit_lock/pentagon 1.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the first notch. 
+
+[[turn the dial right|pentagon_dial2]]
+[[turn the dial left|pentagon_dial8]]
+
+[[take a step back|locked door]]
+
+:: pentagon_dial2
+<<set $pentagonDial to [2]>>
+<img src="src/assets/img/tutorial_exit_lock/pentagon 2.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the second notch. 
+
+[[turn the dial right|pentagon_dial3]]
+[[turn the dial left|pentagon_dial1]]
+
+[[take a step back|locked door]]
+
+:: pentagon_dial3
+<<set $pentagonDial to [3]>>
+<img src="src/assets/img/tutorial_exit_lock/pentagon 3.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the third notch. 
+
+[[turn the dial right|pentagon_dial4]]
+[[turn the dial left|pentagon_dial2]]
+
+[[take a step back|locked door]]
+
+:: pentagon_dial4
+<<set $pentagonDial to [4]>>
+<img src="src/assets/img/tutorial_exit_lock/pentagon 4.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the fourth notch. 
+
+[[turn the dial right|pentagon_dial5]]
+[[turn the dial left|pentagon_dial3]]
+
+[[take a step back|locked door]]
+
+:: pentagon_dial5
+<<set $pentagonDial to [5]>>
+<img src="src/assets/img/tutorial_exit_lock/pentagon 5.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the fifth notch. 
+
+[[turn the dial right|pentagon_dial6]]
+[[turn the dial left|pentagon_dial4]]
+
+[[take a step back|locked door]]
+
+:: pentagon_dial6
+<<set $pentagonDial to [6]>>
+<img src="src/assets/img/tutorial_exit_lock/pentagon 6.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the sixth notch. 
+
+[[turn the dial right|pentagon_dial7]]
+[[turn the dial left|pentagon_dial5]]
+
+[[take a step back|locked door]]
+
+:: pentagon_dial7
+<<set $pentagonDial to [7]>>
+<img src="src/assets/img/tutorial_exit_lock/pentagon 7.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the fifth notch. 
+
+[[turn the dial right|pentagon_dial8]]
+[[turn the dial left|pentagon_dial6]]
+
+[[take a step back|locked door]]
+
+:: pentagon_dial8
+<<set $pentagonDial to [8]>>
+<img src="src/assets/img/tutorial_exit_lock/pentagon 8.png" width="240" alt="[]"/>
+upon closer inspection, at the center of the shape is a dial.
+the dial is currently set at the eigth notch. 
+
+[[turn the dial right|pentagon_dial1]]
+[[turn the dial left|pentagon_dial7]]
+
+[[take a step back|locked door]]
