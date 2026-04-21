@@ -585,7 +585,6 @@ circuitRoomState: $circuitRoomState
 /* CIRCUIT END, DARK START */
 /***************************/
 
-/* TODO-Z implement rest of this */
 :: dark_tut
 \> You step through the door-
 
@@ -593,42 +592,157 @@ circuitRoomState: $circuitRoomState
 
 \> You feel for the door behind you, only to find a smooth stone wall behind you.
 
-\> [[[...]|dark_tut2]]
+\> [[...|dark_tut2]]
 
-:: dark_tut2
-
-
+::dark_tut2
 
 
 
 
-<<set $tutCrunch to 0>>
+
+
+
 \> Okay. This is fine. You're fine! There's just no door where there was a door, and you're in a pitch black room. Textbook fine.
 
 \> After a long moment, you feel around. The space is narrow enough that you can feel both sides with your arms out.
 
-\>> [[[Start moving forwards.]|dark_tut_crunch]]
+\>> [[Start moving forwards.|dark_tut_crunch1]]
 
-:: dark_tut_crunch
-
-
+::dark_tut_crunch1
 
 
 
 
 
-<<set $tutCrunch to $tutCrunch + 1>>
-<<if $tutCrunch is 1>>
+
+
+
 \> You hear something crunch under your feet. Nothing could possibly make you check what it is, but you take note.
 
-\>> [[[Another.]|dark_tut_step]]
+\>> [[Another.|dark_tut_step1]]
+
+::dark_tut_step1
+
+
+
+
+
+
+
+
+\> You take another step.
+
+\>> [[Another.|dark_tut_groove]]
+
+
+::dark_tut_groove
+
+
+
+
+
+
+
+
+\> You take another step-
+
+\> And nearly trip. There's something making the ground uneven here.
+
+\> You kneel down and feel it out with your hands - Against the cool stone floor, you can feel a wooden triangle inlaid into the ground.
+
+\> That's enough, you don't want splinters. On top of everything else.
+
+\>> [[Another step.|dark_tut_step2]]
+
+::dark_tut_step2
+
+
+
+
+
+
+
+
+\> You take another step.
+
+\>> [[Another.|dark_tut_crunch2]]
+
+::dark_tut_crunch2
+
+
+
+
+
+
+
+
+\> You hear something crunch under your feet. Nothing could possibly make you check what it is, but you take note.
+
+\>> [[Another.|dark_tut_crunch3]]
+
+::dark_tut_crunch3
+
+
+
+
+
+
+
+
+\> You hear something crunch under your feet. You take note.
+
+\>> [[Another.|dark_tut_step3]]
+
+::dark_tut_step3
+
+
+
+
+
+
+
+
+\> You take another step.
+
+\>> [[Another.|dark_tut_crunch4]]
+
+::dark_tut_crunch4
+
+
+
+
+
+
+
+<<set $dark_tut_press to 1>>
+\> You hear something crunch under your feet. You take note.
+
+\>> [[Another.|dark_tut_end]]
+
+::dark_tut_end
+
+
+
+
+
+
+
+
+\> The room seems to come to an end here. You fumble around looking for something, anything, you notice something you can press on the wall. You readjust-
+
+\> And the floor tile below you crunches, sinks down and clicks.
+<<if $dark_tut_press is 1>>
+\> That's once.
 <<else>>
-
+That's $dark_tut_press times.
 <</if>>
+\>> [[Step down on it again.|dark_tut_end][$dark_tut_press to $dark_tut_press + 1]]
 
-:: dark_tut_groove
-
-:: dark_tut_step
+<<if $dark_tut_press is 4>>
+\>> [[Press the button.|starting_room]]
+<<else>>
+\>> [[Press the button.|dark_tut_end][$dark_tut_press to 0]]
+<</if>>
 
 
 
