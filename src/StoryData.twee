@@ -13,11 +13,12 @@ A Sense of Nowhere
 
 
 :: landing {"position":"625,250","size":"100,100"}
+<<set $inventory to [0]>>
 /*hexagon and heater tutorial*/<<set $hexagonDial to [1]>> <<set $hexagonLock to ['False']>><<set $heaterNumber to [1,2,3,4].random()>> 
 /*circle and music tutorial*/<<set $circleDial to [1]>> <<set $circleLock to ['False']>> <<set $songNumber to [1,2,3,4].random()>>
 /*triangle and dark tutorial*/<<set $triangleDial to [1]>> <<set $triangleLock to ['False']>>
 /*diamond and circuit tutorial*/<<set $diamondDial to [1]>> <<set $diamondLock to ['False']>> <<set $circuitRoomState to [1]>> <<set $circuitNumber to [1,2,3,4,5,6,7,8].random()>> <<set $hasWire to ['False']>>
-/*pentagon and kitchen tutorial*/<<set $pentagonDial to [1]>> <<set $pentagonLock to ['False']>>
+/*pentagon and kitchen tutorial*/<<set $pentagonDial to [1]>> <<set $pentagonLock to ['False']>> <<set $recipeNumber to [1,2,3].random()>> <<set $ITEMbanana to [0]>> <<set $ITEMcookie to [0]>> <<set $ITEManchovy to [0]>> <<set $ITEMplate to [0]>> <<set $tutorialCookingPot to []>><<set $tutorialIngredients to [0]>> <<set $tutorialSoupCooked to ['False']>> <<set $ITEMbananax2 to [0]>><<set $ITEMcookiex2 to [0]>><<set $ITEManchovyx2 to [0]>><<set $ITEMbanana_cookie to [0]>><<set $ITEMbanana_anchovy to [0]>><<set $ITEMcookie_anchovy to [0]>>
 
 
 <main>

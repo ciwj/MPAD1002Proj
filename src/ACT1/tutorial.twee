@@ -91,7 +91,7 @@ investigate the [[right door |enter_tutorialdark]]
 
 :: enter_tutorialkitchen
 <img src="src/assets/img/rooms/door to tutorial kitchen.jpg" width="800" alt="[]"/>
- [[enter|kitchen tutorial]]
+ [[enter|kitchen_tutorial]]
  [[go back|starting_room 4]]
 
 :: enter_tutorialdark
@@ -100,7 +100,7 @@ investigate the [[right door |enter_tutorialdark]]
  [[go back|starting_room 4]]
 
 
-:: kitchen tutorial
+:: kitchen_tutorial
 
 <div class ="inventory_layout">
  <img src="src/assets/img/rooms/tutorial_kitchen.jpg" width="800" height="auto" alt="[room with a cooking pot, a green bin, a brown crate, a plate and a note tacked to the wall]"/>
@@ -117,8 +117,338 @@ investigate the [[right door |enter_tutorialdark]]
     </div>
 </div>
 
+
 introduce cooking mechanic 
+
 [[go back|starting_room]]
+
+investigate [[the note on the wall]]
+investigate [[the cooking pot|cooking_pot]]
+check the [[brown bin|brown_bin]]
+check the [[green bin|green_bin]]
+walk over to the [[plate]]
+<<if $tutorialSoupCooked == 'True'>>
+  [[look at soup|view_soup]]
+<</if>>
+
+:: the note on the wall
+
+it seems to be a recipe
+
+<<if $recipeNumber == 1>>
+  <img src="src/assets/img/food and soup/banana_cookie recipe.png" width="400" alt="[]"/>
+<</if>>
+
+<<if $recipeNumber == 2>>
+  <img src="src/assets/img/food and soup/banana_anchovy recipe.png" width="400" alt="[]"/>
+<</if>>
+
+<<if $recipeNumber == 3>>
+  <img src="src/assets/img/food and soup/cookie_anchovy recipe.png" width="400" alt="[]"/>
+<</if>>
+
+[[step back | kitchen_tutorial]]
+
+:: brown_bin
+inventory: $inventory
+banana: $ITEMbanana
+cookie: $ITEMcookie
+anchovy: $ITEManchovy
+
+inside the bin there are cookies, bananas and anchovies.
+
+<div style="display:flex;flex-direction:row;justify-content:flex-start;">
+  <img src="src/assets/img/food and soup/base foods/cookie.png" width="240" alt="[]"/>
+  <img src="src/assets/img/food and soup/base foods/banana.png" width="240" alt="[]"/>
+  <img src="src/assets/img/food and soup/base foods/anchovy.png" width="240" alt="[]"/>
+</div>
+
+<<if $inventory <[2]>>
+  grab a [[banana|grab_banana]]
+  grab a [[cookie|grab_cookie]]
+  grab an [[anchovy|grab_anchovy]]
+  grab [[nothing|brown_bin]]
+<</if>>
+
+<<if $inventory == [2]>>
+  your hands are full
+<</if>>
+
+[[step back | kitchen_tutorial]]
+
+
+:: grab_banana
+<<set $ITEMbanana++>>
+<<set $inventory ++>>
+<<goto brown_bin>>
+
+:: drop_banana
+<<set $ITEMbanana-->>
+<<set $inventory-->>
+<<goto green_bin>>
+
+:: grab_cookie
+<<set $ITEMcookie++>>
+<<set $inventory ++>>
+<<goto brown_bin>>
+
+:: drop_cookie
+<<set $ITEMcookie-->>
+<<set $inventory-->>
+<<goto green_bin>>
+
+:: grab_anchovy
+<<set $ITEManchovy++>>
+<<set $inventory ++>>
+<<goto brown_bin>>
+
+:: drop_anchovy
+<<set $ITEManchovy-->>
+<<set $inventory-->>
+<<goto green_bin>>
+
+<!-- drop soups start -->
+
+:: drop_anchovyx2
+<<set $ITEManchovyx2-->>
+<<set $ITEMplate++>>
+<<set $tutorialSoupCooked to 'False'>>
+<<goto green_bin>>
+
+:: drop_cookiex2
+<<set $ITEMcookiex2-->>
+<<set $ITEMplate++>>
+<<set $tutorialSoupCooked to 'False'>>
+<<goto green_bin>>
+
+:: drop_bananax2
+<<set $ITEMbananax2-->>
+<<set $ITEMplate++>>
+<<set $tutorialSoupCooked to 'False'>>
+<<goto green_bin>>
+
+:: drop_banana_cookie
+<<set $ITEMbanana_cookie-->>
+<<set $ITEMplate++>>
+<<set $tutorialSoupCooked to 'False'>>
+<<goto green_bin>>
+
+:: drop_banana_anchovy
+<<set $ITEMbanana_anchovy-->>
+<<set $ITEMplate++>>
+<<set $tutorialSoupCooked to 'False'>>
+<<goto green_bin>>
+
+:: drop_cookie_anchovy
+<<set $ITEMcookie_anchovy-->>
+<<set $ITEMplate++>>
+<<set $tutorialSoupCooked to 'False'>>
+<<goto green_bin>>
+
+<!-- drop soups end -->
+
+
+:: green_bin
+
+inventory: $inventory
+banana: $ITEMbanana
+cookie: $ITEMcookie
+anchovy: $ITEManchovy
+
+it looks to be for compost.
+
+<<if $inventory > 0>>
+
+  <div style="display:flex;flex-direction:column;align-items:flex-start;">
+  throw out:
+  <<if $ITEMbanana > 0>> [[banana|drop_banana]]<</if>>
+  <<if $ITEMcookie > 0>>[[cookie|drop_cookie]] <</if>>
+  <<if $ITEManchovy > 0>>[[anchovy|drop_anchovy]]<</if>>
+  <<if $ITEManchovyx2 > 0>>[[anchovy soup|drop_anchovyx2]]<</if>>
+  <<if $ITEMcookiex2 > 0>>[[cookie soup|drop_cookiex2]]<</if>>
+  <<if $ITEMbananax2 > 0>>[[banana soup|drop_bananax2]]<</if>>
+  <<if $ITEMbanana_cookie > 0>>[['choco-banana crumble bites'|drop_banana_cookie]]<</if>>
+  <<if $ITEMbanana_anchovy > 0>>[['tropical tangy anchovy mash'|drop_banana_anchovy]]<</if>>
+  <<if $ITEMcookie_anchovy > 0>>[['savoury salted cookie dough'|drop_cookie_anchovy]]<</if>>
+
+
+  [[nothing|green_bin]]
+  </div>
+
+
+
+<</if>>
+
+[[step back | kitchen_tutorial]]
+
+:: plate
+a slightly dusty plate
+ITEMplate: $ITEMplate
+<<if ($ITEMplate ==0) and ($inventory <2)>>
+[[pick it up|grab_plate]]
+<</if>>
+
+<<if $ITEMplate == 1>>
+[[put it down|drop_plate]]
+<</if>>
+
+
+[[step back|kitchen_tutorial]]
+
+:: grab_plate
+<<set $ITEMplate++>>
+<<set $inventory++>>
+<<goto plate>>
+
+:: drop_plate
+<<set $ITEMplate-->>
+<<goto plate>>
+
+:: cooking_pot
+ 
+a cooking pot. 
+
+<<if $inventory > 0>>
+<div style="display:flex;flex-direction:column;align-items:flex-start;">
+add to the pot: 
+  <<if $ITEMbanana > 0>> [[banana|cook_banana]]<</if>>
+  <<if $ITEMcookie > 0>>[[cookie|cook_cookie]]<</if>>
+  <<if $ITEManchovy > 0>>[[anchovy|cook_anchovy]]<</if>>
+  [[nothing|cooking_pot]]
+  </div>
+<</if>>
+
+<div style="display:flex;flex-direction:column;align-items:flex-start;">
+<<if $tutorialIngredients == 0>>
+  <<else>>
+    items in the pot:
+    $tutorialCookingPot
+<</if>>
+</div>
+
+<<if ($tutorialIngredients == 2)>>
+  the ingredients have mixed!
+  <<if $ITEMplate == 0>>
+    if only you had something to carry it with...
+  <</if>>
+  <<if $ITEMplate==1>>
+    take [[soup|take_soup]] 
+  <</if>>
+<</if>>
+
+[[take a step back|kitchen_tutorial]]
+
+:: cook_banana
+<<if $ITEMbanana == 2>>
+<<run $tutorialCookingPot.push('banana2')>>
+<</if>>
+<<if $ITEMbanana == 1>>
+  <<if $tutorialCookingPot.includes ('banana2')>>
+  <<run $tutorialCookingPot.push('banana')>>
+  <<else>>
+    <<run $tutorialCookingPot.push('banana2')>>
+  <</if>>
+<</if>>
+<<set$inventory-->>
+<<set $ITEMbanana-->>
+<<set $tutorialIngredients ++>>
+<<goto cooking_pot>>
+
+:: cook_cookie
+<<if $ITEMcookie == 2>>
+<<run $tutorialCookingPot.push('cookie2')>>
+<</if>>
+<<if $ITEMcookie == 1>>
+  <<if $tutorialCookingPot.includes ('cookie2')>>
+  <<run $tutorialCookingPot.push('cookie')>>
+  <<else>>
+    <<run $tutorialCookingPot.push('cookie2')>>
+  <</if>>
+<</if>>
+<<set$inventory-->>
+<<set $ITEMcookie-->>
+<<set $tutorialIngredients ++>>
+<<goto cooking_pot>>
+
+:: cook_anchovy
+<<if $ITEManchovy == 2>>
+<<run $tutorialCookingPot.push('anchovy2')>>
+<</if>>
+<<if $ITEManchovy == 1>>
+  <<if $tutorialCookingPot.includes ('anchovy2')>>
+  <<run $tutorialCookingPot.push('anchovy')>>
+  <<else>>
+    <<run $tutorialCookingPot.push('anchovy2')>>
+  <</if>>
+<</if>>
+<<set$inventory-->>
+<<set $ITEManchovy-->>
+<<set $tutorialIngredients ++>>
+<<goto cooking_pot>>
+
+:: take_soup
+<<if (($tutorialCookingPot.includes('banana2')) and ($tutorialCookingPot.includes('banana')))>>
+  <<set $ITEMbananax2 ++>>
+    you recieved [[banana soup|view_soup]]
+<</if>>
+<<if (($tutorialCookingPot.includes('cookie2')) and ($tutorialCookingPot.includes('cookie')))>>
+  <<set $ITEMcookiex2 ++>>
+    you recieved [[cookie soup|view_soup]]
+<</if>>
+<<if (($tutorialCookingPot.includes('anchovy2')) and ($tutorialCookingPot.includes('anchovy')))>>
+  <<set $ITEManchovyx2 ++>>
+    you recieved [[anchovy soup|view_soup]]
+<</if>>
+<<if ($tutorialCookingPot.includes('banana')) and ($tutorialCookingPot.includes('anchovy'))>>
+  <<set $ITEMbanana_anchovy ++>>
+    you recieved [['Tropical Tangy Anchovy Mash'|view_soup]]
+<</if>>
+<<if ($tutorialCookingPot.includes('banana')) and ($tutorialCookingPot.includes('cookie'))>>
+  <<set $ITEMbanana_cookie ++>>
+      you recived [['Choco-banana crumble bites'|view_soup]]
+<</if>>
+<<if ($tutorialCookingPot.includes('cookie')) and ($tutorialCookingPot.includes('anchovy'))>>
+  <<set $ITEMcookie_anchovy++>>
+    you recived [['savory salted cookie dough'|view_soup]]
+<</if>>
+
+<<set $inventory++>>
+<<set $ITEMplate-->>
+<<set $tutorialIngredients to 0>>
+<<set $tutorialSoupCooked to 'True'>>
+<<set $tutorialCookingPot to []>>
+
+:: view_soup
+<<if ($ITEMbananax2 == 1)>>
+  <img src="src/assets/img/food and soup/bananax2.png" width="240" alt="[]"/>
+  banana soup
+  [[look up at room|kitchen_tutorial]]
+<</if>>
+<<if ($ITEMcookiex2 == 1)>>
+  <img src="src/assets/img/food and soup/cookiex2.png" width="240" alt="[]"/>
+  cookie soup
+  [[look up at room|kitchen_tutorial]]
+<</if>>
+<<if $ITEManchovyx2 ==1>>
+  <img src="src/assets/img/food and soup/anchovyx2.png" width="240" alt="[]"/>
+  anchovy soup
+  [[look up at room|kitchen_tutorial]]
+<</if>>
+<<if $ITEMbanana_anchovy == 1>>
+  <img src="src/assets/img/food and soup/banana_anchovy.png" width="240" alt="[]"/>
+  'Tropical Tangy Anchovy Mash'
+  [[look up at room|kitchen_tutorial]]
+<</if>>
+<<if $ITEMbanana_cookie == 1>>
+  <img src="src/assets/img/food and soup/banana_cookie.png" width="240" alt="[]"/>
+  'Choco-banana crumble bites'
+  [[look up at room|kitchen_tutorial]]
+<</if>>
+<<if $ITEMcookie_anchovy == 1>>
+  <img src="src/assets/img/food and soup/cookie_anchovy.png" width="240" alt="[]"/>
+  'savory salted cookie dough'
+  [[look up at room|kitchen_tutorial]]
+<</if>>
 
 
 /*****************************/
@@ -652,9 +982,9 @@ you are faced with a door with a strange lock. there are 5 shapes: a hexagon, a 
 
 investigate the [[hexagon]] 
 investigate the [[circle]]
-investigate the [[triangle]] TODO
+investigate the triangle
 investigate the [[diamond]]
-investigate the [[pentagon]] TODO
+investigate the [[pentagon]] 
 
 :: lock check
 
@@ -695,44 +1025,56 @@ the circle dial is correct
 <!--triangle lock -->
 <!--diamond lock -->
 <<if ($circuitNumber == 1) and ($diamondDial == 1)>>
-<<set $DiamondLock to ['True']>>
-the Diamond dial is correct
+<<set $diamondLock to ['True']>>
+the diamond dial is correct
 <</if>>
 <<if ($circuitNumber == 2) and ($diamondDial == 2)>>
-<<set $DiamondLock to ['True']>>
-the Diamond dial is correct
+<<set $diamondLock to ['True']>>
+the diamond dial is correct
 <</if>>
 <<if ($circuitNumber == 3) and ($diamondDial == 3)>>
-<<set $DiamondLock to ['True']>>
-the Diamond dial is correct
+<<set $diamondLock to ['True']>>
+the diamond dial is correct
 <</if>>
 <<if ($circuitNumber == 4) and ($diamondDial == 4)>>
-<<set $DiamondLock to ['True']>>
-the Diamond dial is correct
+<<set $diamondLock to ['True']>>
+the diamond dial is correct
 <</if>>
 <<if ($circuitNumber == 5) and ($diamondDial == 5)>>
-<<set $DiamondLock to ['True']>>
-the Diamond dial is correct
+<<set $diamondLock to ['True']>>
+the diamond dial is correct
 <</if>>
 <<if ($circuitNumber == 6) and ($diamondDial == 6)>>
-<<set $DiamondLock to ['True']>>
-the Diamond dial is correct
+<<set $diamondLock to ['True']>>
+the diamond dial is correct
 <</if>>
 <<if ($circuitNumber == 7) and ($diamondDial == 7)>>
-<<set $DiamondLock to ['True']>>
-the Diamond dial is correct
+<<set $diamondLock to ['True']>>
+the diamond dial is correct
 <</if>>
 <<if ($circuitNumber == 8) and ($diamondDial == 8)>>
-<<set $DiamondLock to ['True']>>
-the Diamond dial is correct
+<<set $diamondLock to ['True']>>
+the diamond dial is correct
 <</if>>
 <<if ($circuitNumber == 9) and ($diamondDial == 9)>>
-<<set $DiamondLock to ['True']>>
-the Diamond dial is correct
+<<set $diamondLock to ['True']>>
+the diamond dial is correct
 <</if>>
 <!--pentagon lock -->
-<<goto locked_door>>
+<<if ($recipeNumber == 1) and ($pentagonDial == 3)>>
+<<set $pentagonLock to ['True']>>
+the pentagon dial is correct
+<</if>>
+<<if ($recipeNumber == 2) and ($pentagonDial == 4)>>
+<<set $pentagonLock to ['True']>>
+the pentagon dial is correct
+<</if>>
+<<if ($recipeNumber == 3) and ($pentagonDial == 5)>>
+<<set $pentagonLock to ['True']>>
+the pentagon dial is correct
+<</if>>
 
+[[*thumbs up*| locked_door]]
 
 
 
@@ -1087,7 +1429,7 @@ the dial is currently set at the eigth notch.
 [[take a step back|locked_door]]
 
 
-<!--DIAMOND -->
+<!--diamond -->
 
 :: diamond
 <<if $diamondDial == 1>>
