@@ -24,11 +24,12 @@
 
 you find yourself in a room with a whole lot of doors
 
-investigate the [[door ahead of you |enter_tutorialexit]]
-
 [[look right|starting_room 2]]
 [[look left| starting_room 4]]
 [[check behind you| starting_room 3]]
+
+investigate the [[door ahead of you |enter_tutorialexit]]
+
 
 :: enter_tutorialexit
  <img src="src/assets/img/rooms/door to tutorial exit.jpg" width="800" alt="[]"/>
@@ -39,12 +40,13 @@ investigate the [[door ahead of you |enter_tutorialexit]]
  <img src="src/assets/img/rooms/tutorial_start 2.jpg" width="800" alt="[]"/>
 
 you find yourself in a room with a whole lot of doors
-investigate the [[left door |enter_tutorialmusic]]
-investigate the [[right door |enter_tutorialcircuit]]
 
 [[look right|starting_room 3]]
 [[look left| starting_room]]
 [[check behind you| starting_room 4]]
+
+investigate the [[left door |enter_tutorialmusic]]
+investigate the [[right door |enter_tutorialcircuit]]
 
 :: enter_tutorialmusic
  <img src="src/assets/img/rooms/door to tutorial music.jpg" width="800" alt="[]"/>
@@ -61,38 +63,41 @@ investigate the [[right door |enter_tutorialcircuit]]
 :: starting_room 3
  <img src="src/assets/img/rooms/tutorial_start 3.jpg" width="800" alt="[]"/>
 
- you find yourself in a room with a whole lot of doors
-investigate the [[left door|enter_tutorialheater]]
-investigate the [[middle door |enter_tutorialkitchen]]
-investigate the [[right door |enter_tutorialdark]]
+you find yourself in a room with a whole lot of doors
 
 [[look right|starting_room 4]]
 [[look left| starting_room 2]]
 [[check behind you| starting_room]]
 
-:: enter_tutorialheater
-<img src="src/assets/img/rooms/door to tutorial heater.jpg" width="800" alt="[]"/>
- [[enter|heater tutorial]]
- [[go back|starting_room 3]]
-
-:: enter_tutorialkitchen
-<img src="src/assets/img/rooms/door to tutorial kitchen.jpg" width="800" alt="[]"/>
- [[enter|kitchen tutorial]]
- [[go back|starting_room 3]]
-
-:: enter_tutorialdark
-<img src="src/assets/img/rooms/door to tutorial dark.jpg" width="800" alt="[]"/>
- [[enter|dark tutorial]]
- [[go back|starting_room 3]]
-
 
 :: starting_room 4
- <img src="src/assets/img/rooms/tutorial_start 4.jpg" width="800" alt="[]"/>
+<img src="src/assets/img/rooms/tutorial_start 4.jpg" width="800" alt="[]"/>
+
+you find yourself in a room with a whole lot of doors
+
 [[look right|starting_room]]
 [[look left| starting_room 3]]
 [[check behind you| starting_room 2]]
 
+investigate the [[left door|enter_tutorialheater]]
+investigate the [[middle door |enter_tutorialkitchen]]
+investigate the [[right door |enter_tutorialdark]]
 
+
+:: enter_tutorialheater
+<img src="src/assets/img/rooms/door to tutorial heater.jpg" width="800" alt="[]"/>
+ [[enter|heater tutorial]]
+ [[go back|starting_room 4]]
+
+:: enter_tutorialkitchen
+<img src="src/assets/img/rooms/door to tutorial kitchen.jpg" width="800" alt="[]"/>
+ [[enter|kitchen tutorial]]
+ [[go back|starting_room 4]]
+
+:: enter_tutorialdark
+<img src="src/assets/img/rooms/door to tutorial dark.jpg" width="800" alt="[]"/>
+ [[enter|dark tutorial]]
+ [[go back|starting_room 4]]
 
 
 :: kitchen tutorial
@@ -295,7 +300,7 @@ previous page - [[next page|musicbook2]]
 :: heater tutorial
 
 <div class ="inventory_layout">
- <img src="src/assets/img/tutorial_heater.jpg" width="800" height="auto" alt="[alt text goes here]"/>
+ <img src="src/assets/img/rooms/tutorial_heater.jpg" width="800" height="auto" alt="[alt text goes here]"/>
     /* TODO-S retake image above in landscape? */
 
     <div class="inventory"> 
@@ -319,68 +324,176 @@ learn to use the heating machine
 
 
 :: dial stage 1
-<<if $heaterNumer == 1>>
-  <img src="src/assets/img/temperature gauge/tutorial G1D1.png" width="240" alt="[]"/>
-<</if>>>>
-<<if $heaterNumer == 2>>
-  <img src="src/assets/img/temperature gauge/tutorial G2D1.png" width="240" alt="[]"/>
-<</if>>>>
-<<if $heaterNumer == 3>>
-  <img src="src/assets/img/temperature gauge/tutorial G3D1.png" width="240" alt="[]"/>
-<</if>>>>
-<<if $heaterNumer == 4>>
-  <img src="src/assets/img/temperature gauge/tutorial G4D1.png" width="240" alt="[]"/>
-<</if>>>>
+<<if $heaterNumber == 1>>
+  <img src="src/assets/img/temperature_gauge/tutorial G1D1.jpg" width="400" alt="[]"/>
+<</if>>
+<<if $heaterNumber == 2>>
+  <img src="src/assets/img/temperature_gauge/tutorial G2D1.jpg" width="400" alt="[]"/>
+<</if>>
+<<if $heaterNumber == 3>>
+  <img src="src/assets/img/temperature_gauge/tutorial G3D1.jpg" width="400" alt="[]"/>
+<</if>>
+<<if $heaterNumber == 4>>
+  <img src="src/assets/img/temperature_gauge/tutorial G4D1.jpg" width="400" alt="[]"/>
+<</if>>
+this machine has definetly seen better days
 
 [[ vv decrease|dial stage 1]] - [[^^ increase|dial stage 2]]
+[[take a step back | heater tutorial]]
 
 :: dial stage 2
-<<if $heaterNumer == 1>>
-  <img src="src/assets/img/temperature gauge/tutorial G1D2.png" width="240" alt="[]"/>
-<</if>>>>
-<<if $heaterNumer == 2>>
-  <img src="src/assets/img/temperature gauge/tutorial G2D2.png" width="240" alt="[]"/>
-<</if>>>>
-<<if $heaterNumer == 3>>
-  <img src="src/assets/img/temperature gauge/tutorial G3D2.png" width="240" alt="[]"/>
-<</if>>>>
-<<if $heaterNumer == 4>>
-  <img src="src/assets/img/temperature gauge/tutorial G4D2.png" width="240" alt="[]"/>
-<</if>>>>
+<<if $heaterNumber == 1>>
+  <img src="src/assets/img/temperature_gauge/tutorial G1D2.jpg" width="400" alt="[]"/>
+<</if>>
+<<if $heaterNumber == 2>>
+  <img src="src/assets/img/temperature_gauge/tutorial G2D2.jpg" width="400" alt="[]"/>
+<</if>>
+<<if $heaterNumber == 3>>
+  <img src="src/assets/img/temperature_gauge/tutorial G3D2.jpg" width="400" alt="[]"/>
+<</if>>
+<<if $heaterNumber == 4>>
+  <img src="src/assets/img/temperature_gauge/tutorial G4D2.jpg" width="400" alt="[]"/>
+<</if>>
+this machine has definetly seen better days
 
 [[ vv decrease|dial stage 1]] - [[^^ increase|dial stage 3]]
+[[take a step back | heater tutorial]]
+
 
 :: dial stage 3
-<<if $heaterNumer == 1>>
-  <img src="src/assets/img/temperature gauge/tutorial G1D3.png" width="240" alt="[]"/>
-<</if>>>>
-<<if $heaterNumer == 2>>
-  <img src="src/assets/img/temperature gauge/tutorial G2D3.png" width="240" alt="[]"/>
-<</if>>>>
-<<if $heaterNumer == 3>>
-  <img src="src/assets/img/temperature gauge/tutorial G3D3.png" width="240" alt="[]"/>
-<</if>>>>
-<<if $heaterNumer == 4>>
-  <img src="src/assets/img/temperature gauge/tutorial G4D3.png" width="240" alt="[]"/>
-<</if>>>>
+<<if $heaterNumber == 1>>
+  <img src="src/assets/img/temperature_gauge/tutorial G1D3.jpg" width="400" alt="[]"/>
+<</if>>
+<<if $heaterNumber == 2>>
+  <img src="src/assets/img/temperature_gauge/tutorial G2D3.jpg" width="400" alt="[]"/>
+<</if>>
+<<if $heaterNumber == 3>>
+  <img src="src/assets/img/temperature_gauge/tutorial G3D3.jpg" width="400" alt="[]"/>
+<</if>>
+<<if $heaterNumber == 4>>
+  <img src="src/assets/img/temperature_gauge/tutorial G4D3.jpg" width="400" alt="[]"/>
+<</if>>
+this machine has definetly seen better days
 
 [[ vv decrease|dial stage 2]] - [[^^ increase|dial stage 4]]
+[[take a step back | heater tutorial]]
+
 
 :: dial stage 4
-<<if $heaterNumer == 1>>
-  <img src="src/assets/img/temperature gauge/tutorial G1D4.png" width="240" alt="[]"/>
-<</if>>>>
-<<if $heaterNumer == 2>>
-  <img src="src/assets/img/temperature gauge/tutorial G2D4.png" width="240" alt="[]"/>
-<</if>>>>
-<<if $heaterNumer == 3>>
-  <img src="src/assets/img/temperature gauge/tutorial G3D4.png" width="240" alt="[]"/>
-<</if>>>>
-<<if $heaterNumer == 4>>
-  <img src="src/assets/img/temperature gauge/tutorial G4D4.png" width="240" alt="[]"/>
-<</if>>>>
+<<if $heaterNumber == 1>>
+  <img src="src/assets/img/temperature_gauge/tutorial G1D4.jpg" width="400" alt="[]"/>
+<</if>>
+<<if $heaterNumber == 2>>
+  <img src="src/assets/img/temperature_gauge/tutorial G2D4.jpg" width="400" alt="[]"/>
+<</if>>
+<<if $heaterNumber == 3>>
+  <img src="src/assets/img/temperature_gauge/tutorial G3D4.jpg" width="400" alt="[]"/>
+<</if>>
+<<if $heaterNumber == 4>>
+  <img src="src/assets/img/temperature_gauge/tutorial G4D4.jpg" width="400" alt="[]"/>
+<</if>>
+this machine has definetly seen better days
 
-[[ vv decrease|dial stage 1]] - [[^^ increase|dial stage 3]]
+[[ vv decrease|dial stage 1]] - [[^^ increase|dial stage 5]]
+[[take a step back | heater tutorial]]
+
+
+:: dial stage 5
+<<if $heaterNumber == 1>>
+  <img src="src/assets/img/temperature_gauge/tutorial G1D5.jpg" width="400" alt="[]"/>
+<</if>>
+<<if $heaterNumber == 2>>
+  <img src="src/assets/img/temperature_gauge/tutorial G2D5.jpg" width="400" alt="[]"/>
+<</if>>
+<<if $heaterNumber == 3>>
+  <img src="src/assets/img/temperature_gauge/tutorial G3D5.jpg" width="400" alt="[]"/>
+<</if>>
+<<if $heaterNumber == 4>>
+  <img src="src/assets/img/temperature_gauge/tutorial G4D5.jpg" width="400" alt="[]"/>
+<</if>>
+this machine has definetly seen better days
+
+
+[[ vv decrease|dial stage 4]] - [[^^ increase|dial stage 6]]
+[[take a step back | heater tutorial]]
+
+
+:: dial stage 6
+<<if $heaterNumber == 1>>
+  <img src="src/assets/img/temperature_gauge/tutorial G1D6.jpg" width="400" alt="[]"/>
+<</if>>
+<<if $heaterNumber == 2>>
+  <img src="src/assets/img/temperature_gauge/tutorial G2D6.jpg" width="400" alt="[]"/>
+<</if>>
+<<if $heaterNumber == 3>>
+  <img src="src/assets/img/temperature_gauge/tutorial G3D6.jpg" width="400" alt="[]"/>
+<</if>>
+<<if $heaterNumber == 4>>
+  <img src="src/assets/img/temperature_gauge/tutorial G4D6.jpg" width="400" alt="[]"/>
+<</if>>
+this machine has definetly seen better days
+
+
+[[ vv decrease|dial stage 5]] - [[^^ increase|dial stage 7]]
+[[take a step back | heater tutorial]]
+
+
+:: dial stage 7
+<<if $heaterNumber == 1>>
+  <img src="src/assets/img/temperature_gauge/tutorial G1D7.jpg" width="400" alt="[]"/>
+<</if>>
+<<if $heaterNumber == 2>>
+  <img src="src/assets/img/temperature_gauge/tutorial G2D7.jpg" width="400" alt="[]"/>
+<</if>>
+<<if $heaterNumber == 3>>
+  <img src="src/assets/img/temperature_gauge/tutorial G3D7.jpg" width="400" alt="[]"/>
+<</if>>
+<<if $heaterNumber == 4>>
+  <img src="src/assets/img/temperature_gauge/tutorial G4D7.jpg" width="400" alt="[]"/>
+<</if>>
+this machine has definetly seen better days
+
+[[ vv decrease|dial stage 6]] - [[^^ increase|dial stage 8]]
+[[take a step back | heater tutorial]]
+
+
+:: dial stage 8
+<<if $heaterNumber == 1>>
+  <img src="src/assets/img/temperature_gauge/tutorial G1D8.jpg" width="400" alt="[]"/>
+<</if>>
+<<if $heaterNumber == 2>>
+  <img src="src/assets/img/temperature_gauge/tutorial G2D8.jpg" width="400" alt="[]"/>
+<</if>>
+<<if $heaterNumber == 3>>
+  <img src="src/assets/img/temperature_gauge/tutorial G3D8.jpg" width="400" alt="[]"/>
+<</if>>
+<<if $heaterNumber == 4>>
+  <img src="src/assets/img/temperature_gauge/tutorial G4D8.jpg" width="400" alt="[]"/>
+<</if>>
+this machine has definetly seen better days
+
+[[ vv decrease|dial stage 7]] - [[^^ increase|dial stage 9]]
+[[take a step back | heater tutorial]]
+
+
+:: dial stage 9
+<<if $heaterNumber == 1>>
+  <img src="src/assets/img/temperature_gauge/tutorial G1D9.jpg" width="400" alt="[]"/>
+<</if>>
+<<if $heaterNumber == 2>>
+  <img src="src/assets/img/temperature_gauge/tutorial G2D9.jpg" width="400" alt="[]"/>
+<</if>>
+<<if $heaterNumber == 3>>
+  <img src="src/assets/img/temperature_gauge/tutorial G3D9.jpg" width="400" alt="[]"/>
+<</if>>
+<<if $heaterNumber == 4>>
+  <img src="src/assets/img/temperature_gauge/tutorial G4D9.jpg" width="400" alt="[]"/>
+<</if>>
+this machine has definetly seen better days
+
+[[ vv decrease|dial stage 8]] - [[^^ increase|dial stage 9]]  
+[[take a step back | heater tutorial]]
+
 
 
 
@@ -450,9 +563,13 @@ learn to complete the circuit
 /***************************/
 
 :: locked door
+
  <img src="src/assets/img/rooms/tutorial_exit.jpg" width="800" alt="[]"/>
 
 you are faced with a door with a strange lock. there are 5 shapes: a hexagon, a circle, a triangle, a diamond, and a pentagon. 
+
+[[try the door|lock check]]
+[[go back|starting_room]]
 
 investigate the [[hexagon]]
 investigate the [[circle]]
@@ -460,7 +577,51 @@ investigate the [[triangle]]
 investigate the [[diamond]]
 investigate the [[pentagon]]
 
-[[go back|starting_room]]
+:: lock check
+
+<!--hexagon lock -->
+<<if ($heaterNumber == 1) and ($hexagonDial == 9)>>
+  <<set $hexagonLock to [True]>>
+  the hexagon dial is correct
+<</if>>
+<<if ($heaterNumber == 2) and ($hexagonDial == 7)>>
+  <<set $hexagonLock to [True]>>
+  the hexagon dial is correct
+<</if>>
+<<if ($heaterNumber == 3) and ($hexagonDial == 5)>>
+  <<set $hexagonLock to [True]>>
+  the hexagon dial is correct
+<</if>>
+<<if ($heaterNumber == 4) and ($hexagonDial == 3)>>
+  <<set $hexagonLock to [True]>>
+  the hexagon dial is correct
+<</if>>
+
+<!--circle lock -->
+<<if ($songNumber == 1) and ($circleDial == 1)>>
+<<set $circleLock to [True]>>
+the circle dial is correct
+<</if>>
+<<if ($songNumber == 2) and ($circleDial == 2)>>
+<<set $circleLock to [True]>>
+the circle dial is correct
+<</if>>
+<<if ($songNumber == 3) and ($circleDial == 3)>>
+<<set $circleLock to [True]>>
+the circle dial is correct
+<</if>>
+<<if ($songNumber == 4) and ($circleDial == 4)>>
+<<set $circleLock to [True]>>
+the circle dial is correct
+<</if>>
+<!--triangle lock -->
+<!--diamond lock -->
+<!--pentagon lock -->
+
+
+
+
+
 
 <!--HEXAGON -->
 :: hexagon
