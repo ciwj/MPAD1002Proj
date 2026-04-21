@@ -13,24 +13,11 @@ A Sense of Nowhere
 
 
 :: landing {"position":"625,250","size":"100,100"}
-<<set $songNumber to [1,2,3,4].random()>>
-<<set $heaterNumber to [1,2,3,4].random()>> 
-/* G1: A9
-   G2: A7
-   G3: A5
-   G4: A3*/
-<<set $circuitNumber to [1,2,3,4,5,6,7,8].random()>>
-<<set $hexagonDial to [1]>>
-<<set $hexagonLock to [False]>>
-<<set $circleDial to [1]>>
-<<set $circleLock to [False]>>
-<<set $triangleDial to [1]>>
-<<set $triangleLock to [False]>>
-<<set $diamondDial to [1]>>
-<<set $diamondLock to [False]>>
-<<set $pentagonDial to [1]>>
-<<set $pentagonLock to [False]>>
-
+/*hexagon and heater tutorial*/<<set $hexagonDial to [1]>> <<set $hexagonLock to ['False']>><<set $heaterNumber to [1,2,3,4].random()>> 
+/*circle and music tutorial*/<<set $circleDial to [1]>> <<set $circleLock to ['False']>> <<set $songNumber to [1,2,3,4].random()>>
+/*triangle and dark tutorial*/<<set $triangleDial to [1]>> <<set $triangleLock to ['False']>>
+/*diamond and circuit tutorial*/<<set $diamondDial to [1]>> <<set $diamondLock to ['False']>> <<set $circuitRoomState to [1]>> <<set $circuitNumber to [1,2,3,4,5,6,7,8].random()>> <<set $hasWire to ['False']>>
+/*pentagon and kitchen tutorial*/<<set $pentagonDial to [1]>> <<set $pentagonLock to ['False']>>
 
 
 <main>

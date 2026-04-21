@@ -33,7 +33,7 @@ investigate the [[door ahead of you |enter_tutorialexit]]
 
 :: enter_tutorialexit
  <img src="src/assets/img/rooms/door to tutorial exit.jpg" width="800" alt="[]"/>
- [[enter|locked door]]
+ [[enter|locked_door]]
  [[go back|starting_room]]
 
 :: starting_room 2
@@ -56,7 +56,7 @@ investigate the [[right door |enter_tutorialcircuit]]
  
 :: enter_tutorialcircuit
  <img src="src/assets/img/rooms/door to tutorial circuit.jpg" width="800" alt="[]"/>
- [[enter|circuit tutorial]]
+ [[enter|circuit_tutorial]]
  [[go back|starting_room 2]]
 
 
@@ -154,7 +154,7 @@ introduce listening and recreating sounds
 [img[Red Button|src/assets/img/buttons/buttonBlue.png][noteB]]
 
 
-[[go back|starting_room]]
+[[go back|starting_room 2]]
 
 
 
@@ -319,7 +319,7 @@ learn to use the heating machine
 
 [[investigate the machine|dial stage 1]]
 
-[[go back|starting_room]]
+[[go back|starting_room 4]]
 
 
 
@@ -501,9 +501,84 @@ this machine has definetly seen better days
 /* HEATER END, CIRCUIT START */
 /*****************************/
 
-:: circuit tutorial
-learn to complete the circuit
-[[go back|starting_room]]
+:: circuit_tutorial
+circuit number: $circuitNumber
+circuitRoomState: $circuitRoomState
+
+<<if $circuitRoomState == 1>>
+<img src="src/assets/img/rooms/tutorial_circuit disconnected.jpg" width="800" alt="[]"/>
+
+[[pick up the wire]]
+
+[[go back|starting_room 2]]
+<</if>>
+
+<<if $circuitRoomState == 2>>
+<img src="src/assets/img/rooms/tutorial_circuit picked up.jpg" width="800" alt="[]"/>
+
+[[attach the wire]]
+
+[[go back|starting_room 2]]
+<</if>>
+
+<<if $circuitRoomState == 3>>
+  <<if $circuitNumber == 1>>
+    <img src="src/assets/img/rooms/tutorial_circuit A1.jpg" width="800" alt="[]"/>
+
+    [[go back|starting_room 2]]
+  <</if>>
+  <<if $circuitNumber == 2>>
+    <img src="src/assets/img/rooms/tutorial_circuit A2.jpg" width="800" alt="[]"/>
+
+    [[go back|starting_room 2]]
+  <</if>>
+  <<if $circuitNumber == 3>>
+    <img src="src/assets/img/rooms/tutorial_circuit A3.jpg" width="800" alt="[]"/>
+
+    [[go back|starting_room 2]]
+  <</if>>
+  <<if $circuitNumber == 4>>
+    <img src="src/assets/img/rooms/tutorial_circuit A4.jpg" width="800" alt="[]"/>
+
+    [[go back|starting_room 2]]
+  <</if>>
+  <<if $circuitNumber == 5>>
+    <img src="src/assets/img/rooms/tutorial_circuit A5.jpg" width="800" alt="[]"/>
+
+    [[go back|starting_room 2]]
+  <</if>>
+  <<if $circuitNumber == 6>>
+    <img src="src/assets/img/rooms/tutorial_circuit A6.jpg" width="800" alt="[]"/>
+
+    [[go back|starting_room 2]]
+  <</if>>
+  <<if $circuitNumber == 7>>
+    <img src="src/assets/img/rooms/tutorial_circuit A7.jpg" width="800" alt="[]"/>
+
+    [[go back|starting_room 2]]
+  <</if>>
+  <<if $circuitNumber == 8>>
+    <img src="src/assets/img/rooms/tutorial_circuit A8.jpg" width="800" alt="[]"/>
+
+    [[go back|starting_room 2]]
+  <</if>>
+  <<if $circuitNumber == 9>>
+    <img src="src/assets/img/rooms/tutorial_circuit A9.jpg" width="800" alt="[]"/>
+
+    [[go back|starting_room 2]]
+  <</if>>
+<</if>>
+
+:: pick up the wire
+<<set $hasWire to ['True']>>
+<<set $circuitRoomState to [2]>>
+<<goto circuit_tutorial>>
+
+:: attach the wire
+<<set $hasWire to ['False']>>
+<<set $circuitRoomState to [3]>>
+<<goto circuit_tutorial>>
+
 
 
 /***************************/
@@ -562,7 +637,11 @@ learn to complete the circuit
 /* DARK END, TUTORIAL EXIT START */
 /***************************/
 
-:: locked door
+:: locked_door
+
+<<if ($hexagonLock == ['True']) and ($circleLock == ['True']) /* and ($triangleLock == ['True'])*/ and ($diamondLock == ['True']) /*and ($pentagonLock == ['True'])*/ >>
+  <<goto unlocked_door>>
+<</if>>
 
  <img src="src/assets/img/rooms/tutorial_exit.jpg" width="800" alt="[]"/>
 
@@ -571,52 +650,89 @@ you are faced with a door with a strange lock. there are 5 shapes: a hexagon, a 
 [[try the door|lock check]]
 [[go back|starting_room]]
 
-investigate the [[hexagon]]
+investigate the [[hexagon]] 
 investigate the [[circle]]
-investigate the [[triangle]]
+investigate the [[triangle]] TODO
 investigate the [[diamond]]
-investigate the [[pentagon]]
+investigate the [[pentagon]] TODO
 
 :: lock check
 
 <!--hexagon lock -->
 <<if ($heaterNumber == 1) and ($hexagonDial == 9)>>
-  <<set $hexagonLock to [True]>>
-  the hexagon dial is correct
+  <<set $hexagonLock to ['True']>>
 <</if>>
 <<if ($heaterNumber == 2) and ($hexagonDial == 7)>>
-  <<set $hexagonLock to [True]>>
+  <<set $hexagonLock to ['True']>>
   the hexagon dial is correct
 <</if>>
 <<if ($heaterNumber == 3) and ($hexagonDial == 5)>>
-  <<set $hexagonLock to [True]>>
+  <<set $hexagonLock to ['True']>>
   the hexagon dial is correct
 <</if>>
 <<if ($heaterNumber == 4) and ($hexagonDial == 3)>>
-  <<set $hexagonLock to [True]>>
+  <<set $hexagonLock to ['True']>>
   the hexagon dial is correct
 <</if>>
 
 <!--circle lock -->
 <<if ($songNumber == 1) and ($circleDial == 1)>>
-<<set $circleLock to [True]>>
+<<set $circleLock to ['True']>>
 the circle dial is correct
 <</if>>
 <<if ($songNumber == 2) and ($circleDial == 2)>>
-<<set $circleLock to [True]>>
+<<set $circleLock to ['True']>>
 the circle dial is correct
 <</if>>
 <<if ($songNumber == 3) and ($circleDial == 3)>>
-<<set $circleLock to [True]>>
+<<set $circleLock to ['True']>>
 the circle dial is correct
 <</if>>
 <<if ($songNumber == 4) and ($circleDial == 4)>>
-<<set $circleLock to [True]>>
+<<set $circleLock to ['True']>>
 the circle dial is correct
 <</if>>
 <!--triangle lock -->
 <!--diamond lock -->
+<<if ($circuitNumber == 1) and ($diamondDial == 1)>>
+<<set $DiamondLock to ['True']>>
+the Diamond dial is correct
+<</if>>
+<<if ($circuitNumber == 2) and ($diamondDial == 2)>>
+<<set $DiamondLock to ['True']>>
+the Diamond dial is correct
+<</if>>
+<<if ($circuitNumber == 3) and ($diamondDial == 3)>>
+<<set $DiamondLock to ['True']>>
+the Diamond dial is correct
+<</if>>
+<<if ($circuitNumber == 4) and ($diamondDial == 4)>>
+<<set $DiamondLock to ['True']>>
+the Diamond dial is correct
+<</if>>
+<<if ($circuitNumber == 5) and ($diamondDial == 5)>>
+<<set $DiamondLock to ['True']>>
+the Diamond dial is correct
+<</if>>
+<<if ($circuitNumber == 6) and ($diamondDial == 6)>>
+<<set $DiamondLock to ['True']>>
+the Diamond dial is correct
+<</if>>
+<<if ($circuitNumber == 7) and ($diamondDial == 7)>>
+<<set $DiamondLock to ['True']>>
+the Diamond dial is correct
+<</if>>
+<<if ($circuitNumber == 8) and ($diamondDial == 8)>>
+<<set $DiamondLock to ['True']>>
+the Diamond dial is correct
+<</if>>
+<<if ($circuitNumber == 9) and ($diamondDial == 9)>>
+<<set $DiamondLock to ['True']>>
+the Diamond dial is correct
+<</if>>
 <!--pentagon lock -->
+<<goto locked_door>>
+
 
 
 
@@ -659,7 +775,7 @@ the dial is currently set at the first notch.
 [[turn the dial right|hexagon_dial2]]
 [[turn the dial left|hexagon_dial8]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: hexagon_dial2
 <<set $hexagonDial to [2]>>
@@ -670,7 +786,7 @@ the dial is currently set at the second notch.
 [[turn the dial right|hexagon_dial3]]
 [[turn the dial left|hexagon_dial1]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: hexagon_dial3
 <<set $hexagonDial to [3]>>
@@ -681,7 +797,7 @@ the dial is currently set at the third notch.
 [[turn the dial right|hexagon_dial4]]
 [[turn the dial left|hexagon_dial2]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: hexagon_dial4
 <<set $hexagonDial to [4]>>
@@ -692,7 +808,7 @@ the dial is currently set at the fourth notch.
 [[turn the dial right|hexagon_dial5]]
 [[turn the dial left|hexagon_dial3]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: hexagon_dial5
 <<set $hexagonDial to [5]>>
@@ -703,7 +819,7 @@ the dial is currently set at the fifth notch.
 [[turn the dial right|hexagon_dial6]]
 [[turn the dial left|hexagon_dial4]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: hexagon_dial6
 <<set $hexagonDial to [6]>>
@@ -714,7 +830,7 @@ the dial is currently set at the sixth notch.
 [[turn the dial right|hexagon_dial7]]
 [[turn the dial left|hexagon_dial5]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: hexagon_dial7
 <<set $hexagonDial to [7]>>
@@ -725,7 +841,7 @@ the dial is currently set at the fifth notch.
 [[turn the dial right|hexagon_dial8]]
 [[turn the dial left|hexagon_dial6]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: hexagon_dial8
 <<set $hexagonDial to [8]>>
@@ -736,7 +852,7 @@ the dial is currently set at the eigth notch.
 [[turn the dial right|hexagon_dial1]]
 [[turn the dial left|hexagon_dial7]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 <!--CIRCLE -->
 
@@ -775,7 +891,7 @@ the dial is currently set at the first notch.
 [[turn the dial right|circle_dial2]]
 [[turn the dial left|circle_dial8]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: circle_dial2
 <<set $circleDial to [2]>>
@@ -786,7 +902,7 @@ the dial is currently set at the second notch.
 [[turn the dial right|circle_dial3]]
 [[turn the dial left|circle_dial1]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: circle_dial3
 <<set $circleDial to [3]>>
@@ -797,7 +913,7 @@ the dial is currently set at the third notch.
 [[turn the dial right|circle_dial4]]
 [[turn the dial left|circle_dial2]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: circle_dial4
 <<set $circleDial to [4]>>
@@ -808,7 +924,7 @@ the dial is currently set at the fourth notch.
 [[turn the dial right|circle_dial5]]
 [[turn the dial left|circle_dial3]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: circle_dial5
 <<set $circleDial to [5]>>
@@ -819,7 +935,7 @@ the dial is currently set at the fifth notch.
 [[turn the dial right|circle_dial6]]
 [[turn the dial left|circle_dial4]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: circle_dial6
 <<set $circleDial to [6]>>
@@ -830,7 +946,7 @@ the dial is currently set at the sixth notch.
 [[turn the dial right|circle_dial7]]
 [[turn the dial left|circle_dial5]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: circle_dial7
 <<set $circleDial to [7]>>
@@ -841,7 +957,7 @@ the dial is currently set at the fifth notch.
 [[turn the dial right|circle_dial8]]
 [[turn the dial left|circle_dial6]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: circle_dial8
 <<set $circleDial to [8]>>
@@ -852,7 +968,7 @@ the dial is currently set at the eigth notch.
 [[turn the dial right|circle_dial1]]
 [[turn the dial left|circle_dial7]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 <!--TRIANGLE -->
 
@@ -891,7 +1007,7 @@ the dial is currently set at the first notch.
 [[turn the dial right|triangle_dial2]]
 [[turn the dial left|triangle_dial8]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: triangle_dial2
 <<set $triangleDial to [2]>>
@@ -902,7 +1018,7 @@ the dial is currently set at the second notch.
 [[turn the dial right|triangle_dial3]]
 [[turn the dial left|triangle_dial1]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: triangle_dial3
 <<set $triangleDial to [3]>>
@@ -913,7 +1029,7 @@ the dial is currently set at the third notch.
 [[turn the dial right|triangle_dial4]]
 [[turn the dial left|triangle_dial2]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: triangle_dial4
 <<set $triangleDial to [4]>>
@@ -924,7 +1040,7 @@ the dial is currently set at the fourth notch.
 [[turn the dial right|triangle_dial5]]
 [[turn the dial left|triangle_dial3]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: triangle_dial5
 <<set $triangleDial to [5]>>
@@ -935,7 +1051,7 @@ the dial is currently set at the fifth notch.
 [[turn the dial right|triangle_dial6]]
 [[turn the dial left|triangle_dial4]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: triangle_dial6
 <<set $triangleDial to [6]>>
@@ -946,7 +1062,7 @@ the dial is currently set at the sixth notch.
 [[turn the dial right|triangle_dial7]]
 [[turn the dial left|triangle_dial5]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: triangle_dial7
 <<set $triangleDial to [7]>>
@@ -957,7 +1073,7 @@ the dial is currently set at the fifth notch.
 [[turn the dial right|triangle_dial8]]
 [[turn the dial left|triangle_dial6]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: triangle_dial8
 <<set $triangleDial to [8]>>
@@ -968,7 +1084,7 @@ the dial is currently set at the eigth notch.
 [[turn the dial right|triangle_dial1]]
 [[turn the dial left|triangle_dial7]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 
 <!--DIAMOND -->
@@ -1008,7 +1124,7 @@ the dial is currently set at the first notch.
 [[turn the dial right|diamond_dial2]]
 [[turn the dial left|diamond_dial8]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: diamond_dial2
 <<set $diamondDial to [2]>>
@@ -1019,7 +1135,7 @@ the dial is currently set at the second notch.
 [[turn the dial right|diamond_dial3]]
 [[turn the dial left|diamond_dial1]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: diamond_dial3
 <<set $diamondDial to [3]>>
@@ -1030,7 +1146,7 @@ the dial is currently set at the third notch.
 [[turn the dial right|diamond_dial4]]
 [[turn the dial left|diamond_dial2]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: diamond_dial4
 <<set $diamondDial to [4]>>
@@ -1041,7 +1157,7 @@ the dial is currently set at the fourth notch.
 [[turn the dial right|diamond_dial5]]
 [[turn the dial left|diamond_dial3]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: diamond_dial5
 <<set $diamondDial to [5]>>
@@ -1052,7 +1168,7 @@ the dial is currently set at the fifth notch.
 [[turn the dial right|diamond_dial6]]
 [[turn the dial left|diamond_dial4]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: diamond_dial6
 <<set $diamondDial to [6]>>
@@ -1063,7 +1179,7 @@ the dial is currently set at the sixth notch.
 [[turn the dial right|diamond_dial7]]
 [[turn the dial left|diamond_dial5]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: diamond_dial7
 <<set $diamondDial to [7]>>
@@ -1074,7 +1190,7 @@ the dial is currently set at the fifth notch.
 [[turn the dial right|diamond_dial8]]
 [[turn the dial left|diamond_dial6]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: diamond_dial8
 <<set $diamondDial to [8]>>
@@ -1085,7 +1201,7 @@ the dial is currently set at the eigth notch.
 [[turn the dial right|diamond_dial1]]
 [[turn the dial left|diamond_dial7]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 
 <!--PENTAGON -->
@@ -1125,7 +1241,7 @@ the dial is currently set at the first notch.
 [[turn the dial right|pentagon_dial2]]
 [[turn the dial left|pentagon_dial8]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: pentagon_dial2
 <<set $pentagonDial to [2]>>
@@ -1136,7 +1252,7 @@ the dial is currently set at the second notch.
 [[turn the dial right|pentagon_dial3]]
 [[turn the dial left|pentagon_dial1]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: pentagon_dial3
 <<set $pentagonDial to [3]>>
@@ -1147,7 +1263,7 @@ the dial is currently set at the third notch.
 [[turn the dial right|pentagon_dial4]]
 [[turn the dial left|pentagon_dial2]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: pentagon_dial4
 <<set $pentagonDial to [4]>>
@@ -1158,7 +1274,7 @@ the dial is currently set at the fourth notch.
 [[turn the dial right|pentagon_dial5]]
 [[turn the dial left|pentagon_dial3]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: pentagon_dial5
 <<set $pentagonDial to [5]>>
@@ -1169,7 +1285,7 @@ the dial is currently set at the fifth notch.
 [[turn the dial right|pentagon_dial6]]
 [[turn the dial left|pentagon_dial4]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: pentagon_dial6
 <<set $pentagonDial to [6]>>
@@ -1180,7 +1296,7 @@ the dial is currently set at the sixth notch.
 [[turn the dial right|pentagon_dial7]]
 [[turn the dial left|pentagon_dial5]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: pentagon_dial7
 <<set $pentagonDial to [7]>>
@@ -1191,7 +1307,7 @@ the dial is currently set at the fifth notch.
 [[turn the dial right|pentagon_dial8]]
 [[turn the dial left|pentagon_dial6]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
 
 :: pentagon_dial8
 <<set $pentagonDial to [8]>>
@@ -1202,4 +1318,7 @@ the dial is currently set at the eigth notch.
 [[turn the dial right|pentagon_dial1]]
 [[turn the dial left|pentagon_dial7]]
 
-[[take a step back|locked door]]
+[[take a step back|locked_door]]
+
+:: unlocked_door
+you've unlocked the door.
