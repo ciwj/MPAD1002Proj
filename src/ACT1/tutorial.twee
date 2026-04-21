@@ -103,7 +103,7 @@ investigate the [[right door |enter_tutorialdark]]
 :: kitchen tutorial
 
 <div class ="inventory_layout">
- <img src="src/assets/img/tutorial_kitchen.jpg" width="800" height="auto" alt="[room with a cooking pot, a green bin, a brown crate, a plate and a note tacked to the wall]"/>
+ <img src="src/assets/img/rooms/tutorial_kitchen.jpg" width="800" height="auto" alt="[room with a cooking pot, a green bin, a brown crate, a plate and a note tacked to the wall]"/>
     /* TODO-S retake image above in landscape? */
 
     <div class="inventory"> 
@@ -128,7 +128,7 @@ introduce cooking mechanic
 :: music tutorial
 
 <div class ="inventory_layout">
-    <img src="src/assets/img/tutorial_music.jpg" width="800" height="auto" alt="[alt text goes here]" class="main_img"/>
+    <img src="src/assets/img/rooms/tutorial_music.jpg" width="800" height="auto" alt="[alt text goes here]" class="main_img"/>
     /* TODO-S retake image above in landscape? */
 
     <div class="inventory"> 
