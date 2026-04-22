@@ -20,7 +20,21 @@
 
 
 :: starting_room
+
+
+<div class ="inventory_layout">
  <img src="src/assets/img/rooms/tutorial_start 1.jpg" width="800" alt="[room with 6 doors. 3 on right wall. 2 on left. 1 ahead of you]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 
 you find yourself in a room with a whole lot of doors
 
@@ -32,13 +46,38 @@ investigate the [[door ahead of you |enter_tutorialexit]]
 
 
 :: enter_tutorialexit
+
+ <div class ="inventory_layout">
  <img src="src/assets/img/rooms/door to tutorial exit.jpg" width="800" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
  [[enter|locked_door]]
  [[go back|starting_room]]
 
 :: starting_room 2
+
+<div class ="inventory_layout">
  <img src="src/assets/img/rooms/tutorial_start 2.jpg" width="800" alt="[]"/>
 
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 you find yourself in a room with a whole lot of doors
 
 [[look right|starting_room 3]]
@@ -49,20 +88,58 @@ investigate the [[left door |enter_tutorialmusic]]
 investigate the [[right door |enter_tutorialcircuit]]
 
 :: enter_tutorialmusic
+
+ <div class ="inventory_layout">
  <img src="src/assets/img/rooms/door to tutorial music.jpg" width="800" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
  [[enter|music tutorial]]
  [[go back|starting_room 2]]
 
  
 :: enter_tutorialcircuit
+ 
+  <div class ="inventory_layout">
  <img src="src/assets/img/rooms/door to tutorial circuit.jpg" width="800" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
  [[enter|circuit_tutorial]]
  [[go back|starting_room 2]]
 
 
 :: starting_room 3
+
+<div class ="inventory_layout">
  <img src="src/assets/img/rooms/tutorial_start 3.jpg" width="800" alt="[]"/>
 
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 you find yourself in a room with a whole lot of doors
 
 [[look right|starting_room 4]]
@@ -71,8 +148,20 @@ you find yourself in a room with a whole lot of doors
 
 
 :: starting_room 4
+
+<div class ="inventory_layout">
 <img src="src/assets/img/rooms/tutorial_start 4.jpg" width="800" alt="[]"/>
 
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 you find yourself in a room with a whole lot of doors
 
 [[look right|starting_room]]
@@ -85,17 +174,56 @@ investigate the [[right door |enter_tutorialdark]]
 
 
 :: enter_tutorialheater
+
+  <div class ="inventory_layout">
 <img src="src/assets/img/rooms/door to tutorial heater.jpg" width="800" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
  [[enter|heater tutorial]]
  [[go back|starting_room 4]]
 
 :: enter_tutorialkitchen
+
+  <div class ="inventory_layout">
 <img src="src/assets/img/rooms/door to tutorial kitchen.jpg" width="800" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
  [[enter|kitchen_tutorial]]
  [[go back|starting_room 4]]
 
 :: enter_tutorialdark
+
+  <div class ="inventory_layout">
 <img src="src/assets/img/rooms/door to tutorial dark.jpg" width="800" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
  [[enter|dark tutorial]]
  [[go back|starting_room 4]]
 
@@ -104,7 +232,6 @@ investigate the [[right door |enter_tutorialdark]]
 
 <div class ="inventory_layout">
  <img src="src/assets/img/rooms/tutorial_kitchen.jpg" width="800" height="auto" alt="[room with a cooking pot, a green bin, a brown crate, a plate and a note tacked to the wall]"/>
-    /* TODO-S retake image above in landscape? */
 
     <div class="inventory"> 
 
@@ -136,15 +263,54 @@ walk over to the [[plate]]
 it seems to be a recipe
 
 <<if $recipeNumber == 1>>
+
+<div class ="inventory_layout">
   <img src="src/assets/img/food and soup/banana_cookie recipe.png" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 <</if>>
 
 <<if $recipeNumber == 2>>
+
+  <div class ="inventory_layout">
   <img src="src/assets/img/food and soup/banana_anchovy recipe.png" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 <</if>>
 
 <<if $recipeNumber == 3>>
+
+  <div class ="inventory_layout">
   <img src="src/assets/img/food and soup/cookie_anchovy recipe.png" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 <</if>>
 
 [[step back | kitchen_tutorial]]
@@ -157,10 +323,23 @@ anchovy: $ITEManchovy
 
 inside the bin there are cookies, bananas and anchovies.
 
-<div style="display:flex;flex-direction:row;justify-content:flex-start;">
-  <img src="src/assets/img/food and soup/base foods/cookie.png" width="240" alt="[]"/>
-  <img src="src/assets/img/food and soup/base foods/banana.png" width="240" alt="[]"/>
-  <img src="src/assets/img/food and soup/base foods/anchovy.png" width="240" alt="[]"/>
+
+
+<div class ="inventory_layout">
+    <div style="display:flex;flex-direction:row;justify-content:flex-start;">
+      <img src="src/assets/img/food and soup/base foods/cookie.png" width="240" alt="[]"/>
+      <img src="src/assets/img/food and soup/base foods/banana.png" width="240" alt="[]"/>
+      <img src="src/assets/img/food and soup/base foods/anchovy.png" width="240" alt="[]"/>
+    </div>
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 </div>
 
 <<if $inventory <[2]>>
@@ -420,32 +599,110 @@ add to the pot:
 
 :: view_soup
 <<if ($ITEMbananax2 == 1)>>
+
+  <div class ="inventory_layout">
   <img src="src/assets/img/food and soup/bananax2.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
   banana soup
   [[look up at room|kitchen_tutorial]]
 <</if>>
 <<if ($ITEMcookiex2 == 1)>>
+
+   <div class ="inventory_layout">
   <img src="src/assets/img/food and soup/cookiex2.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
   cookie soup
   [[look up at room|kitchen_tutorial]]
 <</if>>
 <<if $ITEManchovyx2 ==1>>
+
+   <div class ="inventory_layout">
   <img src="src/assets/img/food and soup/anchovyx2.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
   anchovy soup
   [[look up at room|kitchen_tutorial]]
 <</if>>
 <<if $ITEMbanana_anchovy == 1>>
+
+   <div class ="inventory_layout">
   <img src="src/assets/img/food and soup/banana_anchovy.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
   'Tropical Tangy Anchovy Mash'
   [[look up at room|kitchen_tutorial]]
 <</if>>
 <<if $ITEMbanana_cookie == 1>>
+
+   <div class ="inventory_layout">
   <img src="src/assets/img/food and soup/banana_cookie.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
   'Choco-banana crumble bites'
   [[look up at room|kitchen_tutorial]]
 <</if>>
 <<if $ITEMcookie_anchovy == 1>>
+
+     <div class ="inventory_layout">
   <img src="src/assets/img/food and soup/cookie_anchovy.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
   'savory salted cookie dough'
   [[look up at room|kitchen_tutorial]]
 <</if>>
@@ -459,7 +716,6 @@ add to the pot:
 
 <div class ="inventory_layout">
     <img src="src/assets/img/rooms/tutorial_music.jpg" width="800" height="auto" alt="[alt text goes here]" class="main_img"/>
-    /* TODO-S retake image above in landscape? */
 
     <div class="inventory"> 
 
@@ -492,7 +748,6 @@ introduce listening and recreating sounds
 
 <div class ="inventory_layout">
   <img src="src/assets/img/musicbook_page1.jpg" width="800" height="auto" alt="[alt text goes here]"/>
-    /* TODO-S retake image above in landscape? */
 
     <div class="inventory"> 
 
@@ -512,7 +767,6 @@ previous page - [[next page|musicbook2]]
 
 <div class ="inventory_layout">
  <img src="src/assets/img/musicbook_page2.jpg" width="800" height="auto" alt="[alt text goes here]"/>
-    /* TODO-S retake image above in landscape? */
 
     <div class="inventory"> 
 
@@ -533,7 +787,6 @@ previous page - [[next page|musicbook2]]
 
 <div class ="inventory_layout">
  <img src="src/assets/img/musicbook_page3.jpg" width="800" height="auto" alt="[alt text goes here]"/>
-    /* TODO-S retake image above in landscape? */
 
     <div class="inventory"> 
 
@@ -589,8 +842,7 @@ previous page - [[next page|musicbook2]]
 
 
 <div class ="inventory_layout">
- <img src="src/assets/img/tutorial_music.jpg" width="400" height="auto" alt="[alt text goes here]"/>
-    /* TODO-S retake image above in landscape? */
+ <img src="src/assets/img/rooms/tutorial_music.jpg" width="400" height="auto" alt="[alt text goes here]"/>
 
     <div class="inventory"> 
 
@@ -631,7 +883,6 @@ previous page - [[next page|musicbook2]]
 
 <div class ="inventory_layout">
  <img src="src/assets/img/rooms/tutorial_heater.jpg" width="800" height="auto" alt="[alt text goes here]"/>
-    /* TODO-S retake image above in landscape? */
 
     <div class="inventory"> 
 
@@ -655,34 +906,133 @@ learn to use the heating machine
 
 :: dial stage 1
 <<if $heaterNumber == 1>>
+
+  <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G1D1.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 <</if>>
 <<if $heaterNumber == 2>>
+
+   <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G2D1.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 <</if>>
 <<if $heaterNumber == 3>>
+
+   <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G3D1.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 <</if>>
 <<if $heaterNumber == 4>>
+
+   <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G4D1.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
-this machine has definetly seen better days
+this machine has definitely seen better days
 
 [[ vv decrease|dial stage 1]] - [[^^ increase|dial stage 2]]
 [[take a step back | heater tutorial]]
 
 :: dial stage 2
 <<if $heaterNumber == 1>>
+
+  <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G1D2.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 <<if $heaterNumber == 2>>
+
+  <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G2D2.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 <<if $heaterNumber == 3>>
+
+  <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G3D2.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 <<if $heaterNumber == 4>>
+
+  <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G4D2.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 this machine has definetly seen better days
 
@@ -692,16 +1042,64 @@ this machine has definetly seen better days
 
 :: dial stage 3
 <<if $heaterNumber == 1>>
+
+  <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G1D3.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 <<if $heaterNumber == 2>>
+
+   <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G2D3.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 <<if $heaterNumber == 3>>
+
+    <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G3D3.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 <<if $heaterNumber == 4>>
+
+     <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G4D3.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 this machine has definetly seen better days
 
@@ -711,16 +1109,64 @@ this machine has definetly seen better days
 
 :: dial stage 4
 <<if $heaterNumber == 1>>
+
+    <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G1D4.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 <<if $heaterNumber == 2>>
+
+   <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G2D4.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 <<if $heaterNumber == 3>>
+
+  <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G3D4.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 <<if $heaterNumber == 4>>
+
+  <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G4D4.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 this machine has definetly seen better days
 
@@ -730,16 +1176,64 @@ this machine has definetly seen better days
 
 :: dial stage 5
 <<if $heaterNumber == 1>>
+
+   <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G1D5.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 <<if $heaterNumber == 2>>
+
+   <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G2D5.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 <<if $heaterNumber == 3>>
+
+   <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G3D5.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 <<if $heaterNumber == 4>>
+
+    <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G4D5.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 this machine has definetly seen better days
 
@@ -750,16 +1244,64 @@ this machine has definetly seen better days
 
 :: dial stage 6
 <<if $heaterNumber == 1>>
+
+    <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G1D6.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 <<if $heaterNumber == 2>>
+
+  <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G2D6.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 <<if $heaterNumber == 3>>
+
+  <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G3D6.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 <<if $heaterNumber == 4>>
+
+  <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G4D6.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 this machine has definetly seen better days
 
@@ -770,16 +1312,64 @@ this machine has definetly seen better days
 
 :: dial stage 7
 <<if $heaterNumber == 1>>
+
+  <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G1D7.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 <<if $heaterNumber == 2>>
+
+  <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G2D7.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 <<if $heaterNumber == 3>>
+
+  <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G3D7.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 <<if $heaterNumber == 4>>
+
+  <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G4D7.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 this machine has definetly seen better days
 
@@ -789,16 +1379,64 @@ this machine has definetly seen better days
 
 :: dial stage 8
 <<if $heaterNumber == 1>>
+
+  <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G1D8.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 <<if $heaterNumber == 2>>
+
+  <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G2D8.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 <<if $heaterNumber == 3>>
+
+   <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G3D8.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 <<if $heaterNumber == 4>>
+
+   <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G4D8.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 this machine has definetly seen better days
 
@@ -808,16 +1446,64 @@ this machine has definetly seen better days
 
 :: dial stage 9
 <<if $heaterNumber == 1>>
+
+   <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G1D9.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 <<if $heaterNumber == 2>>
+
+  <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G2D9.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 <<if $heaterNumber == 3>>
+
+  <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G3D9.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 <<if $heaterNumber == 4>>
+
+   <div class ="inventory_layout">
   <img src="src/assets/img/temperature_gauge/tutorial G4D9.jpg" width="400" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
 <</if>>
 this machine has definetly seen better days
 
@@ -836,7 +1522,20 @@ circuit number: $circuitNumber
 circuitRoomState: $circuitRoomState
 
 <<if $circuitRoomState == 1>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/rooms/tutorial_circuit disconnected.jpg" width="800" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 
 [[pick up the wire]]
 
@@ -844,7 +1543,20 @@ circuitRoomState: $circuitRoomState
 <</if>>
 
 <<if $circuitRoomState == 2>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/rooms/tutorial_circuit picked up.jpg" width="800" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 
 [[attach the wire]]
 
@@ -853,47 +1565,169 @@ circuitRoomState: $circuitRoomState
 
 <<if $circuitRoomState == 3>>
   <<if $circuitNumber == 1>>
+
+    <div class ="inventory_layout">
     <img src="src/assets/img/rooms/tutorial_circuit A1.jpg" width="800" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
+
 
     [[go back|starting_room 2]]
   <</if>>
   <<if $circuitNumber == 2>>
+
+    <div class ="inventory_layout">
     <img src="src/assets/img/rooms/tutorial_circuit A2.jpg" width="800" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
+
 
     [[go back|starting_room 2]]
   <</if>>
   <<if $circuitNumber == 3>>
+
+     <div class ="inventory_layout">
     <img src="src/assets/img/rooms/tutorial_circuit A3.jpg" width="800" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 
     [[go back|starting_room 2]]
   <</if>>
   <<if $circuitNumber == 4>>
+
+     <div class ="inventory_layout">
     <img src="src/assets/img/rooms/tutorial_circuit A4.jpg" width="800" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
+
 
     [[go back|starting_room 2]]
   <</if>>
   <<if $circuitNumber == 5>>
+
+    <div class ="inventory_layout">
     <img src="src/assets/img/rooms/tutorial_circuit A5.jpg" width="800" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
+
+
 
     [[go back|starting_room 2]]
   <</if>>
   <<if $circuitNumber == 6>>
+
+     <div class ="inventory_layout">
     <img src="src/assets/img/rooms/tutorial_circuit A6.jpg" width="800" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 
     [[go back|starting_room 2]]
   <</if>>
   <<if $circuitNumber == 7>>
+
+     <div class ="inventory_layout">
     <img src="src/assets/img/rooms/tutorial_circuit A7.jpg" width="800" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 
     [[go back|starting_room 2]]
   <</if>>
   <<if $circuitNumber == 8>>
+
+     <div class ="inventory_layout">
     <img src="src/assets/img/rooms/tutorial_circuit A8.jpg" width="800" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 
     [[go back|starting_room 2]]
   <</if>>
   <<if $circuitNumber == 9>>
+
+     <div class ="inventory_layout">
     <img src="src/assets/img/rooms/tutorial_circuit A9.jpg" width="800" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 
     [[go back|starting_room 2]]
   <</if>>
@@ -1087,7 +1921,21 @@ That's $dark_tut_press times.
   <<goto unlocked_door>>
 <</if>>
 
+
+ <div class ="inventory_layout">
  <img src="src/assets/img/rooms/tutorial_exit.jpg" width="800" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
+
 
 you are faced with a door with a strange lock. there are 5 shapes: a hexagon, a circle, a triangle, a diamond, and a pentagon. 
 
@@ -1224,7 +2072,20 @@ the pentagon dial is correct
 
 :: hexagon_dial1
 <<set $hexagonDial to [1]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/hexagon1.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the first notch. 
 
@@ -1235,7 +2096,20 @@ the dial is currently set at the first notch.
 
 :: hexagon_dial2
 <<set $hexagonDial to [2]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/hexagon2.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the second notch. 
 
@@ -1246,7 +2120,20 @@ the dial is currently set at the second notch.
 
 :: hexagon_dial3
 <<set $hexagonDial to [3]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/hexagon3.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the third notch. 
 
@@ -1257,7 +2144,20 @@ the dial is currently set at the third notch.
 
 :: hexagon_dial4
 <<set $hexagonDial to [4]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/hexagon 4.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the fourth notch. 
 
@@ -1268,7 +2168,20 @@ the dial is currently set at the fourth notch.
 
 :: hexagon_dial5
 <<set $hexagonDial to [5]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/hexagon5.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the fifth notch. 
 
@@ -1279,7 +2192,20 @@ the dial is currently set at the fifth notch.
 
 :: hexagon_dial6
 <<set $hexagonDial to [6]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/hexagon6.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the sixth notch. 
 
@@ -1290,7 +2216,20 @@ the dial is currently set at the sixth notch.
 
 :: hexagon_dial7
 <<set $hexagonDial to [7]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/hexagon7.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the fifth notch. 
 
@@ -1301,7 +2240,20 @@ the dial is currently set at the fifth notch.
 
 :: hexagon_dial8
 <<set $hexagonDial to [8]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/hexagon8.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the eigth notch. 
 
@@ -1340,7 +2292,20 @@ the dial is currently set at the eigth notch.
 
 :: circle_dial1
 <<set $circleDial to [1]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/circle 1.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the first notch. 
 
@@ -1351,7 +2316,20 @@ the dial is currently set at the first notch.
 
 :: circle_dial2
 <<set $circleDial to [2]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/circle 2.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the second notch. 
 
@@ -1362,7 +2340,20 @@ the dial is currently set at the second notch.
 
 :: circle_dial3
 <<set $circleDial to [3]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/circle 3.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the third notch. 
 
@@ -1373,7 +2364,20 @@ the dial is currently set at the third notch.
 
 :: circle_dial4
 <<set $circleDial to [4]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/circle 4.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the fourth notch. 
 
@@ -1384,7 +2388,20 @@ the dial is currently set at the fourth notch.
 
 :: circle_dial5
 <<set $circleDial to [5]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/circle 5.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the fifth notch. 
 
@@ -1395,7 +2412,20 @@ the dial is currently set at the fifth notch.
 
 :: circle_dial6
 <<set $circleDial to [6]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/circle 6.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the sixth notch. 
 
@@ -1406,7 +2436,20 @@ the dial is currently set at the sixth notch.
 
 :: circle_dial7
 <<set $circleDial to [7]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/circle 7.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the fifth notch. 
 
@@ -1417,7 +2460,20 @@ the dial is currently set at the fifth notch.
 
 :: circle_dial8
 <<set $circleDial to [8]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/circle 8.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the eigth notch. 
 
@@ -1456,7 +2512,20 @@ the dial is currently set at the eigth notch.
 
 :: triangle_dial1
 <<set $triangleDial to [1]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/triangle 1.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the first notch. 
 
@@ -1467,7 +2536,20 @@ the dial is currently set at the first notch.
 
 :: triangle_dial2
 <<set $triangleDial to [2]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/triangle 2.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the second notch. 
 
@@ -1478,7 +2560,20 @@ the dial is currently set at the second notch.
 
 :: triangle_dial3
 <<set $triangleDial to [3]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/triangle 3.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the third notch. 
 
@@ -1489,7 +2584,20 @@ the dial is currently set at the third notch.
 
 :: triangle_dial4
 <<set $triangleDial to [4]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/triangle 4.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the fourth notch. 
 
@@ -1500,7 +2608,20 @@ the dial is currently set at the fourth notch.
 
 :: triangle_dial5
 <<set $triangleDial to [5]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/triangle 5.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the fifth notch. 
 
@@ -1511,7 +2632,20 @@ the dial is currently set at the fifth notch.
 
 :: triangle_dial6
 <<set $triangleDial to [6]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/triangle 6.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the sixth notch. 
 
@@ -1522,7 +2656,20 @@ the dial is currently set at the sixth notch.
 
 :: triangle_dial7
 <<set $triangleDial to [7]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/triangle 7.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the fifth notch. 
 
@@ -1533,7 +2680,20 @@ the dial is currently set at the fifth notch.
 
 :: triangle_dial8
 <<set $triangleDial to [8]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/triangle 8.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the eigth notch. 
 
@@ -1573,7 +2733,21 @@ the dial is currently set at the eigth notch.
 
 :: diamond_dial1
 <<set $diamondDial to [1]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/diamond 1.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
+
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the first notch. 
 
@@ -1584,7 +2758,20 @@ the dial is currently set at the first notch.
 
 :: diamond_dial2
 <<set $diamondDial to [2]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/diamond 2.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the second notch. 
 
@@ -1595,7 +2782,20 @@ the dial is currently set at the second notch.
 
 :: diamond_dial3
 <<set $diamondDial to [3]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/diamond 3.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the third notch. 
 
@@ -1606,7 +2806,20 @@ the dial is currently set at the third notch.
 
 :: diamond_dial4
 <<set $diamondDial to [4]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/diamond 4.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the fourth notch. 
 
@@ -1617,7 +2830,20 @@ the dial is currently set at the fourth notch.
 
 :: diamond_dial5
 <<set $diamondDial to [5]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/diamond 5.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the fifth notch. 
 
@@ -1628,7 +2854,20 @@ the dial is currently set at the fifth notch.
 
 :: diamond_dial6
 <<set $diamondDial to [6]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/diamond 6.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the sixth notch. 
 
@@ -1639,7 +2878,20 @@ the dial is currently set at the sixth notch.
 
 :: diamond_dial7
 <<set $diamondDial to [7]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/diamond 7.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the fifth notch. 
 
@@ -1650,7 +2902,20 @@ the dial is currently set at the fifth notch.
 
 :: diamond_dial8
 <<set $diamondDial to [8]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/diamond 8.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the eigth notch. 
 
@@ -1690,7 +2955,20 @@ the dial is currently set at the eigth notch.
 
 :: pentagon_dial1
 <<set $pentagonDial to [1]>>
+
+  <div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/pentagon 1.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the first notch. 
 
@@ -1701,7 +2979,20 @@ the dial is currently set at the first notch.
 
 :: pentagon_dial2
 <<set $pentagonDial to [2]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/pentagon 2.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the second notch. 
 
@@ -1712,7 +3003,20 @@ the dial is currently set at the second notch.
 
 :: pentagon_dial3
 <<set $pentagonDial to [3]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/pentagon 3.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the third notch. 
 
@@ -1723,7 +3027,20 @@ the dial is currently set at the third notch.
 
 :: pentagon_dial4
 <<set $pentagonDial to [4]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/pentagon 4.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the fourth notch. 
 
@@ -1734,7 +3051,20 @@ the dial is currently set at the fourth notch.
 
 :: pentagon_dial5
 <<set $pentagonDial to [5]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/pentagon 5.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the fifth notch. 
 
@@ -1745,7 +3075,20 @@ the dial is currently set at the fifth notch.
 
 :: pentagon_dial6
 <<set $pentagonDial to [6]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/pentagon 6.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the sixth notch. 
 
@@ -1756,7 +3099,20 @@ the dial is currently set at the sixth notch.
 
 :: pentagon_dial7
 <<set $pentagonDial to [7]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/pentagon 7.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the fifth notch. 
 
@@ -1767,7 +3123,20 @@ the dial is currently set at the fifth notch.
 
 :: pentagon_dial8
 <<set $pentagonDial to [8]>>
+
+<div class ="inventory_layout">
 <img src="src/assets/img/tutorial_exit_lock/pentagon 8.png" width="240" alt="[]"/>
+
+    <div class="inventory"> 
+
+    <button class="inventory_slot"> Item 1 </button>
+    <button class="inventory_slot"> Item 2 </button>
+    <button class="inventory_slot hidden"> Item 3 </button>
+    <button class="inventory_slot hidden"> Item 4 </button>
+    <button class="inventory_slot hidden"> Item 5 </button>
+
+    </div>
+</div>
 upon closer inspection, at the center of the shape is a dial.
 the dial is currently set at the eigth notch. 
 
