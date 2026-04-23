@@ -717,18 +717,6 @@ add to the pot:
 /*****************************/
 
 :: music tutorial
-<<cacheaudio "music_room_background" "src/assets/audio/music_room_background.mp3">>
-<<audio "music_room_background" volume 0.05 play>>
-
-<<cacheaudio "play_radio" "src/assets/audio/play_radio.mp3">>
-<<audio "play_radio" volume 0.05 play>>
-
-<<cacheaudio "turn_page_forward" "src/assets/audio/turn_page_forward.mp3">>
-<<audio "turn_page_forward" volume 0.05 play>>
-
-<<cacheaudio "turn_page_backward" "src/assets/audio/turn_page_backward.mp3">>
-<<audio "turn_page_backward" volume 0.05 play>>
-
 <div class ="inventory_layout">
     <img src="src/assets/img/rooms/tutorial_music.jpg" width="800" height="auto" alt="[alt text goes here]" class="main_img"/>
 
@@ -819,37 +807,25 @@ previous page - [[next page|musicbook2]]
 
 
 :: noteC
- <img src="src/assets/img/tutorial_music.jpg" width="240" height="auto" alt="[alt text goes here]"/>
-<!--<<cacheaudio trackId sourceList>> -->
-<<cacheaudio "noteC" "src/assets/audio/tutorial_music_noteC.mp3">>
-<!--<<audio trackIdList actionList>> -->
+<img src="src/assets/img/tutorial_music.jpg" width="240" height="auto" alt="[alt text goes here]"/>
 <<audio "noteC" play goto "music tutorial">>
 
 ...
 
 :: noteE
- <img src="src/assets/img/tutorial_music.jpg" width="240" height="auto" alt="[alt text goes here]"/>
-<!--<<cacheaudio trackId sourceList>> -->
-<<cacheaudio "noteE" "src/assets/audio/tutorial_music_noteE.mp3">>
-<!--<<audio trackIdList actionList>> -->
+<img src="src/assets/img/tutorial_music.jpg" width="240" height="auto" alt="[alt text goes here]"/>
 <<audio "noteE" play goto "music tutorial">>
 
 ...
 
 :: noteG
- <img src="src/assets/img/tutorial_music.jpg" width="240" height="auto" alt="[alt text goes here]"/>
-<!--<<cacheaudio trackId sourceList>> -->
-<<cacheaudio "noteG" "src/assets/audio/tutorial_music_noteG.mp3">>
-<!--<<audio trackIdList actionList>> -->
+<img src="src/assets/img/tutorial_music.jpg" width="240" height="auto" alt="[alt text goes here]"/>
 <<audio "noteG" play goto "music tutorial">>
 
 ...
 
 :: noteB
- <img src="src/assets/img/tutorial_music.jpg" width="240" height="auto" alt="[alt text goes here]"/>
-<!--<<cacheaudio trackId sourceList>> -->
-<<cacheaudio "noteB" "src/assets/audio/tutorial_music_noteB.mp3">>
-<!--<<audio trackIdList actionList>> -->
+<img src="src/assets/img/tutorial_music.jpg" width="240" height="auto" alt="[alt text goes here]"/>
 <<audio "noteB" play goto "music tutorial">>
 
 ...
@@ -871,22 +847,18 @@ previous page - [[next page|musicbook2]]
     </div>
 </div>
 <<if $songNumber == 1>>
-<<cacheaudio "song1" "src/assets/audio/tutorial_music_song1.mp3">>
 <<audio "song1" play goto "music tutorial">>
 <</if>>
 
 <<if $songNumber == 2>>
-<<cacheaudio "song2" "src/assets/audio/tutorial_music_song2.mp3">>
 <<audio "song2" play goto "music tutorial">>
 <</if>>
 
 <<if $songNumber == 3>>
-<<cacheaudio "song3" "src/assets/audio/tutorial_music_song3.mp3">>
 <<audio "song3" play goto "music tutorial">>
 <</if>>
 
 <<if $songNumber == 4>>
-<<cacheaudio "song4" "src/assets/audio/tutorial_music_song4.mp3">>
 <<audio "song4" play goto "music tutorial">>
 <</if>>
 ...
@@ -896,20 +868,6 @@ previous page - [[next page|musicbook2]]
 <!-- HEATER TUTORIAL START -->
 
 :: heater tutorial
-
-<<cacheaudio "hot_room_background" "src/assets/audio/hot_room_background.mp3">>
-<<audio "hot_room_background" volume 0.05 play>>
-
-<<cacheaudio "lava_rising" "src/assets/audio/lava_rising.mp3">>
-<<audio "lava_rising" volume 0.05 play>>
-
-<<cacheaudio "lava_decreasing" "src/assets/audio/lava_decreasing.mp3">>
-<<audio "lava_decreasing" volume 0.05 play>>
-
-<<cacheaudio "learn_heating_machine" "src/assets/audio/learn_heating_machine.mp3">>
-<<audio "learn_heating_machine" volume 0.05 play>>
-
-
 
 <div class ="inventory_layout">
  <img src="src/assets/img/rooms/tutorial_heater.jpg" width="800" height="auto" alt="[alt text goes here]"/>
@@ -926,7 +884,6 @@ previous page - [[next page|musicbook2]]
 </div>
 
 learn to use the heating machine
-
 
 [[investigate the machine|dial stage 1]]
 
@@ -1547,13 +1504,6 @@ this machine has definetly seen better days
 /*****************************/
 
 :: circuit_tutorial
-
-<<cacheaudio "pick_up_wire" "src/assets/audio/pick_up_wire.mp3">>
-<<audio "pick_up_wire" volume 0.05 play>>
-
-<<cacheaudio "attach_wire" "src/assets/audio/attach_wire.mp3">>
-<<audio "attach_wire" volume 0.05 play>>
-
 circuit number: $circuitNumber
 circuitRoomState: $circuitRoomState
 
@@ -1785,26 +1735,6 @@ circuitRoomState: $circuitRoomState
 /* CIRCUIT END, DARK START */
 /***************************/
 
-
-
-<<cacheaudio "dark_tut2_FX" "src/assets/audio/SFX/dark_tut2_FX.mp3">>
-<<audio "dark_tut2_FX" volume 0.05 play>>
-
-<<cacheaudio "footsteps" "src/assets/audio/footsteps.mp3">>
-<<audio "footsteps" volume 0.05 play>>
-
-<<cacheaudio "footsteps_dark_room" "src/assets/audio/footsteps_dark_room.mp3">>
-<<audio "footsteps_dark_room" volume 0.05 play>>
-
-<<cacheaudio "fumble" "src/assets/audio/fumble.mp3">>
-<<audio "fumble" volume 0.05 play>>
-
-<<cacheaudio "kneel_down" "src/assets/audio/kneel_down.mp3">>
-<<audio "kneel_down" volume 0.05 play>>
-
-<<cacheaudio "slow_crunchy_steps" "src/assets/audio/slow_crunchy_steps.mp3">>
-<<audio "slow_crunchy_steps" volume 0.05 play>>
-
 :: dark_tut
 [img[Darkness.|src/assets/img/blank_img_800x590.png]]
 <<audio "dark_tut_background" volume 0.05 play>>
@@ -1906,27 +1836,6 @@ That's $dark_tut_press times.
 /***************************/
 
 :: locked_door
-
-<<cacheaudio "exit_room_background" "src/assets/audio/exit_room_background.mp3">>
-<<audio "exit_room_background" volume 0.05 play>>
-
-<<cacheaudio "lock_door" "src/assets/audio/lock_door.mp3">>
-<<audio "lock_door" volume 0.05 play>>
-
-<<cacheaudio "lock" "src/assets/audio/lock.mp3">>
-<<audio "lock" volume 0.05 play>>
-
-<<cacheaudio "step_back" "src/assets/audio/step_back.mp3">>
-<<audio "step_back" volume 0.05 play>>
-
-<<cacheaudio "turn_dial_left" "src/assets/audio/turn_dial_left.mp3">>
-<<audio "turn_dial_left" volume 0.05 play>>
-
-<<cacheaudio "turn_dial_right" "src/assets/audio/turn_dial_right.mp3">>
-<<audio "turn_dial_right" volume 0.05 play>>
-
-<<cacheaudio "unlock_door" "src/assets/audio/unlock_door.mp3">>
-<<audio "unlock_door" volume 0.05 play>>
 
 <<if ($hexagonLock == ['True']) and ($circleLock == ['True']) /* and ($triangleLock == ['True'])*/ and ($diamondLock == ['True']) /*and ($pentagonLock == ['True'])*/ >>
   <<goto unlocked_door>>

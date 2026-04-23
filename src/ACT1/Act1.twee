@@ -240,7 +240,6 @@ footer img{
 
 
 :: name_set1
-<<cacheaudio title src/assets/music/Title.mp3>>
 <<audio "title" volume 0.05 loop play>>
 /* Gradient from black to white after some scrolling, then the below.*/
 
@@ -500,7 +499,7 @@ footer img{
   <source src="src/assets/video/getup_pt1.mp4" type="video/mp4">
   Your browser does not support video.
 </video>
-
+<<timed 2s>> <<audio "shuffle_noise_SFX" time 16 volume 0.7 play>> <</timed>>
 <<timed 10333ms>> <<goto wakeup3>> <</timed>>
 
 :: wakeup3
