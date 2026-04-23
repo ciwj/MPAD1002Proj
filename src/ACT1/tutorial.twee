@@ -320,7 +320,7 @@ it seems to be a recipe
 
     </div>
 </div>
-</</if>>
+<</if>>
 <<cacheaudio "soupCooking" "src/assets/audio/soup_boiling.mp3">>
 <<audio "soupCooking" volume 0.05 play>>
 
