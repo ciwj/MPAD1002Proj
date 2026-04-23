@@ -1829,8 +1829,7 @@ circuitRoomState: $circuitRoomState
 /* CIRCUIT END, DARK START */
 /***************************/
 
-<<cacheaudio "dark_tut_background" "src/assets/audio/dark_tut_background.mp3">>
-<<audio "dark_tut_background" volume 0.05 play>>
+
 
 <<cacheaudio "dark_tut2" "src/assets/audio/dark_tut2.mp3">>
 <<audio "dark_tut2" volume 0.05 play>>
@@ -1851,6 +1850,7 @@ circuitRoomState: $circuitRoomState
 <<audio "slow_crunchy_steps" volume 0.05 play>>
 
 :: dark_tut
+<<audio "dark_tut_background" volume 0.05 play>>
 \> You step through the door-
 
 \> Pure black. You can't see a thing.
