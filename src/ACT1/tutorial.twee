@@ -20,50 +20,6 @@
 
 
 :: starting_room
-
-<<cacheaudio "starting_room_background_music" "src/assets/audio/starting_room_background_music.mp3">>
-<<audio "starting_room_background_music" volume 0.05 play>>
-
-<<cacheaudio "Open_the_door" "src/assets/audio/Open_the_door.mp3">>
-<<audio "Open_the_door" volume 0.05 play>>
-
-<<cacheaudio "Close_the_door" "src/assets/audio/Close_the_door.mp3">>
-<<audio "Close_the_door" volume 0.05 play>>
-
-<<cacheaudio "Kitchen_background_music" "src/assets/audio/Kitchen_background_music.mp3">>
-<<audio "Kitchen_background_music" volume 0.05 play>>
-
-<<cacheaudio "soup_boiling" "src/assets/audio/soup_boiling.mp3">>
-<<audio "soup_boiling" volume 0.05 play>>
-
-<<cacheaudio "clicking" "src/assets/audio/clicking.mp3">>
-<<audio "clicking" volume 0.05 play>>
-
-<<cacheaudio "clicking_back" "src/assets/audio/clicking_back.mp3">>
-<<audio "clicking_back" volume 0.05 play>>
-
-<<cacheaudio "throw_out" "src/assets/audio/throw_out.mp3">>
-<<audio "throw_out" volume 0.05 play>>
-
-<<cacheaudio "mixing_food" "src/assets/audio/mixing_food.mp3">>
-<<audio "mixing_food" volume 0.05 play>>
-
-<<cacheaudio "correct_recipe" "src/assets/audio/correct_recipe.mp3">>
-<<audio "correct_recipe" volume 0.05 play>>
-
-<<cacheaudio "drop_food" "src/assets/audio/drop_food.mp3">>
-<<audio "drop_food" volume 0.05 play>>
-
-<<cacheaudio "pick_up_plate" "src/assets/audio/pick_up_plate.mp3">>
-<<audio "pick_up_plate" volume 0.05 play>>
-
-<<cacheaudio "drop_plate" "src/assets/audio/drop_plate.mp3">>
-<<audio "drop_plate" volume 0.05 play>>
-
-<<cacheaudio "button_sound" "src/assets/audio/button_sound.mp3">>
-<<audio "button_sound" volume 0.05 play>>
-
-
 <div class ="inventory_layout">
  <img src="src/assets/img/rooms/tutorial_start 1.jpg" width="800" alt="[room with 6 doors. 3 on right wall. 2 on left. 1 ahead of you]"/>
 
@@ -1831,8 +1787,8 @@ circuitRoomState: $circuitRoomState
 
 
 
-<<cacheaudio "dark_tut2" "src/assets/audio/dark_tut2.mp3">>
-<<audio "dark_tut2" volume 0.05 play>>
+<<cacheaudio "dark_tut2_FX" "src/assets/audio/SFX/dark_tut2_FX.mp3">>
+<<audio "dark_tut2_FX" volume 0.05 play>>
 
 <<cacheaudio "footsteps" "src/assets/audio/footsteps.mp3">>
 <<audio "footsteps" volume 0.05 play>>
