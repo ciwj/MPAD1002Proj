@@ -8,6 +8,7 @@ Navigation passage. Start: [[endroom_main]]
 
 :: endroom_main
 <<cacheaudio wahwah src/assets/music/WAWAWAAAAHH.mp3>>
+<<audio "actII_track" fadeout>>
 <<audio "wahwah" volume 0.05 loop play>>
 /* REFERENCE paper prototypes interaction 3 */
 /* TEXT: collect your thoughts, analyze the space in front of you.*/

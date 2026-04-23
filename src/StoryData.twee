@@ -20,7 +20,6 @@ A Sense of Nowhere
 /*diamond and circuit tutorial*/<<set $diamondDial to [1]>> <<set $diamondLock to ['False']>> <<set $circuitRoomState to [1]>> <<set $circuitNumber to [1,2,3,4,5,6,7,8].random()>> <<set $hasWire to ['False']>>
 /*pentagon and kitchen tutorial*/<<set $pentagonDial to [1]>> <<set $pentagonLock to ['False']>> <<set $recipeNumber to [1,2,3].random()>> <<set $ITEMbanana to [0]>> <<set $ITEMcookie to [0]>> <<set $ITEManchovy to [0]>> <<set $ITEMplate to [0]>> <<set $tutorialCookingPot to []>><<set $tutorialIngredients to [0]>> <<set $tutorialSoupCooked to ['False']>> <<set $ITEMbananax2 to [0]>><<set $ITEMcookiex2 to [0]>><<set $ITEManchovyx2 to [0]>><<set $ITEMbanana_cookie to [0]>><<set $ITEMbanana_anchovy to [0]>><<set $ITEMcookie_anchovy to [0]>>
 
-
 <main>
     <img src="src/assets/img/grey_logo.png" class="logo-img" alt="logo/poster">
     <div class="buttons">
@@ -50,6 +49,14 @@ Enjoy!
     </div>
 </footer>
 
+/****************/
+/* CACHED AUDIO */
+/****************/
+<<cacheaudio actII_track src/assets/music/ActII_Track.mp3>>
+<<cacheaudio "dark_tut_background" "src/assets/audio/dark_tut_background.mp3">>
+<<cacheaudio footsteps_dirt src/assets/audio/footsteps.mp3>>
+<<cacheaudio prompt src/assets/audio/prompt.mp3>>
+<<audio "prompt" play>>
 
 
 :: nav 
