@@ -6,6 +6,7 @@
 /**********************/
 :: Act2
 
+<<audio "actII_track" volume 0.05 loop play>>
 \> in this cracked stone room there are three hallways ahead of you.  
 \> the hallways to either side are entirely dark. 
 \> in the hall straight ahead you can see a imposing door glistening with gold. 

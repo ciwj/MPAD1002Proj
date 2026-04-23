@@ -52,6 +52,7 @@ Enjoy!
 /****************/
 /* CACHED AUDIO */
 /****************/
+<<cacheaudio actII_track src/assets/music/ActII_Track.mp3>>
 <<cacheaudio "dark_tut_background" "src/assets/audio/dark_tut_background.mp3">>
 <<cacheaudio footsteps_dirt src/assets/audio/footsteps.mp3>>
 <<cacheaudio prompt src/assets/audio/prompt.mp3>>

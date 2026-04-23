@@ -580,7 +580,7 @@ footer img{
 
 \>> [[Again.|wander][$wanderCount to $wanderCount + 1]]
 
-\>>[[Go forwards.|pre_tutroom1]]
+\>> [[Go forwards.|pre_tutroom1]]
 
 <</if>>
 
@@ -590,7 +590,7 @@ footer img{
   Your browser does not support video.
 </video>
 
-<<timed 3s>> \> [[You walk away for a while.|tear_path]] <</timed>>
+<<timed 3s>> \>> [[You walk away for a while.|tear_path]] <</timed>>
 
 ::pre_tutroom1
 \> You take a breath and step forward-
