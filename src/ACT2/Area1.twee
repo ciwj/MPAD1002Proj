@@ -4,14 +4,14 @@
 
 /***********************/
 /* ACT II - AREA 1     */
-/* SIDE ROOM 1 */
+/*  ROOM 1 */
 /***********************/
-:: Area1SideRoom1
+:: Area1Room1 E
 
-walls start twisting. crazy sloped room. stuff looks bonkers
+  <img src="src/assets/img/act 2 transitional rooms/Area1Room1PovE.png" width="400" alt="[]"/>
 
-[[Area1Puzzle| puzzle room]]
 
+[[continue forward|Area1Puzzle]]
 
 <!--////////////////////////////////////////////////SECTION SEPARATOR/////////////////////////////////////////// -->
 
@@ -22,12 +22,12 @@ walls start twisting. crazy sloped room. stuff looks bonkers
 /***********************/
 
 
-:: Area1puzzle
+:: kitchenPuzzleRoom
 
 you are in the crazy kitchen! serve the chef what he wants and you win the gemstone!
 
-[[back|Area1SideRoom1]]
-[[forwards|Area1SideRoom2]]
+[[back|Area1Room1]]
+[[forwards|Area1Room2 S]]
 
 
 <!--////////////////////////////////////////////////SECTION SEPARATOR/////////////////////////////////////////// -->
@@ -35,14 +35,20 @@ you are in the crazy kitchen! serve the chef what he wants and you win the gemst
 
 /***********************/
 /* ACT II - AREA 1     */
-/* SIDE ROOM 2 */
+/*  ROOM 2 */
 /***********************/
-:: Area1SideRoom2
+:: Area1Room2 S
+  <img src="src/assets/img/act 2 transitional rooms/Area1Room2PovS.png" width="400" alt="[]"/>
 
-looks super totally weird in here in regards to direction and space
 
-[[back|Area1puzzle]]
-[[forwards|Area 3]]
+[[turn left|Area1Room2 E]]
+[[back|kitchenPuzzleRoom]]
 
 
 [[back|Act2]]
+
+:: Area1Room2 S
+<img src="src/assets/img/act 2 transitional rooms/Area1Room2PovE.png" width="400" alt="[]"/>
+
+[[forward|Area5Room1 E]]
+[[back|kitchenPuzzleRoom]]

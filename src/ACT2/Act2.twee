@@ -21,16 +21,26 @@
 :: rockslide
 \> the celling collapses and blocks middle hall.
 
-/>> [investigate the right hallway|AreaSideRoom1]
+[investigate the right hallway|Area1Room1 E]
 
-/>> [investigate the left hallway|Area 2]
+[investigate the left hallway|Area 2]
 /**********************/
 
 
-[[Area 3]]
+:: central room S 
 
-[[Area 4]]
+there are two hallways on either side. 
 
-[[Area 5]]
+[[turn right|central room W]]
+[[turn left|central room E]]
 
-[[Exit]]
+
+:: central room W 
+ 
+ [[turn left|central room S]]
+ [[forward|Area1Room1W]]
+
+:: central room E
+
+[[turn right| central room W]]
+[[forward|musicPuzzleRoom S]]

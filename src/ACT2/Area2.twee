@@ -1,139 +1,119 @@
-/**********************/
 /* ACT II - AREA 2    */
-/* MUSIC PUZZLE ROOM  */
+/* MUSIC PUZZLE ROOM   */
 /**********************/
 
-/**********************/
+:: musicPuzzleRoom S
 
-:: area2_start
+music puzzle room S wall pov
+[[turn right| musicPuzzleRoom W]]
+[[turn left| musicPuzzleRoom E]]
 
-/* Player enters the music room */
-/* Gemstone is locked */
+:: musicPuzzleRoom E
 
-> You enter the music room.
+music puzzle room E wall pov
+[[turn right| coldPuzzleRoom W]]
+[[turn left| coldPuzzleRoom E]]
 
-> A locked box holds the gemstone.
-
-> In front of you, there are note buttons.
-
-> The puzzle begins.
-
-
->> [[[Listen to the first sequence.|area2_level1]]]
-/**********************/
-
-/**********************/
-:: area2_level1
-
-/* First easy sequence */
-
-> The buttons light up in a short pattern.
-
-> You try to repeat it.
+[[forwards|Area2Room1 E]]
 
 
->> [[[Complete level 1.|area2_level1_done]]]
+:: musicPuzzleRoom W
 
->> [[[Try again.|area2_level1]]]
-/**********************/
+music puzzle room W wall pov
 
-/**********************/
-:: area2_level1_done
+[[turn right| musicPuzzleRoom N]]
+[[turn left| musicPuzzleRoom S]]
+[[forwards|coldPuzzleRoom S]]
 
-> Correct.
+:: musicPuzzleRoom N
+music puzzle room N wall pov
 
-> The first level is complete.
-
-> A new sequence begins.
-
-
->> [[[Go to level 2.|area2_level2]]]
-/**********************/
-
-/**********************/
-:: area2_level2
-
-/* Second harder sequence */
-
-> This sequence is longer and harder.
-
-> You focus and repeat it carefully.
+[[turn right| musicPuzzleRoom E]]
+[[turn left| musicPuzzleRoom W]]
 
 
->> [[[Complete level 2.|area2_level2_done]]]
+/*:: coldPuzzleRoom S
 
->> [[[Try again.|area2_level2]]]
-/**********************/
+  [[turn right| coldPuzzleRoom W]]
+  [[turn left| coldPuzzleRoom E]]
 
+:: coldPuzzleRoom N
 
-/**********************/
-:: area2_level2_done
+  [[turn right| coldPuzzleRoom E]]
+  [[turn left| coldPuzzleRoom W]]
 
-> Correct again.
+:: coldPuzzleRoom E
 
-> The box makes a clicking sound.
+[[turn right| coldPuzzleRoom W]]
+[[turn left| coldPuzzleRoom E]]
 
-> One final sequence starts.
+:: coldPuzzleRoomxit W
 
-
->> [[[Go to final level.|area2_final]]]
-/**********************/
-
-/**********************/
-:: area2_final
-
-/* Final sequence */
-
-> The final pattern plays.
-
-> It is the hardest one yet.
-
-> You repeat the notes.
-
-
->> [[[Complete the final level.|area2_end]]]
-
->> [[[Try again.|area2_final]]]
-/**********************/
-
-
-/**********************/
-:: area2_end
-
-/* Gemstone collected */
-
-> The box unlocks.
-
-> The gemstone is revealed.
-
-> You pick it up.
-
-
->> [[[Go to Area 3.|area3_start]]]
-/**********************/
-
-<!--////////////////////////////////////////////////SECTION SEPARATOR/////////////////////////////////////////// -->
+[[turn right| coldPuzzleRoom N]]
+[[turn left| coldPuzzleRoom S]]  */
 
 
 
 /**********************/
 /* ACT II - AREA 2    */
-/* SIDE ROOM 1        */
+/*  ROOM 1            */
 /**********************/
 
-:: Area2SideRoom1
+:: Area2Room1 S
+  <img src="src/assets/img/act 2 transitional rooms/Area2Room1PovS.png" width="400" alt="[]"/>
 
-weird room themed for area 2
+  [[forwards|Area2Room2 W]]
+  [[turn right|Area2Room1 W]]
+  [[turn left|Area2Room1 E]]
 
 
-<!--////////////////////////////////////////////////SECTION SEPARATOR/////////////////////////////////////////// -->
+:: Area2Room1 E 
+  <img src="src/assets/img/act 2 transitional rooms/Area2Room1PovE.png" width="400" alt="[]"/>
 
+[[turn right|Area2Room1 S]]
+[[turn left|Area2Room1 N]]
+
+:: Area2Room1 N 
+  <img src="src/assets/img/act 2 transitional rooms/Area2Room1PovN.png" width="400" alt="[]"/>
+
+[[forwards|Area3Room2 E]]
+[[turn right|Area2Room1 E]]
+[[turn left|Area2Room1 W]]
+
+:: Area2Room1 W
+  <img src="src/assets/img/act 2 transitional rooms/Area2Room1PovW.png" width="400" alt="[]"/>
+
+[[forwards|musicPuzzleRoom W]]
+[[turn right|musicPuzzleRoom N]]
+[[turn left|Area2Room1 S]]
 
 /**********************/
-/* ACT II - AREA 2    */
-/* SIDE ROOM 2        */
+/* ACT II - AREA 2   */
+/*  ROOM 2             */
 /**********************/
 
-:: Area2SideRoom2
+:: Area2Room2 W
+  <img src="src/assets/img/act 2 transitional rooms/Area2Room1PovW.png" width="400" alt="[]"/>
 
-another weird room themed for area 2
+[[turn right|Area2Room2 N]]
+[[turn left|Area2Room2 S]]
+
+:: Area2Room2 N
+  <img src="src/assets/img/act 2 transitional rooms/Area2Room1PovN.png" width="400" alt="[]"/>
+
+[[turn right|Area2Room2 E]]
+[[turn left|Area2Room2 W]]
+
+:: Area2Room2 S
+  <img src="src/assets/img/act 2 transitional rooms/Area2Room1PovS.png" width="400" alt="[]"/>
+
+[[turn right|Area2Room2 W]]
+[[turn left|Area2Room2 E]]
+[[forwards|darkPuzzleRoom S]]
+
+:: Area2Room2 E
+  <img src="src/assets/img/act 2 transitional rooms/Area2Room1PovE.png" width="400" alt="[]"/>
+
+[[turn right|Area2Room2 S]]
+[[turn left|Area2Room2 N]]
+

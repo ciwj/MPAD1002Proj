@@ -1,110 +1,88 @@
+/* ACT II - AREA 3    */
+/* COLD  PUZZLE ROOM   */
+/**********************/
+
+:: coldPuzzleRoom S
+  [[turn right| coldPuzzleRoom W]]
+  [[turn left| coldPuzzleRoom E]]
+
+:: coldPuzzleRoom N
+  [[turn right| coldPuzzleRoom E]]
+  [[turn left| coldPuzzleRoom W]]
+
+:: coldPuzzleRoom E
+[[turn right| coldPuzzleRoom S]]
+[[turn left| coldPuzzleRoom N]]
+
+:: coldPuzzleRoom W
+[[turn right| coldPuzzleRoom N]]
+[[turn left| coldPuzzleRoom S]] 
 
 /**********************/
 /* ACT II - AREA 3    */
-/* COLD PUZZLE ROOM   */
+/*  ROOM 1            */
 /**********************/
+:: Area3Room1 N
+  <img src="src/assets/img/act 2 transitional rooms/Area3Room1PovN.png" width="400" alt="[]"/>
 
-/**********************/
-:: Area 3
-
-/* Player enters cold room */
-
-> You enter the cold room.
-
-> The air is freezing.
-
-> A gemstone is trapped inside layers of ice.
-
-> A lantern sits nearby.
-
-
->> [[[Use the lantern.|area3_heat1]]]
-
-/**********************/
-
-
-/**********************/
-:: area3_heat1
-
-/* First heating stage */
-
-> You hold the lantern near the ice.
-
-> The outer layer starts to melt.
-
-
->> [[[Keep heating.|area3_heat2]]]
-
-/**********************/
-
-/**********************/
-:: area3_heat2
-
-/* More melting */
-
-> More ice melts away.
-
-> You hear small crackling sounds.
-
-
->> [[[Listen carefully.|area3_listen]]]
-/**********************/
-
-/**********************/
-:: area3_listen
-
-/* Crackling clue */
-
-> The crackling sound grows louder.
-
-> You wait and pay attention.
-
-> At the right moment, the last layer begins to break.
-
-
->> [[[Free the gemstone.|area3_end]]]
-
->> [[[Wait and listen again.|area3_listen]]]
-/**********************/
-
-/**********************/
-:: area3_end
-
-/* Gemstone freed */
-
-> The ice cracks open.
-
-> The gemstone is finally free.
-
-> You take it.
-
-
->> [[[Go to Area 5.|area5_start]]]
-/**********************/
-
-<!--////////////////////////////////////////////////SECTION SEPARATOR/////////////////////////////////////////// -->
-
-/**********************/
-/* ACT II - AREA 3    */
-/* SIDE ROOM 1        */
-/**********************/
-
-:: Area3SideRoom1
-
-weird room themed for area 3
-
-
-<!--////////////////////////////////////////////////SECTION SEPARATOR/////////////////////////////////////////// -->
+[[forward|coldPuzzleRoom]]
 
 
 /**********************/
 /* ACT II - AREA 3    */
-/* SIDE ROOM 2        */
+/*  ROOM 2             */
 /**********************/
 
-:: Area3SideRoom2
+:: Area3Room2 W
 
-another weird room themed for area 3
+  <img src="src/assets/img/act 2 transitional rooms/Area3Room2PovW.png" width="400" alt="[]"/>
+
+[[forward|Area2Room1 S]]
+[[turn right|Area3Room2 N]]
+[[turn left| Area3Room2 S]]
+
+:: Area3Room2 N 
+  <img src="src/assets/img/act 2 transitional rooms/Area3Room2PovN.png" width="400" alt="[]"/>
+
+[[forwards|Area3Room1 N]]
+[[turn right| Area3Room2 E]]
+[[turn left| Area3Room2 W]]
 
 
-[[back|Act2]]
+:: Area3Room2 S 
+  <img src="src/assets/img/act 2 transitional rooms/Area3Room2PovS.png" width="400" alt="[]"/>
+
+  [[forward| Exit E]]
+  [[turn right| Area3Room2 E]]
+  [[turn left| Area3Room2 W]]
+
+
+:: Area3Room2 E
+  <img src="src/assets/img/act 2 transitional rooms/Area3Room2PovE.png" width="400" alt="[]"/>
+    [[forward|Area4Room2 E]]
+    [[turn right| Area3Room2 W]]
+    [[turn left| Area3Room2 E]]
+
+
+/*:: Exit S
+
+  [[turn right| Exit W]]
+  [[turn left| Exit E]]
+  <!--FORWARD FROM HERE IS THE ACTUAL EXIT -->
+
+    :: Exit N
+
+  [[turn right| Exit E]]
+  [[turn left| Exit W]]
+
+    :: Exit E
+
+[[forward|Area4Room2 E]]
+[[turn right| Exit W]]
+[[turn left| Exit E]]
+
+    :: Exit W
+
+[[forward||Area3Room2 W]]
+[[turn right| Exit N]]
+[[turn left| Exit S]] */

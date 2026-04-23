@@ -1,43 +1,97 @@
-:: Area 4
-you are in area 4
+/* ACT II - AREA 4    */
+/* DARK PUZZLE ROOM   */
+/**********************/
 
-[[Exit]]
+:: darkPuzzleRoom S
 
-<!--////////////////////////////////////////////////SECTION SEPARATOR/////////////////////////////////////////// -->
+darkPuzzleRoom pov s wall
 
-/***********************/
-/* ACT II - AREA 4     */
-/* DARK PUZZLE ROOM */
-/***********************/
+[[forwards| Area4Room2 S]]
+[[turn right|darkPuzzleRoom W]]
+[[turn left| darkPuzzleRoom E]]
+
+:: darkPuzzleRoom E
+
+darkPuzzleRoom pov E wall
+
+[[forwards| Area4Room1 E]]
+[[turn right|darkPuzzleRoom S]]
+[[turn left| darkPuzzleRoom N]]
+
+:: darkPuzzleRoom N
+
+darkPuzzleRoom pov n wall
+
+[[forwards| Area2Room2 N]]
+[[turn right|darkPuzzleRoom E]]
+[[turn left| darkPuzzleRoom W]]
+
+:: darkPuzzleRoom W
+
+darkPuzzleRoom pov W wall
+
+[[turn right|darkPuzzleRoom N]]
+[[turn left| darkPuzzleRoom S]]
 
 
-:: Area4puzzle
+/**********************/
+/* ACT II - AREA 4    */
+/*  ROOM 1            */
+/**********************/
 
-woah super dark cave. search around to find the gemstone! 
+:: Area4Room1 E
+  <img src="src/assets/img/act 2 transitional rooms/Area4Room1PovE.png" width="400" alt="[]"/>
+
+  [[turn right| Area4Room1 S]]
+  [[turn left| Area4Room1 N]]
+
+:: Area4Room1 S
+  <img src="src/assets/img/act 2 transitional rooms/Area4Room1PovS.png" width="400" alt="[]"/>
+  
+  [[forwards|Area4Room2 W]]
+  [[turn right| Area4Room1 W]]
+  [[turn left| Area4Room1 E]]
+
+:: Area4Room1 W
+  <img src="src/assets/img/act 2 transitional rooms/Area4Room1PovW.png" width="400" alt="[]"/>
+
+  [[turn right| Area4Room1 N]]
+  [[turn left| Area4Room1 S]]
+
+  :: Area4Room1 N
+  <img src="src/assets/img/act 2 transitional rooms/Area4Room1PovE.png" width="400" alt="[]"/>
+  
+  [[turn right| Area4Room1 E]]
+  [[turn left| Area4Room1 W]]
 
 
-<!--////////////////////////////////////////////////SECTION SEPARATOR/////////////////////////////////////////// -->
+/**********************/
+/* ACT II - AREA 4    */
+/*  ROOM 2             */
+/**********************/
 
+:: Area4Room2 S
+  <img src="src/assets/img/act 2 transitional rooms/Area4Room2PovS.png" width="400" alt="[]"/>
 
-/***********************/
-/* ACT II - AREA 4     */
-/* SIDE ROOM 1 */
-/***********************/
+  [[turn right| Area4Room2 W]]
+  [[turn left| Area4Room2 E]]
 
-:: Area4SideRoom1
+:: Area4Room2 N
+  <img src="src/assets/img/act 2 transitional rooms/Area4Room2PovN.png" width="400" alt="[]"/>
 
-weird room themed for area 4
+  [[turn right| Area4Room2 E]]
+  [[turn left| Area4Room2 W]]
 
+:: Area4Room2 E
+  <img src="src/assets/img/act 2 transitional rooms/Area4Room2PovE.png" width="400" alt="[]"/>
 
-<!--////////////////////////////////////////////////SECTION SEPARATOR/////////////////////////////////////////// -->
+[[forward| Area4Room1 N]]
+[[turn right| Area4Room2 S]]
+[[turn left| Area4Room2 N]]
 
+:: Area4Room2 W
+  <img src="src/assets/img/act 2 transitional rooms/Area4Room2PovW.png" width="400" alt="[]"/>
 
-:: Area4SideRoom2
-
-another weird room themed for area 4
-
-/***********************/
-/* ACT II - AREA 4     */
-/* SIDE ROOM 2 */
-/***********************/
-
+[[forward| Exit W]]
+[[turn right| Area4Room2 N]]
+[[turn left| Area4Room2 S]]

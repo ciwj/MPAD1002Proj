@@ -1,6 +1,22 @@
-:: Exit
-you are at the exit of Act2
+:: Exit S
 
-[[Act3]]
+  [[turn right| Exit W]]
+  [[turn left| Exit E]]
+  <!--FORWARD FROM HERE IS THE ACTUAL EXIT TO ACT 3 -->
 
-/*LOOK AT PAPER PROTOTYPE INTERACTION 2 */
+:: Exit N
+
+  [[turn right| Exit E]]
+  [[turn left| Exit W]]
+
+:: Exit E
+
+[[forward|Area4Room2 E]]
+[[turn right| Exit S]]
+[[turn left| Exit N]]
+
+:: Exit W
+
+[[forward||Area3Room2 W]]
+[[turn right| Exit N]]
+[[turn left| Exit S]]
