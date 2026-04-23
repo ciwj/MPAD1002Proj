@@ -540,7 +540,6 @@ footer img{
   Your browser does not support video.
 </video>
 <<set $wanderCount to 0>>
-<<cacheaudio footsteps_dirt src/assets/audio/footsteps.mp3>>
 <<timed 2s>>
 <<audio "footsteps_dirt" play>>
 <<next 5s>> \> [[You wander.|tear_path]]
