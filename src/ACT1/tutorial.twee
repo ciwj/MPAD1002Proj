@@ -579,7 +579,6 @@ inside the bin there are cookies, bananas and anchovies.
 <<set $inventory-->>
 <<goto green_bin>> 
 
-<<audio "drop_food" volume 0.05 play>>
 <!-- drop soups start -->
 
 :: drop_anchovyx2
@@ -674,12 +673,10 @@ ITEMplate: $ITEMplate
 <<set $inventory++>>
 <<goto plate>>
 
-<<audio "pick_up_plate" volume 0.05 play>>
 :: drop_plate
 <<set $ITEMplate-->>
 <<goto plate>>
 
-<<audio "drop_plate" volume 0.05 play>>
 :: cooking_pot
  
 a cooking pot. 
