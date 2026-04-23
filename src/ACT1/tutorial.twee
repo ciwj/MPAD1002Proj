@@ -38,7 +38,7 @@
 
 you find yourself in a room with a whole lot of doors
 <<cacheaudio "starting_room" "src/assets/audio/starting_room_background_music.mp3">>
-<<audio "titlestarting_room" volume 0.05 play>>
+<<audio "starting_room" volume 0.05 play>>
 [[look right|starting_room 2]]
 [[look left| starting_room 4]]
 [[check behind you| starting_room 3]]

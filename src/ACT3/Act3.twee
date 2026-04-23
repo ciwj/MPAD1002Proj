@@ -7,7 +7,8 @@ Navigation passage. Start: [[endroom_main]]
 /**************************/
 
 :: endroom_main
-
+<<cacheaudio wahwah src/assets/music/WAWAWAAAAHH.mp3>>
+<<audio "wahwah" volume 0.05 loop play>>
 /* REFERENCE paper prototypes interaction 3 */
 /* TEXT: collect your thoughts, analyze the space in front of you.*/
 /* DRAWINGS: one head-on shot of the room, one looking left, one looking right.*/
@@ -37,7 +38,7 @@ Navigation passage. Start: [[endroom_main]]
 >> [[[.. I want to hurl this.]|bad_end1]]
 
 /********************/
-/* GOOD ENDING */
+/*    GOOD ENDING   */
 /********************/
 
 :: place1
@@ -69,6 +70,7 @@ Navigation passage. Start: [[endroom_main]]
 > This is the final one. You wonder what this'll do.
 
 >> [[[Brace yourself and put down the last one]]|good_end1]
+<<audio "wahwah" fadeout>>
 
 ::good_end1
 
@@ -85,7 +87,7 @@ Navigation passage. Start: [[endroom_main]]
 /**************/
 
 :: bad_end1
-
+<<audio "wahwah" fadeout>>
 /* DRAWING: same frame as before */
 
 > Your grip tightens around the object in your hand. You gather everything you have, then..
@@ -111,6 +113,7 @@ Navigation passage. Start: [[endroom_main]]
 >> [[[I'm sick of this. I'm sick of whatever you are. whatever this is. I'm going to take a long, nice nap, and after that? I might take another.]|null_choice2]]
 
 :: null_choice2
+<<audio "wahwah" fadeout>>
 /* DRAWINGS: looking right image from above with your hand raised with a gem in it */
 
 > You don't want to do that. I'm trying to help you.
