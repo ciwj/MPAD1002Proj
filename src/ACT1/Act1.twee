@@ -524,6 +524,7 @@ footer img{
   <source src="src/assets/video/wander1.mp4" type="video/mp4">
   Your browser does not support video.
 </video>
+<<set $wanderCount to 0>>
 <<cacheaudio footsteps_dirt src/assets/audio/footsteps.mp3>>
 <<timed 2s>>
 <<audio "footsteps_dirt" play>>
@@ -533,7 +534,7 @@ footer img{
 ::tear_path
 
 [img[Something is in front of you.|src/assets/img/act1/woodsTear.png]]
-<<set $wanderCount to 0>>
+<<if $wanderCount is 0>>
 \> You try to wrap your head around whats happening in front of you. There must be a way to explain what you're seeing in front of you.
 
 
@@ -547,7 +548,42 @@ footer img{
 \>> [[.. Let me try a different direction.|wander][$wanderCount to $wanderCount + 1]]
 
 \>>[[What's that behind it? Let me take a look.|pre_tutroom1]]<</type>>
-/* TODO-Z implement dialogue variations */
+<<elseif $wanderCount is 1>>
+\> You're back.
+
+
+\> You must've gotten turned around?
+
+
+\>> [[.. Wander. Again.|wander][$wanderCount to $wanderCount + 1]]
+
+\>>[[Go forwards.|pre_tutroom1]]
+
+<<elseif $wanderCount is 2>>
+\> .. Okay. It must be really easily to get turned around here.
+
+
+\>> [[.. Wander, again.|wander][$wanderCount to $wanderCount + 1]]
+
+\>>[[Go forwards.|pre_tutroom1]]
+
+<<elseif $wanderCount is 3>>
+\> There's no way.
+
+
+\>> [[.. Pick a direction, and walk in the straightest line you can.|wander][$wanderCount to $wanderCount + 1]]
+
+\>>[[Go forwards.|pre_tutroom1]]
+
+<<else>>
+\> ...
+
+
+\>> [[Again.|wander][$wanderCount to $wanderCount + 1]]
+
+\>>[[Go forwards.|pre_tutroom1]]
+
+<</if>>
 
 :: wander
 <video width="800px" autoplay muted>
