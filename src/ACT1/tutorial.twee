@@ -19,23 +19,39 @@
 
 
 
+
 :: starting_room
+
+
 <div class ="inventory_layout">
  <img src="src/assets/img/rooms/tutorial_start 1.jpg" width="800" alt="[room with 6 doors. 3 on right wall. 2 on left. 1 ahead of you]"/>
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
 
 you find yourself in a room with a whole lot of doors
-
+<<cacheaudio "starting_room" "src/assets/audio/starting_room_background_music.mp3">>
+<<audio "starting_room" volume 0.05 play>>
 [[look right|starting_room 2]]
 [[look left| starting_room 4]]
 [[check behind you| starting_room 3]]
@@ -50,14 +66,27 @@ investigate the [[door ahead of you |enter_tutorialexit]]
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
+
  [[enter|locked_door]]
  [[go back|starting_room]]
 
@@ -68,11 +97,23 @@ investigate the [[door ahead of you |enter_tutorialexit]]
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -92,16 +133,33 @@ investigate the [[right door |enter_tutorialcircuit]]
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
  [[enter|music tutorial]]
  [[go back|starting_room 2]]
+<<cacheaudio "Open_the_door" "src/assets/audio/Open_the_door.mp3">>
+<<audio "Open_the_door" volume 0.05 play>>
+
+<<cacheaudio "Close_the_door" "src/assets/audio/Close_the_door.mp3">>
+<<audio "Close_the_door" volume 0.05 play>>
 
 
 
@@ -112,11 +170,23 @@ investigate the [[right door |enter_tutorialcircuit]]
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -131,11 +201,23 @@ investigate the [[right door |enter_tutorialcircuit]]
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -153,11 +235,23 @@ you find yourself in a room with a whole lot of doors
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -179,11 +273,23 @@ investigate the [[right door |enter_tutorialdark]]
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -191,18 +297,31 @@ investigate the [[right door |enter_tutorialdark]]
  [[go back|starting_room 4]]
 
 :: enter_tutorialkitchen
-
+<<cacheaudio "Kitchen_background_music" "src/assets/audio/Kitchen_background_music.mp3">>
+<<audio "Kitchen_background_music" volume 0.05 play>>
 
   <div class ="inventory_layout">
 <img src="src/assets/img/rooms/door to tutorial kitchen.jpg" width="800" alt="[]"/>
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -216,15 +335,27 @@ investigate the [[right door |enter_tutorialdark]]
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
- [[enter|dark_tut]]
+ [[enter|dark tutorial]]
  [[go back|starting_room 4]]
 
 
@@ -235,11 +366,23 @@ investigate the [[right door |enter_tutorialdark]]
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -269,11 +412,23 @@ it seems to be a recipe
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -286,11 +441,23 @@ it seems to be a recipe
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -303,16 +470,46 @@ it seems to be a recipe
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
 </</if>>
+<<cacheaudio "soupCooking" "src/assets/audio/soup_boiling.mp3">>
+<<audio "soupCooking" volume 0.05 play>>
 
+<<cacheaudio "clicking_sound" "src/assets/audio/clicking_sound.mp3">>
+<<audio "clicking_sound" volume 0.05 play>>
+
+<<cacheaudio "clicking_back" "src/assets/audio/clicking_back.mp3">>
+<<audio "clicking_back" volume 0.05 play>>
+
+
+
+<<cacheaudio "throw_out" "src/assets/audio/throw_out.mp3">>
+<<audio "throw_out" volume 0.05 play>>
+
+<<cacheaudio "mixing_food" "src/assets/audio/mixing_food.mp3">>
+<<audio "mixing_food" volume 0.05 play>>
+
+<<cacheaudio "correct_recipe" "src/assets/audio/correct_recipe.mp3">>
+<<audio "correct_recipe" volume 0.05 play>>
 [[step back | kitchen_tutorial]]
 
 :: brown_bin
@@ -333,11 +530,35 @@ inside the bin there are cookies, bananas and anchovies.
     </div>
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+        <<if $ITEMbanana > 0>>
+    <img src="src/assets/img/food and soup/base foods/banana.png" class="inventory_img" alt="Banana">
+      <<else>>
+    <img src="src/assets/img/misc items" class="inventory_img" alt="Empty Slot">
+       <</if>>
+    </button>
+   <button class="inventory_slot">
+      <<if $ITEMcookie > 0>>
+        <img src="src/assets/img/food and soup/base foods/cookie.png" class="inventory_img" alt="Cookie">
+      <<else>>
+        <img src="src/assets/img/misc items/" class="inventory_img" alt="Empty Slot">
+      <</if>>
+</button>
+      <button class="inventory_slot">
+      <<if $ITEManchovy > 0>>
+        <img src="src/assets/img/food and soup/base foods/anchovy.png" class="inventory_img" alt="Anchovy">
+      <<else>>
+        <img src="src/assets/img/misc items/" class="inventory_img" alt="Empty Slot">
+      <</if>>
+</button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -386,7 +607,8 @@ inside the bin there are cookies, bananas and anchovies.
 <<set $inventory-->>
 <<goto green_bin>> 
 
-
+<<cacheaudio "drop_food" "src/assets/audio/drop_food.mp3">>
+<<audio "drop_food" volume 0.05 play>>
 <!-- drop soups start -->
 
 :: drop_anchovyx2
@@ -481,12 +703,14 @@ ITEMplate: $ITEMplate
 <<set $inventory++>>
 <<goto plate>>
 
-
+<<cacheaudio "pick_up_plate" "src/assets/audio/pick_up_plate.mp3">>
+<<audio "pick_up_plate" volume 0.05 play>>
 :: drop_plate
 <<set $ITEMplate-->>
 <<goto plate>>
 
-
+<<cacheaudio "drop_plate" "src/assets/audio/drop_plate.mp3">>
+<<audio "drop_plate" volume 0.05 play>>
 :: cooking_pot
  
 a cooking pot. 
@@ -609,11 +833,23 @@ add to the pot:
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -627,11 +863,23 @@ add to the pot:
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -645,11 +893,23 @@ add to the pot:
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -663,11 +923,23 @@ add to the pot:
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -681,11 +953,23 @@ add to the pot:
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -699,11 +983,23 @@ add to the pot:
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -722,11 +1018,23 @@ add to the pot:
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -736,7 +1044,14 @@ introduce listening and recreating sounds
 
 [[play the radio|radio]]
 [[flip through the book|musicbook1]]
+<<cacheaudio "play_radio" "src/assets/audio/play_radio.mp3">>
+<<audio "play_radio" volume 0.05 play>>
 
+<<cacheaudio "turn_page_forward" "src/assets/audio/turn_page_forward.mp3">>
+<<audio "turn_page_forward" volume 0.05 play>>
+
+<<cacheaudio "turn_page_backward" "src/assets/audio/turn_page_backward.mp3">>
+<<audio "turn_page_backward" volume 0.05 play>>
 
 [img[Red Button|src/assets/img/buttons/buttonRed.png][noteC]]\
 [img[Red Button|src/assets/img/buttons/buttonYellow.png][noteE]]\
@@ -755,11 +1070,23 @@ introduce listening and recreating sounds
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -774,11 +1101,23 @@ previous page - [[next page|musicbook2]]
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -794,11 +1133,23 @@ previous page - [[next page|musicbook2]]
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -838,11 +1189,23 @@ previous page - [[next page|musicbook2]]
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -874,11 +1237,23 @@ previous page - [[next page|musicbook2]]
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -899,11 +1274,23 @@ learn to use the heating machine
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -915,11 +1302,23 @@ learn to use the heating machine
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -931,11 +1330,23 @@ learn to use the heating machine
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -947,15 +1358,32 @@ learn to use the heating machine
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
 this machine has definitely seen better days
+<<cacheaudio "lava_rising" "src/assets/audio/lava_rising.mp3">>
+<<audio "lava_rising" volume 0.05 play>>
+
+<<cacheaudio "lava_decreasing" "src/assets/audio/lava_decreasing.mp3">>
+<<audio "lava_decreasing" volume 0.05 play>>
 [[ vv decrease|dial stage 1]] - [[^^ increase|dial stage 2]]
 [[take a step back | heater tutorial]]
 
@@ -967,11 +1395,23 @@ this machine has definitely seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -982,11 +1422,23 @@ this machine has definitely seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -997,11 +1449,23 @@ this machine has definitely seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -1012,11 +1476,23 @@ this machine has definitely seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -1034,11 +1510,23 @@ this machine has definetly seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -1049,11 +1537,23 @@ this machine has definetly seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -1064,11 +1564,23 @@ this machine has definetly seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -1079,11 +1591,23 @@ this machine has definetly seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -1101,11 +1625,23 @@ this machine has definetly seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -1116,11 +1652,23 @@ this machine has definetly seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -1131,11 +1679,23 @@ this machine has definetly seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -1146,11 +1706,23 @@ this machine has definetly seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -1168,11 +1740,23 @@ this machine has definetly seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -1183,11 +1767,23 @@ this machine has definetly seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -1198,11 +1794,23 @@ this machine has definetly seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -1213,11 +1821,23 @@ this machine has definetly seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -1236,11 +1856,23 @@ this machine has definetly seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -1251,11 +1883,23 @@ this machine has definetly seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -1266,11 +1910,23 @@ this machine has definetly seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -1281,11 +1937,23 @@ this machine has definetly seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -1304,11 +1972,23 @@ this machine has definetly seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -1319,11 +1999,23 @@ this machine has definetly seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -1334,11 +2026,23 @@ this machine has definetly seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -1349,11 +2053,23 @@ this machine has definetly seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -1371,11 +2087,23 @@ this machine has definetly seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -1386,11 +2114,23 @@ this machine has definetly seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -1401,11 +2141,23 @@ this machine has definetly seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -1416,11 +2168,23 @@ this machine has definetly seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -1438,11 +2202,23 @@ this machine has definetly seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -1453,11 +2229,23 @@ this machine has definetly seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -1468,11 +2256,23 @@ this machine has definetly seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -1483,11 +2283,23 @@ this machine has definetly seen better days
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 <</if>>
@@ -1514,11 +2326,23 @@ circuitRoomState: $circuitRoomState
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -1535,11 +2359,23 @@ circuitRoomState: $circuitRoomState
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -1557,11 +2393,23 @@ circuitRoomState: $circuitRoomState
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -1576,11 +2424,23 @@ circuitRoomState: $circuitRoomState
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -1595,11 +2455,23 @@ circuitRoomState: $circuitRoomState
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -1613,11 +2485,23 @@ circuitRoomState: $circuitRoomState
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -1632,11 +2516,23 @@ circuitRoomState: $circuitRoomState
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -1652,11 +2548,23 @@ circuitRoomState: $circuitRoomState
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -1670,11 +2578,23 @@ circuitRoomState: $circuitRoomState
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -1688,11 +2608,23 @@ circuitRoomState: $circuitRoomState
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -1706,11 +2638,23 @@ circuitRoomState: $circuitRoomState
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -1736,18 +2680,22 @@ circuitRoomState: $circuitRoomState
 /***************************/
 
 :: dark_tut
-[img[Darkness.|src/assets/img/blank_img_800x590.png]]
-<<audio "dark_tut_background" volume 0.05 play>>
 \> You step through the door-
 
 \> Pure black. You can't see a thing.
 
 \> You feel for the door behind you, only to find a smooth stone wall behind you.
 
-\>> [[...|dark_tut2]]
+\> [[...|dark_tut2]]
 
 ::dark_tut2
-[img[Darkness.|src/assets/img/blank_img_800x590.png]]
+
+
+
+
+
+
+
 \> Okay. This is fine. You're fine! There's just no door where there was a door, and you're in a pitch black room. Textbook fine.
 
 \> After a long moment, you feel around. The space is narrow enough that you can feel both sides with your arms out.
@@ -1755,20 +2703,41 @@ circuitRoomState: $circuitRoomState
 \>> [[Start moving forwards.|dark_tut_crunch1]]
 
 ::dark_tut_crunch1
-[img[Darkness.|src/assets/img/blank_img_800x590.png]]
+
+
+
+
+
+
+
+
 \> You hear something crunch under your feet. Nothing could possibly make you check what it is, but you take note.
 
 \>> [[Another.|dark_tut_step1]]
 
 ::dark_tut_step1
-[img[Darkness.|src/assets/img/blank_img_800x590.png]]
+
+
+
+
+
+
+
+
 \> You take another step.
 
 \>> [[Another.|dark_tut_groove]]
 
 
 ::dark_tut_groove
-[img[Darkness.|src/assets/img/blank_img_800x590.png]]
+
+
+
+
+
+
+
+
 \> You take another step-
 
 \> And nearly trip. There's something making the ground uneven here.
@@ -1780,38 +2749,79 @@ circuitRoomState: $circuitRoomState
 \>> [[Another step.|dark_tut_step2]]
 
 ::dark_tut_step2
-[img[Darkness.|src/assets/img/blank_img_800x590.png]]
+
+
+
+
+
+
+
+
 \> You take another step.
 
 \>> [[Another.|dark_tut_crunch2]]
 
 ::dark_tut_crunch2
-[img[Darkness.|src/assets/img/blank_img_800x590.png]]
+
+
+
+
+
+
+
+
 \> You hear something crunch under your feet. Nothing could possibly make you check what it is, but you take note.
 
 \>> [[Another.|dark_tut_crunch3]]
 
 ::dark_tut_crunch3
-[img[Darkness.|src/assets/img/blank_img_800x590.png]]
+
+
+
+
+
+
+
+
 \> You hear something crunch under your feet. You take note.
 
 \>> [[Another.|dark_tut_step3]]
 
 ::dark_tut_step3
-[img[Darkness.|src/assets/img/blank_img_800x590.png]]
+
+
+
+
+
+
+
+
 \> You take another step.
 
 \>> [[Another.|dark_tut_crunch4]]
 
 ::dark_tut_crunch4
-[img[Darkness.|src/assets/img/blank_img_800x590.png]]
+
+
+
+
+
+
+
 <<set $dark_tut_press to 1>>
 \> You hear something crunch under your feet. You take note.
 
 \>> [[Another.|dark_tut_end]]
 
 ::dark_tut_end
-[img[Darkness.|src/assets/img/blank_img_800x590.png]]
+
+
+
+
+
+
+
+
 \> The room seems to come to an end here. You fumble around looking for something, anything, you notice something you can press on the wall. You readjust-
 
 \> And the floor tile below you crunches, sinks down and clicks.
@@ -1847,11 +2857,23 @@ That's $dark_tut_press times.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -1998,11 +3020,23 @@ the pentagon dial is correct
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2022,11 +3056,23 @@ the dial is currently set at the first notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2046,11 +3092,23 @@ the dial is currently set at the second notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2070,11 +3128,23 @@ the dial is currently set at the third notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2094,11 +3164,23 @@ the dial is currently set at the fourth notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2118,11 +3200,23 @@ the dial is currently set at the fifth notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2142,11 +3236,23 @@ the dial is currently set at the sixth notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2166,11 +3272,23 @@ the dial is currently set at the fifth notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2218,11 +3336,23 @@ the dial is currently set at the eigth notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2242,11 +3372,23 @@ the dial is currently set at the first notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2266,11 +3408,23 @@ the dial is currently set at the second notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2290,11 +3444,23 @@ the dial is currently set at the third notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2314,11 +3480,23 @@ the dial is currently set at the fourth notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2338,11 +3516,23 @@ the dial is currently set at the fifth notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2362,11 +3552,23 @@ the dial is currently set at the sixth notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2386,11 +3588,23 @@ the dial is currently set at the fifth notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2438,11 +3652,23 @@ the dial is currently set at the eigth notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2462,11 +3688,23 @@ the dial is currently set at the first notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2486,11 +3724,23 @@ the dial is currently set at the second notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2510,11 +3760,23 @@ the dial is currently set at the third notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2534,11 +3796,23 @@ the dial is currently set at the fourth notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2558,11 +3832,23 @@ the dial is currently set at the fifth notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2582,11 +3868,23 @@ the dial is currently set at the sixth notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2606,11 +3904,23 @@ the dial is currently set at the fifth notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2659,11 +3969,23 @@ the dial is currently set at the eigth notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2684,11 +4006,23 @@ the dial is currently set at the first notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2708,11 +4042,23 @@ the dial is currently set at the second notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2732,11 +4078,23 @@ the dial is currently set at the third notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2756,11 +4114,23 @@ the dial is currently set at the fourth notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2780,11 +4150,23 @@ the dial is currently set at the fifth notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2804,11 +4186,23 @@ the dial is currently set at the sixth notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2828,11 +4222,23 @@ the dial is currently set at the fifth notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2881,11 +4287,23 @@ the dial is currently set at the eigth notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2905,11 +4323,23 @@ the dial is currently set at the first notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2929,11 +4359,23 @@ the dial is currently set at the second notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2953,11 +4395,23 @@ the dial is currently set at the third notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -2977,11 +4431,23 @@ the dial is currently set at the fourth notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -3001,11 +4467,23 @@ the dial is currently set at the fifth notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -3025,11 +4503,23 @@ the dial is currently set at the sixth notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
@@ -3049,16 +4539,28 @@ the dial is currently set at the fifth notch.
 
     <div class="inventory"> 
 
-    <button class="inventory_slot"> Item 1 </button>
-    <button class="inventory_slot"> Item 2 </button>
-    <button class="inventory_slot hidden"> Item 3 </button>
-    <button class="inventory_slot hidden"> Item 4 </button>
-    <button class="inventory_slot hidden"> Item 5 </button>
+    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
+
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot">
+      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
+    <button class="inventory_slot hidden">
+      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
+    </button>
 
     </div>
 </div>
 upon closer inspection, at the center of the shape is a dial.
-the dial is currently set at the eighth notch.
+the dial is currently set at the eigth notch.
 
 [[turn the dial right|pentagon_dial1]]
 [[turn the dial left|pentagon_dial7]]

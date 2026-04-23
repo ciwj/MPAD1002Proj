@@ -3,108 +3,29 @@
 /* LAVA PUZZLE ROOM   */
 /**********************/
 
+
+:: lavaPuzzleRoom
+
+lava puzzle room
+[[forwards|Area5Room2S]]
 /**********************/
-:: Area 5
-
-/* Player enters lava cave */
-
-> You enter the lava room.
-
-> Heat fills the cave.
-
-> Lava begins to rise.
-
-> You need to press buttons before time runs out.
-
-
->> [[[Find the first button.|area5_button1]]]
+/* ACT II - AREA 5    */
+/*  ROOM 1            */
 /**********************/
 
+:: Area5Room1
+
+  <img src="src/assets/img/act 2 transitional rooms/Area5Room1PovE.png" width="400" alt="[]"/>
+
+[[forwards|lavaPuzzleRoom]]
 
 /**********************/
-:: area5_button1
-
-> You find the first button and press it.
-
-> The lava slows down a little.
-
-
->> [[[Find the second button.|area5_button2]]]
-
+/* ACT II - AREA 5    */
+/*  ROOM 2             */
 /**********************/
 
-/**********************/
-:: area5_button2
+:: Area5Room2 S
 
-> You find the second button and press it.
+  <img src="src/assets/img/act 2 transitional rooms/Area5Room2PovS.png" width="400" alt="[]"/>
 
-> The lava slows again.
-
-> One last button remains.
-
-
->> [[[Find the final button.|area5_button3]]]
-
-/**********************/
-
-/**********************/
-
-:: area5_button3
-
-/* Hidden final button */
-
-> You look around the cave.
-
-> Then you turn behind you and find the final hidden button.
-
-> You press it.
-
-
->> [[[Reveal the gemstone.|area5_end]]]
-
-/**********************/
-
-/**********************/
-
-:: area5_end
-
-/* Gemstone collected */
-
-> The cave shakes.
-
-> The gemstone rises from the ground.
-
-> You grab it quickly.
-
-
->> [[[Continue.|act2_transition]]]
-
-/**********************/
-
-<!--////////////////////////////////////////////////SECTION SEPARATOR/////////////////////////////////////////// -->
-
-
-/***********************/
-/* ACT II - AREA 5     */
-/* SIDE ROOM 1 */
-/***********************/
-
-:: Area5SideRoom1
-
-weird room themed for area 5
-
-
-<!--////////////////////////////////////////////////SECTION SEPARATOR/////////////////////////////////////////// -->
-
-
-/***********************/
-/* ACT II - AREA 5     */
-/* SIDE ROOM 2 */
-/***********************/
-
-:: Area5SideRoom2
-
-another weird room themed for area 5
-
-
-[[Exit]]
+[[forwards|Area3Room2 W]]
