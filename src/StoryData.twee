@@ -55,8 +55,8 @@ Enjoy!
 
 /* CACHED MUSIC */
 <<cacheaudio actII_track src/assets/music/ActII_Track.mp3>>
-<<cacheaudio dark_tut_background src/assets/audio/dark_tut_background.mp3>>
 <<cacheaudio wahwah src/assets/music/WAWAWAAAAHH.mp3>>
+<<cacheaudio title src/assets/music/Title.mp3>>
 
 /* CACHED SFX - ACT 1 (PRE-TUT) */
 <<cacheaudio footsteps_dirt src/assets/audio/footsteps.mp3>>
@@ -64,20 +64,20 @@ Enjoy!
 
 /* EXAMPLE: The macro below registers the audio file at: */
 /* src/assets/audio/dark_tutorial/shuffle_noise.mp3 so it can be used later as shuffle_noise_SFX */
-<<cacheaudio shuffle_noise_SFX src/assets/audio/dark_tutorial/shuffle_noise.mp3>>
+<<cacheaudio shuffle_noise_SFX src/assets/audio/SFX/dark_tutorial/shuffle_noise.mp3>>
 /* Later, the following macro (without the comments) is used in Act1,twee to play the sound, two seconds into the passage, */
 /* At 70% volume, starting 16 seconds into the audio. */
 /* <<timed 2s>> <<audio "shuffle_noise_SFX" time 16 volume 0.7 play>> <</timed>> */
 
 /* CACHED SFX - TUTORIAL ROOMS */
-<<cacheaudio noteC src/assets/audio/tutorial_music_noteC.mp3>>
-<<cacheaudio noteE src/assets/audio/tutorial_music_noteE.mp3>>
-<<cacheaudio "noteG" "src/assets/audio/tutorial_music_noteG.mp3">>
-<<cacheaudio "noteB" "src/assets/audio/tutorial_music_noteB.mp3">>
-<<cacheaudio "song1" "src/assets/audio/tutorial_music_song1.mp3">>
-<<cacheaudio "song2" "src/assets/audio/tutorial_music_song2.mp3">>
-<<cacheaudio "song3" "src/assets/audio/tutorial_music_song3.mp3">>
-<<cacheaudio "song4" "src/assets/audio/tutorial_music_song4.mp3">>
+<<cacheaudio noteC src/assets/audio/SFX/music_tutorial/tutorial_music_noteC.mp3>>
+<<cacheaudio noteE src/assets/audio/SFX/music_tutorial/tutorial_music_noteE.mp3>>
+<<cacheaudio "noteG" "src/assets/audio/SFX/music_tutorial/tutorial_music_noteG.mp3">>
+<<cacheaudio "noteB" "src/assets/audio/SFX/music_tutorial/tutorial_music_noteB.mp3">>
+<<cacheaudio "song1" "src/assets/audio/SFX/music_tutorial/tutorial_music_song1.mp3">>
+<<cacheaudio "song2" "src/assets/audio/SFX/music_tutorial/tutorial_music_song2.mp3">>
+<<cacheaudio "song3" "src/assets/audio/SFX/music_tutorial/tutorial_music_song3.mp3">>
+<<cacheaudio "song4" "src/assets/audio/SFX/music_tutorial/tutorial_music_song4.mp3">>
 
 /* CACHED SFX - ACT II */
 

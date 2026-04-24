@@ -49,12 +49,21 @@
     </div>
 </div>
 
-you find yourself in a room with a whole lot of doors
-[[look right|starting_room 2]]
-[[look left| starting_room 4]]
-[[check behind you| starting_room 3]]
+<<if $firstTimeTut is true>>
+\> You're in a new place. The place you saw through the... Illusion? Rip?
+\> You consider your next steps.
+<<set $firstTimeTut to false>>
+<<else>>
+\> You're here.
+<</if>>
 
-investigate the [[door ahead of you |enter_tutorialexit]]
+\>> [[The right wall.|starting_room 2]]
+
+\>> [[The left wall.| starting_room 4]]
+
+\>> [[Behind you.| starting_room 3]]
+
+\>> [[The door ahead. |enter_tutorialexit]]
 
 
 :: enter_tutorialexit
