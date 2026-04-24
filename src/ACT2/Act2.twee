@@ -1,4 +1,28 @@
 
+:: tool room S
+<img src="src/assets/img/rooms/ToolRoomPovS.jpg" width="400">
+you can hear chatter from the next room over. 
+
+[[creep forwards|tool room W]]
+
+:: tool room W
+<img src="src/assets/img/rooms/ToolRoomPovW.jpg" width="800">
+
+it's a little awkward how you just broke into thier house. 
+
+ [[turn back to see the dammages]]
+ [[get out of here|Act2]]
+
+:: turn back to see the dammages
+<img src="src/assets/img/rooms/ToolRoomPovN.png" width="800">
+
+a half broken down door, boards all over the floor. 
+you very much made a mess of this place.
+
+[[get out of here|Act2]]
+
+
+
 /**************************/
 /* ACT II - CENTRAL ROOM  */
 /**************************/
@@ -7,12 +31,14 @@
 :: Act2
 
 <<audio "actII_track" volume 0.05 loop play>>
-\> in this cracked stone room there are three hallways ahead of you.  
-\> the hallways to either side are entirely dark. 
+\> the cozy atmosphere vanishes immediately. 
+\> you stand in a cracked stone room with three hallways ahead of you. \> the hallways to either side are entirely dark. 
 \> in the hall straight ahead you can see a imposing door glistening with gold. 
 
 \> the door behind you slams shut. 
 \> the walls of this new room shake with the force of it.
+
+\> it seems the home owners aren't a fan of guests.
 
 \> [[there are growing cracks in the stone.|rockslide]]
 /**********************/

@@ -520,7 +520,7 @@
 
     </div>
 </div>
-</</if>>
+<</if>>
 
 \>> [[Step back.| kitchen_tutorial]]
 
@@ -2846,11 +2846,6 @@ That's $dark_tut_press times.
 
 :: locked_door
 
-<<if ($hexagonLock == ['True']) and ($circleLock == ['True']) /* and ($triangleLock == ['True'])*/ and ($diamondLock == ['True']) /*and ($pentagonLock == ['True'])*/ >>
-  <<goto unlocked_door>>
-<</if>>
-
-
  <div class ="inventory_layout">
  <img src="src/assets/img/rooms/tutorial_exit.jpg" width="800" alt="[]"/>
 
@@ -2885,11 +2880,15 @@ you are faced with a door with a strange lock. there are 5 shapes: a hexagon, a 
 
 investigate the [[hexagon]] 
 investigate the [[circle]]
-investigate the triangle
+investigate the [[triangle]]
 investigate the [[diamond]]
 investigate the [[pentagon]] 
 
 :: lock check
+
+<<if ($hexagonLock == ['True']) and ($circleLock == ['True']) /* and ($triangleLock == ['True'])*/ and ($diamondLock == ['True']) /*and ($pentagonLock == ['True'])*/ >>
+  <<goto unlocked_door>>
+<</if>>
 
 <!--hexagon lock -->
 <<if ($heaterNumber == 1) and ($hexagonDial == 9)>>
@@ -2926,6 +2925,9 @@ the circle dial is correct
 the circle dial is correct
 <</if>>
 <!--triangle lock -->
+<<if $triangleDial == 4>>
+<<set $triangleLock to ['True']>>
+<</if>>
 <!--diamond lock -->
 <<if ($circuitNumber == 1) and ($diamondDial == 1)>>
 <<set $diamondLock to ['True']>>
@@ -4523,7 +4525,7 @@ the dial is currently set at the sixth notch.
     </div>
 </div>
 upon closer inspection, at the center of the shape is a dial.
-the dial is currently set at the fifth notch. 
+the dial is currently set at the seventh notch. 
 
 [[turn the dial right|pentagon_dial8]]
 [[turn the dial left|pentagon_dial6]]
@@ -4568,3 +4570,29 @@ the dial is currently set at the eigth notch.
 
 :: unlocked_door
 you've unlocked the door.
+
+...
+
+it won't budge. 
+
+[[shove]]
+
+:: shove
+
+you firmly push on the door. the lock, unlocked, jingles malliciously at you. the door does not open.
+
+[[shove harder]]
+
+:: shove harder
+maybe it's just stuck. maybe it's jammed. you take a stable stance, and SLAM against the door.
+wood creaks, hinges rattle, but that's the most you get.
+
+[[you aren't taking no for an answer]]
+
+:: you aren't taking no for an answer
+you stare down the door. you take a good deep breath as you resolve yourself with the fact you that if you had known you would have tried breaking it down earlier. 
+with a running start, plant your foot and slam your shoulder into the door. 
+
+the wood is a mess of splinters. and you can feel the force of it breaking reverberate through the walls.
+
+[[the door is open|tool room]]
