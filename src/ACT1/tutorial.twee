@@ -309,8 +309,10 @@
 
     </div>
 </div>
- [[enter|heater tutorial]]
- [[go back|starting_room 4]]
+
+\>> [[Step forwards.|heater tutorial]]
+
+\>> [[No, back.|starting_room 4]]
 
 :: enter_tutorialkitchen
 
@@ -339,8 +341,10 @@
 
     </div>
 </div>
- [[enter|kitchen_tutorial]]
- [[go back|starting_room 4]]
+
+\>> [[This one. Step through.|kitchen_tutorial]]
+
+\>> [[Nope.|starting_room 4]]
 
 :: enter_tutorialdark
 
@@ -369,8 +373,9 @@
 
     </div>
 </div>
- [[enter|dark tutorial]]
- [[go back|starting_room 4]]
+
+\>> [[I got a good feeling about this one.|dark tutorial]]
+\>> [[.. Eh.|starting_room 4]]
 
 
 :: kitchen_tutorial
