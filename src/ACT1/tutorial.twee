@@ -406,23 +406,32 @@
     </div>
 </div>
 
+\> ...
 
-introduce cooking mechanic 
+\> A kitchenette?
 
-[[go back|starting_room]]
+\> Everyone's gotta eat, you suppose.
 
-investigate [[the note on the wall]]
-investigate [[the cooking pot|cooking_pot]]
-check the [[brown bin|brown_bin]]
-check the [[green bin|green_bin]]
-walk over to the [[plate]]
+
+\>> [[Read the note on the wall.|the note on the wall]]
+
+\>> [[Go to the pot.|cooking_pot]]
+
+\>> [[The brown bin?|brown_bin]]
+
+\>> [[Green bin..|green_bin]]
+
+\>> [Over to the plate.|plate]]
+
 <<if $tutorialSoupCooked == 'True'>>
-  [[look at soup|view_soup]]
+\>>  [[Inspect your creation.|view_soup]]
 <</if>>
+
+\>> [[Back.|starting_room]]
 
 :: the note on the wall
 
-it seems to be a recipe
+\> It seems to be.. a recipe?
 
 <<if $recipeNumber == 1>>
 
@@ -511,17 +520,16 @@ it seems to be a recipe
 </div>
 </</if>>
 
-[[step back | kitchen_tutorial]]
+\>> [[Step back.| kitchen_tutorial]]
 
 :: brown_bin
-inventory: $inventory
-banana: $ITEMbanana
-cookie: $ITEMcookie
-anchovy: $ITEManchovy
-
-inside the bin there are cookies, bananas and anchovies.
+Inventory: $inventory
+Banana: $ITEMbanana
+Cookie: $ITEMcookie
+Anchovy: $ITEManchovy
 
 
+\> Inside the bin there are cookies, bananas and anchovies. An assortment, to be sure.
 
 <div class ="inventory_layout">
     <div style="display:flex;flex-direction:row;justify-content:flex-start;">
@@ -565,17 +573,20 @@ inside the bin there are cookies, bananas and anchovies.
 </div>
 
 <<if $inventory <[2]>>
-  grab a [[banana|grab_banana]]
-  grab a [[cookie|grab_cookie]]
-  grab an [[anchovy|grab_anchovy]]
-  grab [[nothing|brown_bin]]
+\>> [[Grab a banana|grab_banana]]
+
+\>> [[Grab a cookie|grab_cookie]]
+
+\>> [[Grab an anchovy|grab_anchovy]]
+
+\>> [[Contemplate.|brown_bin]]
 <</if>>
 
 <<if $inventory == [2]>>
-  your hands are full
+\> Your hands are full.
 <</if>>
 
-[[step back | kitchen_tutorial]]
+\>> [[Back. | kitchen_tutorial]]
 
 
 :: grab_banana
