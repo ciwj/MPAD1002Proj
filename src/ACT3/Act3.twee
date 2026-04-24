@@ -175,4 +175,4 @@ Navigation passage. Start: [[endroom_main]]
 
 >> [[[I wish.. I wish I could do this all over again]name_set1]] /* Restart <-- hover text if possible. for below option also */
 
->> [[[.. What if I had done this differently? Is this escapable? No. I need to know]|endroom_main]] /* Back to end room for diff ending*/
+>> [[[.. What if I had done this differently? Is this escapable? No. I need to know.]|endroom_main]] /* Back to end room for diff ending*/

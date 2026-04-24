@@ -1,8 +1,6 @@
 :: Exit S
 
-  [[turn right| Exit W]]
-  [[turn left| Exit E]]
-  <!--FORWARD FROM HERE IS THE ACTUAL EXIT TO ACT 3 -->
+  [[Proceed.|endroom_main]
 
 :: Exit N
 
