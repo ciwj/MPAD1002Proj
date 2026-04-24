@@ -82,7 +82,7 @@ Enjoy!
 <<cacheaudio "song4" "src/assets/audio/SFX/music_tutorial/tutorial_music_song4.mp3">>
 
 /* CACHED SFX - ACT II */
-
+<<cacheaudio "droning" "src/assets/audio/droning.mp3">>
 
 /* CACHED SFX - ACT III */
 

@@ -1163,25 +1163,25 @@ previous page - [[next page|musicbook2]]
 
 
 :: noteC
-<img src="src/assets/img/tutorial_music.jpg" width="240" height="auto" alt="[alt text goes here]"/>
+<img src="src/assets/img/rooms/tutorial_music.jpg" width="240" height="auto" alt="[alt text goes here]"/>
 <<audio "noteC" play goto "music tutorial">>
 
 ...
 
 :: noteE
-<img src="src/assets/img/tutorial_music.jpg" width="240" height="auto" alt="[alt text goes here]"/>
+<img src="src/assets/img/rooms/tutorial_music.jpg" width="240" height="auto" alt="[alt text goes here]"/>
 <<audio "noteE" play goto "music tutorial">>
 
 ...
 
 :: noteG
-<img src="src/assets/img/tutorial_music.jpg" width="240" height="auto" alt="[alt text goes here]"/>
+<img src="src/assets/img/rooms/tutorial_music.jpg" width="240" height="auto" alt="[alt text goes here]"/>
 <<audio "noteG" play goto "music tutorial">>
 
 ...
 
 :: noteB
-<img src="src/assets/img/tutorial_music.jpg" width="240" height="auto" alt="[alt text goes here]"/>
+<img src="src/assets/img/rooms/tutorial_music.jpg" width="240" height="auto" alt="[alt text goes here]"/>
 <<audio "noteB" play goto "music tutorial">>
 
 ...
