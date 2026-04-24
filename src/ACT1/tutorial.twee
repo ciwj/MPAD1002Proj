@@ -94,8 +94,9 @@
     </div>
 </div>
 
- [[enter|locked_door]]
- [[go back|starting_room]]
+\>> [[Go forwards.|locked_door]]
+
+\>> [[Go back.|starting_room]]
 
 :: starting_room 2
 
@@ -124,14 +125,18 @@
 
     </div>
 </div>
-you find yourself in a room with a whole lot of doors
 
-[[look right|starting_room 3]]
-[[look left| starting_room]]
-[[check behind you| starting_room 4]]
+\> Before you are two doors.
 
-investigate the [[left door |enter_tutorialmusic]]
-investigate the [[right door |enter_tutorialcircuit]]
+\>> [[Investigate the left door.|enter_tutorialmusic]]
+
+\>> [[Investigate the right door.|enter_tutorialcircuit]]
+
+\>> [[Turn right.|starting_room 3]]
+
+\>> [[Turn left.| starting_room]]
+
+\>> [[Check behind you.| starting_room 4]]
 
 :: enter_tutorialmusic
 
@@ -160,8 +165,10 @@ investigate the [[right door |enter_tutorialcircuit]]
 
     </div>
 </div>
- [[enter|music tutorial]]
- [[go back|starting_room 2]]
+
+\>> [[Enter.|music tutorial]]
+
+\>> [[Go back.|starting_room 2]]
 
 
 :: enter_tutorialcircuit
@@ -191,8 +198,9 @@ investigate the [[right door |enter_tutorialcircuit]]
 
     </div>
 </div>
- [[enter|circuit_tutorial]]
- [[go back|starting_room 2]]
+
+\>> [[Enter.|circuit_tutorial]]
+\>> [[Go back.|starting_room 2]]
 
 
 :: starting_room 3
@@ -222,11 +230,16 @@ investigate the [[right door |enter_tutorialcircuit]]
 
     </div>
 </div>
-you find yourself in a room with a whole lot of doors
 
-[[look right|starting_room 4]]
-[[look left| starting_room 2]]
-[[check behind you| starting_room]]
+\> You look back at where you came through.
+
+\> You think of the silent, silent trees.
+
+\>> [[Turn right.|starting_room 4]]
+
+\>> [[Turn left.| starting_room 2]]
+
+\>> [[Behind you.| starting_room]]
 
 
 :: starting_room 4
@@ -256,16 +269,18 @@ you find yourself in a room with a whole lot of doors
 
     </div>
 </div>
-you find yourself in a room with a whole lot of doors
 
-[[look right|starting_room]]
-[[look left| starting_room 3]]
-[[check behind you| starting_room 2]]
+\> Before you are three doors.
 
-investigate the [[left door|enter_tutorialheater]]
-investigate the [[middle door |enter_tutorialkitchen]]
-investigate the [[right door |enter_tutorialdark]]
+\>> [[Investigate the left door.|enter_tutorialheater]]
 
+\>> [[Investigate the middle door.|enter_tutorialkitchen]]
+
+\>> [[Investigate the right door.|enter_tutorialdark]]
+
+\>> [[Turn right.|starting_room]]
+\>> [[Turn left.| starting_room 3]]
+\>> [[Behind you.| starting_room 2]]
 
 :: enter_tutorialheater
 
