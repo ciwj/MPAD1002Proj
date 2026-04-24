@@ -3,35 +3,35 @@
 /**********************/
 
 :: darkPuzzleRoom S
-
-darkPuzzleRoom pov s wall
-
+darkPuzzleRoom S
 [[forwards| Area4Room2 S]]
 [[turn right|darkPuzzleRoom W]]
 [[turn left| darkPuzzleRoom E]]
+[[check behind you| darkPuzzleRoom N]]
+
 
 :: darkPuzzleRoom E
-
-darkPuzzleRoom pov E wall
-
+darkPuzzleRoom E
 [[forwards| Area4Room1 E]]
 [[turn right|darkPuzzleRoom S]]
 [[turn left| darkPuzzleRoom N]]
+[[check behind you| darkPuzzleRoom W]]
+
 
 :: darkPuzzleRoom N
-
-darkPuzzleRoom pov n wall
-
+darkPuzzleRoom N
 [[forwards| Area2Room2 N]]
 [[turn right|darkPuzzleRoom E]]
 [[turn left| darkPuzzleRoom W]]
+[[check behind you| darkPuzzleRoom S]]
+
 
 :: darkPuzzleRoom W
-
-darkPuzzleRoom pov W wall
-
+darkPuzzleRoom W
 [[turn right|darkPuzzleRoom N]]
 [[turn left| darkPuzzleRoom S]]
+[[check behind you| darkPuzzleRoom E]]
+
 
 
 /**********************/
@@ -44,25 +44,32 @@ darkPuzzleRoom pov W wall
 
   [[turn right| Area4Room1 S]]
   [[turn left| Area4Room1 N]]
+  [[check behind you| Area4Room1 W]]
+
 
 :: Area4Room1 S
   <img src="src/assets/img/act 2 transitional rooms/Area4Room1PovS.png" width="400" alt="[]"/>
-  
   [[forwards|Area4Room2 W]]
   [[turn right| Area4Room1 W]]
   [[turn left| Area4Room1 E]]
+  [[check behind you| Area4Room1 N]]
+
 
 :: Area4Room1 W
   <img src="src/assets/img/act 2 transitional rooms/Area4Room1PovW.png" width="400" alt="[]"/>
-
+  [[forwards|darkPuzzleRoom W]]
   [[turn right| Area4Room1 N]]
   [[turn left| Area4Room1 S]]
+  [[check behind you| Area4Room1 E]]
 
-  :: Area4Room1 N
-  <img src="src/assets/img/act 2 transitional rooms/Area4Room1PovE.png" width="400" alt="[]"/>
+
+:: Area4Room1 N
+  <img src="src/assets/img/act 2 transitional rooms/Area4Room1PovN.png" width="400" alt="[]"/>
   
   [[turn right| Area4Room1 E]]
   [[turn left| Area4Room1 W]]
+  [[check behind you| Area4Room1 S]]
+
 
 
 /**********************/
@@ -75,23 +82,28 @@ darkPuzzleRoom pov W wall
 
   [[turn right| Area4Room2 W]]
   [[turn left| Area4Room2 E]]
+  [[check behind you| Area4Room2 N]]
+
 
 :: Area4Room2 N
   <img src="src/assets/img/act 2 transitional rooms/Area4Room2PovN.png" width="400" alt="[]"/>
 
   [[turn right| Area4Room2 E]]
   [[turn left| Area4Room2 W]]
+  [[check behind you| Area4Room2 S]]
+
 
 :: Area4Room2 E
   <img src="src/assets/img/act 2 transitional rooms/Area4Room2PovE.png" width="400" alt="[]"/>
-
 [[forward| Area4Room1 N]]
 [[turn right| Area4Room2 S]]
 [[turn left| Area4Room2 N]]
+[[check behind you| Area4Room2 W]]
+
 
 :: Area4Room2 W
   <img src="src/assets/img/act 2 transitional rooms/Area4Room2PovW.png" width="400" alt="[]"/>
-
 [[forward| Exit W]]
 [[turn right| Area4Room2 N]]
 [[turn left| Area4Room2 S]]
+[[check behind you| Area4Room2 E]]

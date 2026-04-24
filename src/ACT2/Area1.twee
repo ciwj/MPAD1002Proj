@@ -6,12 +6,36 @@
 /* ACT II - AREA 1     */
 /*  ROOM 1 */
 /***********************/
+
+:: Area1Room1 S
+  <img src="src/assets/img/act 2 transitional rooms/Area1Room1PovS.png" width="400" alt="[]"/>
+
+  [[turn right| Area1Room1 W]]
+  [[turn left| Area1Room1 E]]
+  [[check behind you| Area1Room1 N]]
+
+:: Area1Room1 N
+  <img src="src/assets/img/act 2 transitional rooms/Area1Room1PovN.png" width="400" alt="[]"/>
+
+  [[turn right| Area1Room1 E]]
+  [[turn left| Area1Room1 W]]
+  [[check behind you| Area1Room1 S]]
+
+
 :: Area1Room1 E
-
   <img src="src/assets/img/act 2 transitional rooms/Area1Room1PovE.png" width="400" alt="[]"/>
+[[forward| central room E]]
+[[turn right| Area1Room1 S]]
+[[turn left| Area1Room1 N]]
+[[check behind you| Area1Room1 W]]
 
 
-[[continue forward|Area1Puzzle]]
+:: Area1Room1 W
+  <img src="src/assets/img/act 2 transitional rooms/Area1Room1PovW.png" width="400" alt="[]"/>
+[[forward| kitchenPuzzleRoom W]]
+[[turn right| Area1Room1 N]]
+[[turn left| Area1Room1 S]]
+[[check behind you| Area1Room1 E]]
 
 <!--////////////////////////////////////////////////SECTION SEPARATOR/////////////////////////////////////////// -->
 
@@ -21,13 +45,37 @@
 /* KITCHEN PUZZLE ROOM */
 /***********************/
 
+:: kitchenPuzzleRoom S
+kitchenPuzzleRoom S
+  [[forwards|Area1Room2 S]]
+  [[turn right| kitchenPuzzleRoom W]]
+  [[turn left| kitchenPuzzleRoom E]]
+  [[check behind you| kitchenPuzzleRoom N]]
 
-:: kitchenPuzzleRoom
 
-you are in the crazy kitchen! serve the chef what he wants and you win the gemstone!
+::  kitchenPuzzleRoom N
+kitchenPuzzleRoom N
 
-[[back|Area1Room1]]
-[[forwards|Area1Room2 S]]
+  [[turn right| kitchenPuzzleRoom E]]
+  [[turn left| kitchenPuzzleRoom W]]
+  [[check behind you| kitchenPuzzleRoom S]]
+
+
+:: kitchenPuzzleRoom E
+kitchenPuzzleRoom E
+[[forwards|Area1Room1 E]]
+[[turn right| kitchenPuzzleRoom S]]
+[[turn left| kitchenPuzzleRoom N]]
+[[check behind you| kitchenPuzzleRoom W]]
+
+
+:: kitchenPuzzleRoom W
+kitchenPuzzleRoom W
+ 
+[[turn right| kitchenPuzzleRoom N]]
+[[turn left| kitchenPuzzleRoom S]]
+[[check behind you| kitchenPuzzleRoom E]]
+
 
 
 <!--////////////////////////////////////////////////SECTION SEPARATOR/////////////////////////////////////////// -->
@@ -37,18 +85,37 @@ you are in the crazy kitchen! serve the chef what he wants and you win the gemst
 /* ACT II - AREA 1     */
 /*  ROOM 2 */
 /***********************/
-:: Area1Room2 S
-  <img src="src/assets/img/act 2 transitional rooms/Area1Room2PovS.png" width="400" alt="[]"/>
+
+::  Area1Room2 S
+<img src="src/assets/img/act 2 transitional rooms/Area1Room2PovS.png" width="400" alt="[]"/>
+   
+  [[turn right|Area1Room2 W]]
+  [[turn left| Area1Room2 E]]
+  [[check behind you| Area1Room2 N]]
 
 
-[[turn left|Area1Room2 E]]
-[[back|kitchenPuzzleRoom]]
+:: Area1Room2 N
+<img src="src/assets/img/act 2 transitional rooms/Area1Room2PovN.png" width="400" alt="[]"/>
+  [[forwards|kitchenPuzzleRoom N]]
+  [[turn right|Area1Room2 E]]
+  [[turn left| Area1Room2 W]]
+  [[check behind you| Area1Room2 S]]
 
 
-[[back|Act2]]
-
-:: Area1Room2 S
+:: Area1Room2 E
 <img src="src/assets/img/act 2 transitional rooms/Area1Room2PovE.png" width="400" alt="[]"/>
+[[forwards|Area5Room1 E]]
+[[turn right| Area1Room2 S]]
+[[turn left| Area1Room2 N]]
+[[check behind you| Area1Room2 W]]
 
+
+:: Area1Room2 W
+<img src="src/assets/img/act 2 transitional rooms/Area1Room2PovW.png" width="400" alt="[]"/>
 [[forward|Area5Room1 E]]
-[[back|kitchenPuzzleRoom]]
+[[turn right| Area1Room2 N]]
+[[turn left| Area1Room2 S]]
+[[check behind you| Area1Room2 W]]
+
+
+

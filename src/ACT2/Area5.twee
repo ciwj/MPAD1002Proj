@@ -3,29 +3,104 @@
 /* LAVA PUZZLE ROOM   */
 /**********************/
 
+:: lavaPuzzleRoom S
+lavaPuzzleRoom S
+[[forwards|Area5Room2 S]]
+[[turn right|lavaPuzzleRoom W]]
+[[turn left| lavaPuzzleRoom E]]
+[[check behind you| lavaPuzzleRoom N]]
 
-:: lavaPuzzleRoom
 
-lava puzzle room
-[[forwards|Area5Room2S]]
+:: lavaPuzzleRoom E
+lavaPuzzleRoom E
+
+[[turn right|lavaPuzzleRoom S]]
+[[turn left| lavaPuzzleRoom N]]
+[[check behind you| lavaPuzzleRoom W]]
+
+
+:: lavaPuzzleRoom N
+lavaPuzzleRoom N
+
+[[turn right|lavaPuzzleRoom E]]
+[[turn left| lavaPuzzleRoom W]]
+[[check behind you| lavaPuzzleRoom S]]
+
+
+:: lavaPuzzleRoom W
+lavaPuzzleRoom W
+[[forwards|Area5Room1 W]]
+[[turn right|lavaPuzzleRoom N]]
+[[turn left| lavaPuzzleRoom S]]
+[[check behind you| lavaPuzzleRoom E]]
+
 /**********************/
 /* ACT II - AREA 5    */
 /*  ROOM 1            */
 /**********************/
 
-:: Area5Room1
+:: Area5Room1 S
+  <img src="src/assets/img/act 2 transitional rooms/Area5Room1PovS.png" width="400" alt="[]"/>
 
+[[turn right|Area5Room1 W]]
+[[turn left| Area5Room1 E]]
+[[check behind you| Area5Room1 N]]
+
+
+:: Area5Room1 E
   <img src="src/assets/img/act 2 transitional rooms/Area5Room1PovE.png" width="400" alt="[]"/>
+[[forwards| lavaPuzzleRoom E]]
+[[turn right|Area5Room1 S]]
+[[turn left| Area5Room1 N]]
+[[check behind you| Area5Room1 W]]
 
-[[forwards|lavaPuzzleRoom]]
+
+:: Area5Room1 N
+  <img src="src/assets/img/act 2 transitional rooms/Area5Room1PovN.png" width="400" alt="[]"/>
+
+[[turn right|Area5Room1 E]]
+[[turn left| Area5Room1 W]]
+[[check behind you| Area5Room1 S]]
+
+
+:: Area5Room1 W
+  <img src="src/assets/img/act 2 transitional rooms/Area5Room1PovW.png" width="400" alt="[]"/>
+[[forwards| Area1Room2 W]]
+[[turn right|Area5Room1 N]]
+[[turn left| Area5Room1 S]]
+[[check behind you| Area5Room1 E]]
 
 /**********************/
 /* ACT II - AREA 5    */
 /*  ROOM 2             */
 /**********************/
-
 :: Area5Room2 S
-
   <img src="src/assets/img/act 2 transitional rooms/Area5Room2PovS.png" width="400" alt="[]"/>
+[[forwards|Area3Room2 W ]]
+[[turn right|Area5Room2 W]]
+[[turn left| Area5Room2 E]]
+[[check behind you| Area5Room2 N]]
 
-[[forwards|Area3Room2 W]]
+
+:: Area5Room2 E
+  <img src="src/assets/img/act 2 transitional rooms/Area5Room2PovE.png" width="400" alt="[]"/>
+
+[[turn right|Area5Room2 S]]
+[[turn left| Area5Room2 N]]
+[[check behind you| Area5Room2 W]]
+
+
+:: Area5Room2 N
+  <img src="src/assets/img/act 2 transitional rooms/Area5Room2PovN.png" width="400" alt="[]"/>
+[[forwards| lavaPuzzleRoom N]]
+[[turn right|Area5Room2 E]]
+[[turn left| Area5Room2 W]]
+[[check behind you| Area5Room2 S]]
+
+
+:: Area5Room2 W
+  <img src="src/assets/img/act 2 transitional rooms/Area5Room2PovW.png" width="400" alt="[]"/>
+
+[[turn right|Area5Room2 N]]
+[[turn left| Area5Room2 S]]
+[[check behind you| Area5Room2 E]]

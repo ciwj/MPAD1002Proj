@@ -14,33 +14,47 @@
 \> the door behind you slams shut. 
 \> the walls of this new room shake with the force of it.
 
-\> [[your eyes follow nervously follow the growing cracks in the stone.|rockslide]]
+\> [[there are growing cracks in the stone.|rockslide]]
 /**********************/
 
 /**********************/
 :: rockslide
 \> the celling collapses and blocks middle hall.
 
-[investigate the right hallway|Area1Room1 E]
+[[investigate the right hallway|Area1Room1 W]]
 
-[investigate the left hallway|Area 2]
+[[investigate the left hallway|musicPuzzleRoom S]]
 /**********************/
 
 
 :: central room S 
-
-there are two hallways on either side. 
+central room S 
 
 [[turn right|central room W]]
 [[turn left|central room E]]
+[[check behind you| central room N]]
+
 
 
 :: central room W 
- 
+ central room W 
+ [[forward|Area1Room1 W]]
+ [[turn|right| central room N]]
  [[turn left|central room S]]
- [[forward|Area1Room1W]]
+ [[check behind you| central room E]]
+
 
 :: central room E
-
+central room E
 [[turn right| central room W]]
+[[turn left| central room N]]
 [[forward|musicPuzzleRoom S]]
+[[check behind you| central room W]]
+
+
+:: central room N 
+central room N 
+
+[[turn right| central room E]]
+[[turn left | central room W]]
+[[check behind you| central room S]]

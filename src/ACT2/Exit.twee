@@ -17,6 +17,28 @@
 
 :: Exit W
 
-[[forward||Area3Room2 W]]
+[[forward|Area3Room2 W]]
 [[turn right| Exit N]]
 [[turn left| Exit S]]
+
+/*BASE TEMPLATE
+::  S
+
+  [[turn right| Exit W]]
+  [[turn left| Exit E]]
+
+::  N
+
+  [[turn right| Exit E]]
+  [[turn left| Exit W]]
+
+::  E
+
+[[turn right| Exit S]]
+[[turn left| Exit N]]
+
+::  W
+
+[[turn right| Exit N]]
+[[turn left| Exit S]]
+ */

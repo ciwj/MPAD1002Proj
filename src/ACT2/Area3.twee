@@ -3,29 +3,71 @@
 /**********************/
 
 :: coldPuzzleRoom S
+  coldPuzzleRoom S
+
   [[turn right| coldPuzzleRoom W]]
   [[turn left| coldPuzzleRoom E]]
+  [[check behind you|coldPuzzleRoom N]]
 
 :: coldPuzzleRoom N
+coldPuzzleRoom N
+  [[forwards| musicPuzzleRoom E]]
   [[turn right| coldPuzzleRoom E]]
   [[turn left| coldPuzzleRoom W]]
+  [[check behind you|coldPuzzleRoom S]]
+
 
 :: coldPuzzleRoom E
+coldPuzzleRoom E
+[[forwards| Area3Room1 S]]
 [[turn right| coldPuzzleRoom S]]
 [[turn left| coldPuzzleRoom N]]
+[[check behind you|coldPuzzleRoom W]]
+
 
 :: coldPuzzleRoom W
+coldPuzzleRoom W
+
 [[turn right| coldPuzzleRoom N]]
 [[turn left| coldPuzzleRoom S]] 
+[[check behind you|coldPuzzleRoom E]]
+
 
 /**********************/
 /* ACT II - AREA 3    */
 /*  ROOM 1            */
 /**********************/
+
+
+:: Area3Room1 S
+  <img src="src/assets/img/act 2 transitional rooms/Area3Room1PovS.png" width="400" alt="[]"/>
+  [[forwards| Area3Room2 S]]
+  [[turn right| Area3Room1 W]]
+  [[turn left| Area3Room1 E]]
+  [[check behind you|Area3Room1 N]]
+
 :: Area3Room1 N
   <img src="src/assets/img/act 2 transitional rooms/Area3Room1PovN.png" width="400" alt="[]"/>
+  [[forwards| coldPuzzleRoom S]]
+  [[turn right| Area3Room1 E]]
+  [[turn left| Area3Room1 W]]
+  [[check behind you|Area3Room1 S]]
 
-[[forward|coldPuzzleRoom]]
+
+:: Area3Room1 E
+  <img src="src/assets/img/act 2 transitional rooms/Area3Room1PovE.png" width="400" alt="[]"/>
+
+[[turn right| Area3Room1 S]]
+[[turn left| Area3Room1 N]]
+[[check behind you|Area3Room1 W]]
+
+
+:: Area3Room1 W
+  <img src="src/assets/img/act 2 transitional rooms/Area3Room1PovW.png" width="400" alt="[]"/>
+
+[[turn right| Area3Room1 N]]
+[[turn left| Area3Room1 S]] 
+[[check behind you|Area3Room1 E]]
 
 
 /**********************/
@@ -36,25 +78,28 @@
 :: Area3Room2 W
 
   <img src="src/assets/img/act 2 transitional rooms/Area3Room2PovW.png" width="400" alt="[]"/>
-
 [[forward|Area2Room1 S]]
 [[turn right|Area3Room2 N]]
 [[turn left| Area3Room2 S]]
+[[check behind you| Area3Room2 E]]
+
 
 :: Area3Room2 N 
   <img src="src/assets/img/act 2 transitional rooms/Area3Room2PovN.png" width="400" alt="[]"/>
-
 [[forwards|Area3Room1 N]]
 [[turn right| Area3Room2 E]]
 [[turn left| Area3Room2 W]]
+[[check behind you| Area3Room2 S]]
+
 
 
 :: Area3Room2 S 
   <img src="src/assets/img/act 2 transitional rooms/Area3Room2PovS.png" width="400" alt="[]"/>
-
   [[forward| Exit E]]
   [[turn right| Area3Room2 E]]
   [[turn left| Area3Room2 W]]
+  [[check behind you| Area3Room2 N]]
+
 
 
 :: Area3Room2 E
@@ -62,27 +107,7 @@
     [[forward|Area4Room2 E]]
     [[turn right| Area3Room2 W]]
     [[turn left| Area3Room2 E]]
+    [[check behind you| Area3Room2 W]]
 
 
-/*:: Exit S
 
-  [[turn right| Exit W]]
-  [[turn left| Exit E]]
-  <!--FORWARD FROM HERE IS THE ACTUAL EXIT -->
-
-    :: Exit N
-
-  [[turn right| Exit E]]
-  [[turn left| Exit W]]
-
-    :: Exit E
-
-[[forward|Area4Room2 E]]
-[[turn right| Exit W]]
-[[turn left| Exit E]]
-
-    :: Exit W
-
-[[forward||Area3Room2 W]]
-[[turn right| Exit N]]
-[[turn left| Exit S]] */

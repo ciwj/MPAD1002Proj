@@ -3,54 +3,36 @@
 /**********************/
 
 :: musicPuzzleRoom S
+musicPuzzleRoom S
 
-music puzzle room S wall pov
 [[turn right| musicPuzzleRoom W]]
 [[turn left| musicPuzzleRoom E]]
+[[check behind you| musicPuzzleRoom N]]
+
 
 :: musicPuzzleRoom E
-
-music puzzle room E wall pov
+musicPuzzleRoom E
+[[forwards|Area2Room1 E]]
 [[turn right| coldPuzzleRoom W]]
 [[turn left| coldPuzzleRoom E]]
+[[check behind you| musicPuzzleRoom W]]
 
-[[forwards|Area2Room1 E]]
 
 
 :: musicPuzzleRoom W
-
-music puzzle room W wall pov
-
+musicPuzzleRoom W
+[[forwards|coldPuzzleRoom S]]
 [[turn right| musicPuzzleRoom N]]
 [[turn left| musicPuzzleRoom S]]
-[[forwards|coldPuzzleRoom S]]
+[[check behind you| musicPuzzleRoom E]]
+
 
 :: musicPuzzleRoom N
-music puzzle room N wall pov
+musicPuzzleRoom N
 
 [[turn right| musicPuzzleRoom E]]
 [[turn left| musicPuzzleRoom W]]
-
-
-/*:: coldPuzzleRoom S
-
-  [[turn right| coldPuzzleRoom W]]
-  [[turn left| coldPuzzleRoom E]]
-
-:: coldPuzzleRoom N
-
-  [[turn right| coldPuzzleRoom E]]
-  [[turn left| coldPuzzleRoom W]]
-
-:: coldPuzzleRoom E
-
-[[turn right| coldPuzzleRoom W]]
-[[turn left| coldPuzzleRoom E]]
-
-:: coldPuzzleRoomxit W
-
-[[turn right| coldPuzzleRoom N]]
-[[turn left| coldPuzzleRoom S]]  */
+[[check behind you| musicPuzzleRoom S]]
 
 
 
@@ -61,31 +43,36 @@ music puzzle room N wall pov
 
 :: Area2Room1 S
   <img src="src/assets/img/act 2 transitional rooms/Area2Room1PovS.png" width="400" alt="[]"/>
-
   [[forwards|Area2Room2 W]]
   [[turn right|Area2Room1 W]]
   [[turn left|Area2Room1 E]]
+  [[check behind you| Area2Room1 N]]
+
 
 
 :: Area2Room1 E 
   <img src="src/assets/img/act 2 transitional rooms/Area2Room1PovE.png" width="400" alt="[]"/>
-
+ 
 [[turn right|Area2Room1 S]]
 [[turn left|Area2Room1 N]]
+[[check behind you| Area2Room1 W]]
+
 
 :: Area2Room1 N 
   <img src="src/assets/img/act 2 transitional rooms/Area2Room1PovN.png" width="400" alt="[]"/>
 
-[[forwards|Area3Room2 E]]
 [[turn right|Area2Room1 E]]
 [[turn left|Area2Room1 W]]
+[[check behind you| Area2Room1 S]]
+
 
 :: Area2Room1 W
   <img src="src/assets/img/act 2 transitional rooms/Area2Room1PovW.png" width="400" alt="[]"/>
-
 [[forwards|musicPuzzleRoom W]]
-[[turn right|musicPuzzleRoom N]]
+[[turn right|Area2Room1 N]]
 [[turn left|Area2Room1 S]]
+[[check behind you| Area2Room1 E]]
+
 
 /**********************/
 /* ACT II - AREA 2   */
@@ -97,23 +84,30 @@ music puzzle room N wall pov
 
 [[turn right|Area2Room2 N]]
 [[turn left|Area2Room2 S]]
+[[check behind you| Area2Room2 E]]
+
 
 :: Area2Room2 N
   <img src="src/assets/img/act 2 transitional rooms/Area2Room1PovN.png" width="400" alt="[]"/>
 
 [[turn right|Area2Room2 E]]
 [[turn left|Area2Room2 W]]
+[[check behind you| Area2Room2 S]]
+
 
 :: Area2Room2 S
   <img src="src/assets/img/act 2 transitional rooms/Area2Room1PovS.png" width="400" alt="[]"/>
-
+[[forwards|darkPuzzleRoom S]]
 [[turn right|Area2Room2 W]]
 [[turn left|Area2Room2 E]]
-[[forwards|darkPuzzleRoom S]]
+[[check behind you| Area2Room2 N]]
+
 
 :: Area2Room2 E
   <img src="src/assets/img/act 2 transitional rooms/Area2Room1PovE.png" width="400" alt="[]"/>
 
 [[turn right|Area2Room2 S]]
 [[turn left|Area2Room2 N]]
+[[check behind you| Area2Room2 W]]
+
 
