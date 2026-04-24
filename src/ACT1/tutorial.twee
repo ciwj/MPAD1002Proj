@@ -279,7 +279,9 @@
 \>> [[Investigate the right door.|enter_tutorialdark]]
 
 \>> [[Turn right.|starting_room]]
+
 \>> [[Turn left.| starting_room 3]]
+
 \>> [[Behind you.| starting_room 2]]
 
 :: enter_tutorialheater
@@ -421,10 +423,10 @@
 
 \>> [[Green bin..|green_bin]]
 
-\>> [Over to the plate.|plate]]
+\>> [[Over to the plate.|plate]]
 
 <<if $tutorialSoupCooked == 'True'>>
-\>>  [[Inspect your creation.|view_soup]]
+\>> [[Admire your creation.|view_soup]]
 <</if>>
 
 \>> [[Back.|starting_room]]
@@ -662,39 +664,39 @@ Anchovy: $ITEManchovy
 
 :: green_bin
 
-inventory: $inventory
-banana: $ITEMbanana
-cookie: $ITEMcookie
-anchovy: $ITEManchovy
+Inventory: $inventory
+Banana: $ITEMbanana
+Cookie: $ITEMcookie
+Anchovy: $ITEManchovy
 
-it looks to be for compost.
+\> Looks like its for compost.
 
 <<if $inventory > 0>>
 
   <div style="display:flex;flex-direction:column;align-items:flex-start;">
-  throw out:
-  <<if $ITEMbanana > 0>> [[banana|drop_banana]]<</if>>
-  <<if $ITEMcookie > 0>>[[cookie|drop_cookie]] <</if>>
-  <<if $ITEManchovy > 0>>[[anchovy|drop_anchovy]]<</if>>
-  <<if $ITEManchovyx2 > 0>>[[anchovy soup|drop_anchovyx2]]<</if>>
-  <<if $ITEMcookiex2 > 0>>[[cookie soup|drop_cookiex2]]<</if>>
-  <<if $ITEMbananax2 > 0>>[[banana soup|drop_bananax2]]<</if>>
-  <<if $ITEMbanana_cookie > 0>>[['choco-banana crumble bites'|drop_banana_cookie]]<</if>>
-  <<if $ITEMbanana_anchovy > 0>>[['tropical tangy anchovy mash'|drop_banana_anchovy]]<</if>>
-  <<if $ITEMcookie_anchovy > 0>>[['savoury salted cookie dough'|drop_cookie_anchovy]]<</if>>
+  Throw out:
+  <<if $ITEMbanana > 0>> [[Banana|drop_banana]]<</if>>
+  <<if $ITEMcookie > 0>>[[Cookie|drop_cookie]] <</if>>
+  <<if $ITEManchovy > 0>>[[Anchovy|drop_anchovy]]<</if>>
+  <<if $ITEManchovyx2 > 0>>[[Anchovy soup|drop_anchovyx2]]<</if>>
+  <<if $ITEMcookiex2 > 0>>[[Cookie soup|drop_cookiex2]]<</if>>
+  <<if $ITEMbananax2 > 0>>[[Banana soup|drop_bananax2]]<</if>>
+  <<if $ITEMbanana_cookie > 0>>[['Choco-banana crumble bites'|drop_banana_cookie]]<</if>>
+  <<if $ITEMbanana_anchovy > 0>>[['Tropical tangy anchovy mash'|drop_banana_anchovy]]<</if>>
+  <<if $ITEMcookie_anchovy > 0>>[['Savoury salted cookie dough'|drop_cookie_anchovy]]<</if>>
 
 
-  [[nothing|green_bin]]
+   [[Nothing|green_bin]]
   </div>
 
 
 
 <</if>>
 
-[[step back | kitchen_tutorial]]
+\>> [[Step back. | kitchen_tutorial]]
 
 :: plate
-a slightly dusty plate
+\> It's a slightly dusty plate.
 ITEMplate: $ITEMplate
 <<if ($ITEMplate ==0) and ($inventory <2)>>
 [[pick it up|grab_plate]]
