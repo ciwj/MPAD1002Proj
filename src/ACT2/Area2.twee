@@ -80,7 +80,7 @@ musicPuzzleRoom N
 /**********************/
 
 :: Area2Room2 W
-  <img src="src/assets/img/act 2 transitional rooms/Area2Room1PovW.png" width="400" alt="[]"/>
+  <img src="src/assets/img/act 2 transitional rooms/Area2Room2PovW.png" width="400" alt="[]"/>
 
 [[turn right|Area2Room2 N]]
 [[turn left|Area2Room2 S]]
@@ -88,7 +88,7 @@ musicPuzzleRoom N
 
 
 :: Area2Room2 N
-  <img src="src/assets/img/act 2 transitional rooms/Area2Room1PovN.png" width="400" alt="[]"/>
+  <img src="src/assets/img/act 2 transitional rooms/Area2Room2PovN.png" width="400" alt="[]"/>
 
 [[turn right|Area2Room2 E]]
 [[turn left|Area2Room2 W]]
@@ -96,15 +96,15 @@ musicPuzzleRoom N
 
 
 :: Area2Room2 S
-  <img src="src/assets/img/act 2 transitional rooms/Area2Room1PovS.png" width="400" alt="[]"/>
+  <img src="src/assets/img/act 2 transitional rooms/Area2Room2PovS.png" width="400" alt="[]"/>
 [[forwards|darkPuzzleRoom S]]
 [[turn right|Area2Room2 W]]
 [[turn left|Area2Room2 E]]
-[[check behind you| Area2Room2 N]]
+[[check behind you|Area2Room2 N]]
 
 
 :: Area2Room2 E
-  <img src="src/assets/img/act 2 transitional rooms/Area2Room1PovE.png" width="400" alt="[]"/>
+  <img src="src/assets/img/act 2 transitional rooms/Area2Room2PovE.png" width="400" alt="[]"/>
 
 [[turn right|Area2Room2 S]]
 [[turn left|Area2Room2 N]]

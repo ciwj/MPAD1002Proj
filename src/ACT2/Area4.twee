@@ -3,34 +3,145 @@
 /**********************/
 
 :: darkPuzzleRoom S
+
+<p> it is entirely, completely pitch black. </p>
+      <video width="320" height="240" controls autoplay>
+  <source src="src/assets/video/sam's poor man's sound effects/cave sounds.mp4" type="video/mp4">
+</video>
+
+
+[[forwards...?|the pool]]
+[[turn right...?|Area1Room1 E]]
+[[turn left...? Area3Room2 S]]
+[[check behind you...?| Area2Room2 S]]
+/* 
 darkPuzzleRoom S
 [[forwards| Area4Room2 S]]
 [[turn right|darkPuzzleRoom W]]
 [[turn left| darkPuzzleRoom E]]
 [[check behind you| darkPuzzleRoom N]]
+*/
 
 
 :: darkPuzzleRoom E
+
+<p> it is entirely, completely pitch black. </p>
+      <video width="320" height="240" controls autoplay>
+  <source src="src/assets/video/sam's poor man's sound effects/cave sounds.mp4" type="video/mp4">
+</video>
+
+
+[[forwards...?|the pool]]
+[[turn right...?|Area5Room1 S]]
+[[turn left...? Area2Room2 W]]
+[[check behind you...?| Area4Room2 N]]
+
+/*
 darkPuzzleRoom E
 [[forwards| Area4Room1 E]]
 [[turn right|darkPuzzleRoom S]]
 [[turn left| darkPuzzleRoom N]]
-[[check behind you| darkPuzzleRoom W]]
+[[check behind you| darkPuzzleRoom W]]*/
 
 
 :: darkPuzzleRoom N
+
+<p> it is entirely, completely pitch black. </p>
+      <video width="320" height="240" controls autoplay>
+  <source src="src/assets/video/sam's poor man's sound effects/cave sounds.mp4" type="video/mp4">
+</video>
+
+[[forwards...?|the pool]]
+[[turn right...?|Area1Room2 N]]
+[[turn left...? Area4Room2 W]]
+[[check behind you...?|Area3Room2 N]]
+
+/*
 darkPuzzleRoom N
 [[forwards| Area2Room2 N]]
 [[turn right|darkPuzzleRoom E]]
 [[turn left| darkPuzzleRoom W]]
-[[check behind you| darkPuzzleRoom S]]
+[[check behind you| darkPuzzleRoom S]]*/
 
 
 :: darkPuzzleRoom W
+
+<p> it is entirely, completely pitch black. </p>
+      <video width="320" height="240" controls autoplay>
+  <source src="src/assets/video/sam's poor man's sound effects/cave sounds.mp4" type="video/mp4">
+</video>
+
+[[forwards...?|the pool]]
+[[turn right...?|Area3Room2 W]]
+[[turn left...? |Area2Room1 E]]
+[[check behind you...?| Area3Room1 S]]
+/*
 darkPuzzleRoom W
 [[turn right|darkPuzzleRoom N]]
 [[turn left| darkPuzzleRoom S]]
 [[check behind you| darkPuzzleRoom E]]
+*/
+
+:: the pool
+
+<p> </p>
+      <video width="320" height="240" controls autoplay>
+  <source src="src/assets/video/sam's poor man's sound effects/walking in water.mp4" type="video/mp4">
+</video>
+
+the water is frigidly cold, with each step it swallows you further. you've lost track of dry ground. 
+
+[[reach into the water|reach]]
+[[keep walking | keep walking]]
+
+:: keep walking
+<p> </p>
+      <video width="320" height="240" controls autoplay>
+  <source src="src/assets/video/sam's poor man's sound effects/walking in water.mp4" type="video/mp4">
+</video>
+
+it's as dark and cold and miserable. 
+
+[[reach into the water | reach]]
+[[keep walking| keep walking]]
+
+:: reach
+
+your hand reaches into the freezing water, and finds nothing. no fish. no plant life. nothing.
+
+[[reach further| reach 2]]
+
+:: reach 2
+you are elbow deep into the water. it's cold and smooth and you know the oils of your skin are ruining this natural envrioment. 
+but still.. nothing
+
+[[reach even further|reach 3]]
+
+your finger tips then hands, then elbow then upper arm, and then all the way up to your shoulder. 
+you strain to keep your head above the surface, the water laps at your collorbone, and you just barely scrape the bottom of the pool.
+your hands find something solid. some kind of rock?
+
+you bring it up to your ear and tap your nail against it. 
+
+a
+[[listen]]
+
+:: listen
+  <video width="320" height="240" controls autoplay>
+  <source src="src/assets/video/sam's poor man's sound effects/crystal sound effect.mp4" type="video/mp4">
+</video>
+
+it's a gem. 
+
+[[you're free to go|go home]]
+
+:: go home
+<video width="320" height="240" controls autoplay>
+  <source src="src/assets/video/sam's poor man's sound effects/walking in water.mp4" type="video/mp4">
+</video>
+ the gem is a pleasant weight in your hand. you pick a direction, and trust eventually you'll make it to dry land.
+
+ [[...|Area4Room1 E]]
 
 
 
