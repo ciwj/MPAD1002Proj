@@ -3,15 +3,15 @@
 /**********************/
 
 :: musicPuzzleRoom S
-musicPuzzleRoom S
 
+[img[A musical space.|src/assets/img/3d/MusicRoom/MusicRoom6.png]]
 [[turn right| musicPuzzleRoom W]]
 [[turn left| musicPuzzleRoom E]]
 [[check behind you| musicPuzzleRoom N]]
 
 
 :: musicPuzzleRoom E
-musicPuzzleRoom E
+[img[A musical space.|src/assets/img/3d/MusicRoom/MusicRoom6.png]]
 [[forwards|Area2Room1 E]]
 [[turn right| coldPuzzleRoom W]]
 [[turn left| coldPuzzleRoom E]]
@@ -20,7 +20,7 @@ musicPuzzleRoom E
 
 
 :: musicPuzzleRoom W
-musicPuzzleRoom W
+[img[A musical space.|src/assets/img/3d/MusicRoom/MusicRoom6.png]]
 [[forwards|coldPuzzleRoom S]]
 [[turn right| musicPuzzleRoom N]]
 [[turn left| musicPuzzleRoom S]]
@@ -28,7 +28,7 @@ musicPuzzleRoom W
 
 
 :: musicPuzzleRoom N
-musicPuzzleRoom N
+[img[A musical space.|src/assets/img/3d/MusicRoom/MusicRoom6.png]]
 
 [[turn right| musicPuzzleRoom E]]
 [[turn left| musicPuzzleRoom W]]

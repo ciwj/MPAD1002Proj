@@ -46,7 +46,7 @@
 /***********************/
 
 :: kitchenPuzzleRoom S
-kitchenPuzzleRoom S
+[img[A kitchen.|src/assets/img/3d/Kitchen/kitchen7.png]]
   [[forwards|Area1Room2 S]]
   [[turn right| kitchenPuzzleRoom W]]
   [[turn left| kitchenPuzzleRoom E]]
@@ -54,15 +54,15 @@ kitchenPuzzleRoom S
 
 
 ::  kitchenPuzzleRoom N
-kitchenPuzzleRoom N
 
+[img[A kitchen.|src/assets/img/3d/Kitchen/kitchen7.png]]
   [[turn right| kitchenPuzzleRoom E]]
   [[turn left| kitchenPuzzleRoom W]]
   [[check behind you| kitchenPuzzleRoom S]]
 
 
 :: kitchenPuzzleRoom E
-kitchenPuzzleRoom E
+[img[A kitchen.|src/assets/img/3d/Kitchen/kitchen7.png]]
 [[forwards|Area1Room1 E]]
 [[turn right| kitchenPuzzleRoom S]]
 [[turn left| kitchenPuzzleRoom N]]
@@ -70,7 +70,7 @@ kitchenPuzzleRoom E
 
 
 :: kitchenPuzzleRoom W
-kitchenPuzzleRoom W
+[img[A kitchen.|src/assets/img/3d/Kitchen/kitchen7.png]]
  
 [[turn right| kitchenPuzzleRoom N]]
 [[turn left| kitchenPuzzleRoom S]]

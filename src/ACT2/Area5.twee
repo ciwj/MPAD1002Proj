@@ -4,7 +4,7 @@
 /**********************/
 
 :: lavaPuzzleRoom S
-lavaPuzzleRoom S
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IQjCJFqAbzs?si=KB01fNvgVr9QqYfX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 [[forwards|Area5Room2 S]]
 [[turn right|lavaPuzzleRoom W]]
 [[turn left| lavaPuzzleRoom E]]
@@ -12,7 +12,8 @@ lavaPuzzleRoom S
 
 
 :: lavaPuzzleRoom E
-lavaPuzzleRoom E
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IQjCJFqAbzs?si=KB01fNvgVr9QqYfX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 [[turn right|lavaPuzzleRoom S]]
 [[turn left| lavaPuzzleRoom N]]
@@ -20,7 +21,8 @@ lavaPuzzleRoom E
 
 
 :: lavaPuzzleRoom N
-lavaPuzzleRoom N
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IQjCJFqAbzs?si=KB01fNvgVr9QqYfX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 [[turn right|lavaPuzzleRoom E]]
 [[turn left| lavaPuzzleRoom W]]
@@ -28,7 +30,7 @@ lavaPuzzleRoom N
 
 
 :: lavaPuzzleRoom W
-lavaPuzzleRoom W
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IQjCJFqAbzs?si=KB01fNvgVr9QqYfX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 [[forwards|Area5Room1 W]]
 [[turn right|lavaPuzzleRoom N]]
 [[turn left| lavaPuzzleRoom S]]

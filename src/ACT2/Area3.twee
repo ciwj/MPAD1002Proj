@@ -3,14 +3,14 @@
 /**********************/
 
 :: coldPuzzleRoom S
-  coldPuzzleRoom S
+[img[A cold room.|src/assets/img/3d/IceRoom/IceRoom2.png]]
 
   [[turn right| coldPuzzleRoom W]]
   [[turn left| coldPuzzleRoom E]]
   [[check behind you|coldPuzzleRoom N]]
 
 :: coldPuzzleRoom N
-coldPuzzleRoom N
+[img[A cold room.|src/assets/img/3d/IceRoom/IceRoom2.png]]
   [[forwards| musicPuzzleRoom E]]
   [[turn right| coldPuzzleRoom E]]
   [[turn left| coldPuzzleRoom W]]
@@ -18,7 +18,7 @@ coldPuzzleRoom N
 
 
 :: coldPuzzleRoom E
-coldPuzzleRoom E
+[img[A cold room.|src/assets/img/3d/IceRoom/IceRoom2.png]]
 [[forwards| Area3Room1 S]]
 [[turn right| coldPuzzleRoom S]]
 [[turn left| coldPuzzleRoom N]]
@@ -26,7 +26,7 @@ coldPuzzleRoom E
 
 
 :: coldPuzzleRoom W
-coldPuzzleRoom W
+[img[A cold room.|src/assets/img/3d/IceRoom/IceRoom2.png]]
 
 [[turn right| coldPuzzleRoom N]]
 [[turn left| coldPuzzleRoom S]] 
