@@ -697,18 +697,18 @@ Anchovy: $ITEManchovy
 
 :: plate
 \> It's a slightly dusty plate.
-ITEMplate: $ITEMplate
 <<if ($ITEMplate ==0) and ($inventory <2)>>
-[[pick it up|grab_plate]]
+
+\>> [[Pick it up|grab_plate]]
 <</if>>
 
 <<if $ITEMplate == 1>>
-[[put it down|drop_plate]]
+\>> [[Put it down.|drop_plate]]
 
 <</if>>
 
 
-[[step back|kitchen_tutorial]]
+\>> [[Step back.|kitchen_tutorial]]
 
 :: grab_plate
 <<set $ITEMplate++>>
@@ -721,37 +721,37 @@ ITEMplate: $ITEMplate
 
 :: cooking_pot
  
-a cooking pot. 
+\> It's a cooking pot.
 
 <<if $inventory > 0>>
 <div style="display:flex;flex-direction:column;align-items:flex-start;">
-add to the pot: 
-  <<if $ITEMbanana > 0>> [[banana|cook_banana]]<</if>>
-  <<if $ITEMcookie > 0>>[[cookie|cook_cookie]]<</if>>
-  <<if $ITEManchovy > 0>>[[anchovy|cook_anchovy]]<</if>>
-  [[nothing|cooking_pot]]
+Add to the pot:
+  <<if $ITEMbanana > 0>> [[Banana|cook_banana]]<</if>>
+  <<if $ITEMcookie > 0>>[[Cookie|cook_cookie]]<</if>>
+  <<if $ITEManchovy > 0>>[[Anchovy|cook_anchovy]]<</if>>
+  [[Nothing.|cooking_pot]]
   </div>
 <</if>>
 
 <div style="display:flex;flex-direction:column;align-items:flex-start;">
 <<if $tutorialIngredients == 0>>
   <<else>>
-    items in the pot:
+    Items in the pot:
     $tutorialCookingPot
 <</if>>
 </div>
 
 <<if ($tutorialIngredients == 2)>>
-  the ingredients have mixed!
+\> The ingredients have gotten to mingle..!
   <<if $ITEMplate == 0>>
-    if only you had something to carry it with...
+\> If only you had something to carry it with...
   <</if>>
   <<if $ITEMplate==1>>
-    take [[soup|take_soup]] 
+\>> Take [[soup|take_soup]]
   <</if>>
 <</if>>
 
-[[take a step back|kitchen_tutorial]]
+\>> [[Take a step back.|kitchen_tutorial]]
 
 :: cook_banana
 <<if $ITEMbanana == 2>>
@@ -804,28 +804,36 @@ add to the pot:
 :: take_soup
 <<if (($tutorialCookingPot.includes('banana2')) and ($tutorialCookingPot.includes('banana')))>>
   <<set $ITEMbananax2 ++>>
-    you recieved [[banana soup|view_soup]]
+
+\>> You recieved [[banana soup|view_soup]]!
 <</if>>
 <<if (($tutorialCookingPot.includes('cookie2')) and ($tutorialCookingPot.includes('cookie')))>>
   <<set $ITEMcookiex2 ++>>
-    you recieved [[cookie soup|view_soup]]
+
+\>> You received [[cookie soup|view_soup]]!
 <</if>>
 <<if (($tutorialCookingPot.includes('anchovy2')) and ($tutorialCookingPot.includes('anchovy')))>>
   <<set $ITEManchovyx2 ++>>
-    you recieved [[anchovy soup|view_soup]]
+
+\>> You received [[anchovy soup|view_soup]]!
 <</if>>
 <<if ($tutorialCookingPot.includes('banana')) and ($tutorialCookingPot.includes('anchovy'))>>
   <<set $ITEMbanana_anchovy ++>>
-    you recieved [['Tropical Tangy Anchovy Mash'|view_soup]]
+
+\>> You received [['Tropical Tangy Anchovy Mash'|view_soup]]!
 <</if>>
 <<if ($tutorialCookingPot.includes('banana')) and ($tutorialCookingPot.includes('cookie'))>>
   <<set $ITEMbanana_cookie ++>>
-      you recived [['Choco-banana crumble bites'|view_soup]]
+
+\>> You received [['Choco-banana crumble bites'|view_soup]]!
 <</if>>
 <<if ($tutorialCookingPot.includes('cookie')) and ($tutorialCookingPot.includes('anchovy'))>>
   <<set $ITEMcookie_anchovy++>>
-    you recived [['savory salted cookie dough'|view_soup]]
+
+\>> You received [['savory salted cookie dough'|view_soup]]!
 <</if>>
+
+\> You're overflowing with pride.
 
 <<set $inventory++>>
 <<set $ITEMplate-->>
@@ -861,7 +869,7 @@ add to the pot:
 
     </div>
 </div>
-  banana soup
+  banana soup.
   [[look up at room|kitchen_tutorial]]
 <</if>>
 <<if ($ITEMcookiex2 == 1)>>
@@ -891,7 +899,7 @@ add to the pot:
 
     </div>
 </div>
-  cookie soup
+  cookie soup.
   [[look up at room|kitchen_tutorial]]
 <</if>>
 <<if $ITEManchovyx2 ==1>>
@@ -921,7 +929,7 @@ add to the pot:
 
     </div>
 </div>
-  anchovy soup
+  anchovy soup.
   [[look up at room|kitchen_tutorial]]
 <</if>>
 <<if $ITEMbanana_anchovy == 1>>
@@ -951,7 +959,7 @@ add to the pot:
 
     </div>
 </div>
-  'Tropical Tangy Anchovy Mash'
+  'Tropical Tangy Anchovy Mash'!
   [[look up at room|kitchen_tutorial]]
 <</if>>
 <<if $ITEMbanana_cookie == 1>>
@@ -981,7 +989,7 @@ add to the pot:
 
     </div>
 </div>
-  'Choco-banana crumble bites'
+  'Choco-Banana Crumble Bites'!
   [[look up at room|kitchen_tutorial]]
 <</if>>
 <<if $ITEMcookie_anchovy == 1>>
@@ -1011,7 +1019,7 @@ add to the pot:
 
     </div>
 </div>
-  'savory salted cookie dough'
+  'Savory Salted Cookie Dough'!
   [[look up at room|kitchen_tutorial]]
 <</if>>
 
