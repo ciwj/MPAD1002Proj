@@ -843,176 +843,26 @@ Add to the pot:
 
 :: view_soup
 <<if ($ITEMbananax2 == 1)>>
-
-  <div class ="inventory_layout">
-  <img src="src/assets/img/food and soup/bananax2.png" width="240" alt="[]"/>
-
-    <div class="inventory"> 
-
-    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
-
-    <button class="inventory_slot">
-      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
-    </button>
-    <button class="inventory_slot">
-      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
-    </button>
-    <button class="inventory_slot">
-      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
-    </button>
-    <button class="inventory_slot hidden">
-      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
-    </button>
-    <button class="inventory_slot hidden">
-      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
-    </button>
-
-    </div>
   banana soup.
   [[look up at room|kitchen_tutorial]]
 <</if>>
 <<if ($ITEMcookiex2 == 1)>>
-
-   <div class ="inventory_layout">
-  <img src="src/assets/img/food and soup/cookiex2.png" width="240" alt="[]"/>
-
-    <div class="inventory"> 
-
-    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
-
-    <button class="inventory_slot">
-      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
-    </button>
-    <button class="inventory_slot">
-      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
-    </button>
-    <button class="inventory_slot">
-      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
-    </button>
-    <button class="inventory_slot hidden">
-      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
-    </button>
-    <button class="inventory_slot hidden">
-      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
-    </button>
-
-    </div>
   cookie soup.
   [[look up at room|kitchen_tutorial]]
 <</if>>
 <<if $ITEManchovyx2 ==1>>
-
-   <div class ="inventory_layout">
-  <img src="src/assets/img/food and soup/anchovyx2.png" width="240" alt="[]"/>
-
-    <div class="inventory"> 
-
-    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
-
-    <button class="inventory_slot">
-      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
-    </button>
-    <button class="inventory_slot">
-      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
-    </button>
-    <button class="inventory_slot">
-      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
-    </button>
-    <button class="inventory_slot hidden">
-      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
-    </button>
-    <button class="inventory_slot hidden">
-      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
-    </button>
-
-    </div>
   anchovy soup.
   [[look up at room|kitchen_tutorial]]
 <</if>>
 <<if $ITEMbanana_anchovy == 1>>
-
-   <div class ="inventory_layout">
-  <img src="src/assets/img/food and soup/banana_anchovy.png" width="240" alt="[]"/>
-
-    <div class="inventory"> 
-
-    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
-
-    <button class="inventory_slot">
-      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
-    </button>
-    <button class="inventory_slot">
-      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
-    </button>
-    <button class="inventory_slot">
-      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
-    </button>
-    <button class="inventory_slot hidden">
-      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
-    </button>
-    <button class="inventory_slot hidden">
-      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
-    </button>
-
-    </div>
   'Tropical Tangy Anchovy Mash'!
   [[look up at room|kitchen_tutorial]]
 <</if>>
 <<if $ITEMbanana_cookie == 1>>
-
-   <div class ="inventory_layout">
-  <img src="src/assets/img/food and soup/banana_cookie.png" width="240" alt="[]"/>
-
-    <div class="inventory"> 
-
-    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
-
-    <button class="inventory_slot">
-      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
-    </button>
-    <button class="inventory_slot">
-      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
-    </button>
-    <button class="inventory_slot">
-      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
-    </button>
-    <button class="inventory_slot hidden">
-      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
-    </button>
-    <button class="inventory_slot hidden">
-      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
-    </button>
-
-    </div>
   'Choco-Banana Crumble Bites'!
   [[look up at room|kitchen_tutorial]]
 <</if>>
 <<if $ITEMcookie_anchovy == 1>>
-
-     <div class ="inventory_layout">
-  <img src="src/assets/img/food and soup/cookie_anchovy.png" width="240" alt="[]"/>
-
-    <div class="inventory"> 
-
-    <h3 class="inventory_header"><<= $name>>'s Inventory</h3>
-
-    <button class="inventory_slot">
-      <img src="src/assets/img/misc items/bag.png" class="inventory_img" alt="Inventory Image">
-    </button>
-    <button class="inventory_slot">
-      <img src="src/assets/img/misc items/bottle.png" class="inventory_img" alt="Inventory Image">
-    </button>
-    <button class="inventory_slot">
-      <img src="src/assets/img/misc items/goblet.png" class="inventory_img hidden" alt="Inventory Image">
-    </button>
-    <button class="inventory_slot hidden">
-      <img src="src/assets/img/misc items/mic.png" class="inventory_img hidden" alt="Inventory Image">
-    </button>
-    <button class="inventory_slot hidden">
-      <img src="src/assets/img/misc items/plate.png" class="inventory_img hidden" alt="Inventory Image">
-    </button>
-
-    </div>
   'Savory Salted Cookie Dough'!
   [[look up at room|kitchen_tutorial]]
 <</if>>
@@ -2881,6 +2731,7 @@ investigate the [[pentagon]]
 :: lock check
 
 <<if ($hexagonLock == ['True']) and ($circleLock == ['True']) and ($triangleLock == ['True']) and ($diamondLock == ['True']) and ($pentagonLock == ['True']) >>
+  test
   <<goto unlocked_door>>
 <</if>>
 
