@@ -376,7 +376,7 @@
     </div>
 </div>
 
-\>> [[I got a good feeling about this one.|dark tutorial]]
+\>> [[I got a good feeling about this one.|dark_tut]]
 \>> [[.. Eh.|starting_room 4]]
 
 
@@ -697,7 +697,7 @@ Anchovy: $ITEManchovy
 
 :: plate
 \> It's a slightly dusty plate.
-<<if ($ITEMplate ==0) and ($inventory <2)>>
+<<if ($inventory <2)>>
 
 \>> [[Pick it up|grab_plate]]
 <</if>>
@@ -706,7 +706,6 @@ Anchovy: $ITEManchovy
 \>> [[Put it down.|drop_plate]]
 
 <</if>>
-
 
 \>> [[Step back.|kitchen_tutorial]]
 
@@ -834,6 +833,7 @@ Add to the pot:
 <</if>>
 
 \> You're overflowing with pride.
+\> [[take a look at your masterpiece|view_soup]]
 
 <<set $inventory++>>
 <<set $ITEMplate-->>
