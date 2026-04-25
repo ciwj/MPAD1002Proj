@@ -868,7 +868,6 @@ Add to the pot:
     </button>
 
     </div>
-</div>
   banana soup.
   [[look up at room|kitchen_tutorial]]
 <</if>>
@@ -898,7 +897,6 @@ Add to the pot:
     </button>
 
     </div>
-</div>
   cookie soup.
   [[look up at room|kitchen_tutorial]]
 <</if>>
@@ -928,7 +926,6 @@ Add to the pot:
     </button>
 
     </div>
-</div>
   anchovy soup.
   [[look up at room|kitchen_tutorial]]
 <</if>>
@@ -958,7 +955,6 @@ Add to the pot:
     </button>
 
     </div>
-</div>
   'Tropical Tangy Anchovy Mash'!
   [[look up at room|kitchen_tutorial]]
 <</if>>
@@ -988,7 +984,6 @@ Add to the pot:
     </button>
 
     </div>
-</div>
   'Choco-Banana Crumble Bites'!
   [[look up at room|kitchen_tutorial]]
 <</if>>
@@ -1018,7 +1013,6 @@ Add to the pot:
     </button>
 
     </div>
-</div>
   'Savory Salted Cookie Dough'!
   [[look up at room|kitchen_tutorial]]
 <</if>>
@@ -2886,7 +2880,7 @@ investigate the [[pentagon]]
 
 :: lock check
 
-<<if ($hexagonLock == ['True']) and ($circleLock == ['True']) and ($triangleLock == ['True'])*/ and ($diamondLock == ['True']) and ($pentagonLock == ['True']) >>
+<<if ($hexagonLock == ['True']) and ($circleLock == ['True']) and ($triangleLock == ['True']) and ($diamondLock == ['True']) and ($pentagonLock == ['True']) >>
   <<goto unlocked_door>>
 <</if>>
 
