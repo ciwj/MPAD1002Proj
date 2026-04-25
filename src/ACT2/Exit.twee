@@ -1,6 +1,6 @@
 :: Exit S
 [img[The doors.|src/assets/img/3d/ExitRoom/ExitRoom4.png]]
-  [[Proceed.|endroom_main]
+  [[Proceed.|endroom_main]]
 
 :: Exit N
 
