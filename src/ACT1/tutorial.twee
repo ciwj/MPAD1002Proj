@@ -697,7 +697,7 @@ Anchovy: $ITEManchovy
 
 :: plate
 \> It's a slightly dusty plate.
-<<if ($inventory <2 )and($ITEMplate == 1)>>
+<<if ($inventory <2 )and($ITEMplate == 0)>>
 
 \>> [[Pick it up|grab_plate]]
 <</if>>
