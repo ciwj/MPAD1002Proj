@@ -419,7 +419,7 @@
 
 \>> [[Go to the pot.|cooking_pot]]
 
-\>> [[The brown bin?|brown_bin]]
+\>> [[The brown bin|brown_bin]]
 
 \>> [[Green bin..|green_bin]]
 
@@ -697,7 +697,7 @@ Anchovy: $ITEManchovy
 
 :: plate
 \> It's a slightly dusty plate.
-<<if ($inventory <2)>>
+<<if ($inventory <2 )and($ITEMplate == 1)>>
 
 \>> [[Pick it up|grab_plate]]
 <</if>>
@@ -833,7 +833,7 @@ Add to the pot:
 <</if>>
 
 \> You're overflowing with pride.
-\> [[take a look at your masterpiece|view_soup]]
+\> [[take a look at your masterpiece| view_soup]]
 
 <<set $inventory++>>
 <<set $ITEMplate-->>
@@ -2886,7 +2886,7 @@ investigate the [[pentagon]]
 
 :: lock check
 
-<<if ($hexagonLock == ['True']) and ($circleLock == ['True']) /* and ($triangleLock == ['True'])*/ and ($diamondLock == ['True']) /*and ($pentagonLock == ['True'])*/ >>
+<<if ($hexagonLock == ['True']) and ($circleLock == ['True']) and ($triangleLock == ['True'])*/ and ($diamondLock == ['True']) and ($pentagonLock == ['True']) >>
   <<goto unlocked_door>>
 <</if>>
 
@@ -2927,6 +2927,7 @@ the circle dial is correct
 <!--triangle lock -->
 <<if $triangleDial == 4>>
 <<set $triangleLock to ['True']>>
+the triangle dial is correct
 <</if>>
 <!--diamond lock -->
 <<if ($circuitNumber == 1) and ($diamondDial == 1)>>
@@ -3574,7 +3575,7 @@ the dial is currently set at the sixth notch.
     </div>
 </div>
 upon closer inspection, at the center of the shape is a dial.
-the dial is currently set at the fifth notch. 
+the dial is currently set at the seventh notch. 
 
 [[turn the dial right|circle_dial8]]
 [[turn the dial left|circle_dial6]]
@@ -3890,7 +3891,7 @@ the dial is currently set at the sixth notch.
     </div>
 </div>
 upon closer inspection, at the center of the shape is a dial.
-the dial is currently set at the fifth notch. 
+the dial is currently set at the seventh notch. 
 
 [[turn the dial right|triangle_dial8]]
 [[turn the dial left|triangle_dial6]]
@@ -4208,7 +4209,7 @@ the dial is currently set at the sixth notch.
     </div>
 </div>
 upon closer inspection, at the center of the shape is a dial.
-the dial is currently set at the fifth notch. 
+the dial is currently set at the seventh notch. 
 
 [[turn the dial right|diamond_dial8]]
 [[turn the dial left|diamond_dial6]]
